@@ -1,0 +1,61 @@
+{{ define "main" }}
+{{ $allCollections := site.Data.collections.collections }}
+{{ $collId := .Params.collection_id }}
+{{ $collData := false }}
+{{ range $allCollections }}
+  {{ if eq .id $collId }}
+    {{ $collData = . }}
+  {{ end }}
+{{ end }}
+
+{{ if $collData }}
+<section class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Collection</p>
+    <h1>{{ $collData.title }}</h1>
+    <p class="lead">{{ $collData.description }}</p>
+  </div>
+</section>
+
+<section class="gallery wrap">
+  <div class="section-title">
+    <h2>{{ len $collData.items }} featured items</h2>
+    <p><a href="{{ "/" | relURL }}">&#8592; All collections</a></p>
+  </div>
+  <div class="card-grid">
+    {{ range $index, $item := $collData.items }}
+      {{ $image := partial "iiif-image.html" $item }}
+      <article class="card reveal" style="--delay: {{ mul $index 0.06 }}s;">
+        <a class="image-link" href="{{ $item.record }}" target="_blank" rel="noopener">
+          <div class="image-frame">
+            <img
+              src="{{ $image }}"
+              alt="{{ $item.title }}"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+        </a>
+        <div class="card-body">
+          <h3>{{ $item.title }}</h3>
+          <p class="meta">{{ $item.date }}{{ with $item.photographer }} · {{ . }}{{ end }}</p>
+          <p class="summary">{{ $item.description }}</p>
+          {{ with $item.subjects }}<div class="chip-row">
+            {{ range . }}<span class="chip">{{ . }}</span>{{ end }}
+          </div>{{ end }}
+        </div>
+      </article>
+    {{ end }}
+  </div>
+</section>
+
+<section class="cta wrap">
+  <div class="cta-card">
+    <div>
+      <h2>Explore the full collection</h2>
+      <p>These featured items are just a sample. Browse the <a href="{{ $collData.collection_page }}" target="_blank" rel="noopener">full {{ $collData.title }}</a> at Temple University Libraries or use the <a href="{{ $collData.manifest }}" target="_blank" rel="noopener">IIIF collection manifest</a> to access the data.</p>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}

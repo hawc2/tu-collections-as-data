@@ -1,0 +1,383 @@
+{
+  "site": {
+    "title": "Temple University Libraries Digital Collections",
+    "description": "Temple University Libraries offers free worldwide access to many of the unique primary historical and cultural resources held by the Libraries. These digital collections span Philadelphia history, African American culture, performing arts, university archives, and more.",
+    "source": "Temple University Libraries",
+    "url": "https://digital.library.temple.edu/"
+  },
+  "collections": [
+    {
+      "id": "wwi-posters",
+      "title": "Allied Posters of World War I",
+      "collection_id": "p16002coll9",
+      "collection_page": "https://digital.library.temple.edu/digital/collection/p16002coll9",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/info/p16002coll9/manifest.json",
+      "description": "A striking collection of over 200 Allied propaganda posters from World War I, featuring recruitment appeals, war bond campaigns, and morale-boosting imagery from the United States, Great Britain, France, and other Allied nations. These posters reflect the visual persuasion techniques of the era and the social mobilization of the home front.",
+      "items": [
+        {
+          "title": "I Want You for U.S. Army",
+          "featured": true,
+          "record": "https://digital.library.temple.edu/digital/collection/p16002coll9/id/4180",
+          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p16002coll9:4180/manifest.json",
+          "date": "1917",
+          "subjects": ["World War I", "Recruitment", "Posters", "Propaganda"],
+          "description": "Iconic recruitment poster featuring Uncle Sam pointing directly at the viewer."
+        },
+        {
+          "title": "Remember Belgium",
+          "featured": true,
+          "record": "https://digital.library.temple.edu/digital/collection/p16002coll9/id/4181",
+          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p16002coll9:4181/manifest.json",
+          "date": "1918",
+          "subjects": ["World War I", "Propaganda", "Enlistment"],
+          "description": "American propaganda poster urging enlistment by referencing the German invasion of Belgium."
+        },
+        {
+          "title": "Beat Back the Hun with Liberty Bonds",
+          "featured": false,
+          "record": "https://digital.library.temple.edu/digital/collection/p16002coll9/id/4182",
+          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p16002coll9:4182/manifest.json",
+          "date": "1918",
+          "subjects": ["World War I", "Liberty Bonds", "Posters"],
+          "description": "War bond poster depicting a menacing German soldier to encourage investment in Liberty Bonds."
+        }
+      ]
+    },
+    {
+      "id": "mosley-photographs",
+      "title": "John W. Mosley Photographs",
+      "collection_id": "p15037coll17",
+      "collection_page": "https://digital.library.temple.edu/digital/collection/p15037coll17",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/info/p15037coll17/manifest.json",
+      "description": "Photographs by John W. Mosley documenting African American social life, community events, and cultural activities in Philadelphia from the 1930s through the 1960s. Mosley captured weddings, dances, civic gatherings, and everyday life, providing a rich visual record of the city's Black communities.",
+      "items": [
+        {
+          "title": "Cotillion Ball at the Bellevue-Stratford Hotel",
+          "featured": true,
+          "record": "https://digital.library.temple.edu/digital/collection/p15037coll17/id/1",
+          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll17:1/manifest.json",
+          "date": "1950s",
+          "subjects": ["African Americans", "Social life", "Dances", "Philadelphia"],
+          "description": "Elegantly dressed attendees at a cotillion ball at the Bellevue-Stratford Hotel in Philadelphia."
+        },
+        {
+          "title": "Easter Promenade on South Street",
+          "featured": true,
+          "record": "https://digital.library.temple.edu/digital/collection/p15037coll17/id/5",
+          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll17:5/manifest.json",
+          "date": "1940s",
+          "subjects": ["African Americans", "Easter", "Parades", "Philadelphia"],
+          "description": "African Americans dressed in Easter finery promenading along South Street in Philadelphia."
+        },
+        {
+          "title": "Musicians at a Jazz Club",
+          "featured": false,
+          "record": "https://digital.library.temple.edu/digital/collection/p15037coll17/id/10",
+          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll17:10/manifest.json",
+          "date": "1940s",
+          "subjects": ["African Americans", "Jazz", "Musicians", "Nightclubs"],
+          "description": "Musicians performing at a Philadelphia jazz club, capturing the vibrant music scene."
+        }
+      ]
+    },
+    {
+      "id": "dance-collection",
+      "title": "Philadelphia Dance Collection",
+      "collection_id": "p16002coll17",
+      "collection_page": "https://digital.library.temple.edu/digital/collection/p16002coll17",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/info/p16002coll17/manifest.json",
+      "description": "Photographs documenting Philadelphia's rich dance heritage, featuring the Pennsylvania Ballet and the Philadelphia Dance Company (Philadanco). The collection spans from the 1960s through the 1990s, capturing performances, rehearsals, and the individual artistry of dancers.",
+      "items": [
+        {
+          "title": "Sleeping Beauty",
+          "featured": true,
+          "record": "https://digital.library.temple.edu/digital/collection/p16002coll17/id/20",
+          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p16002coll17:20/manifest.json",
+          "photographer": "Jack Mitchell",
+          "date": "1966-1967",
+          "subjects": ["Ballet", "Ballet dancers", "Performances"],
+          "description": "Pennsylvania Ballet dancers performing Sleeping Beauty, one of the company's early productions."
+        },
+        {
+          "title": "Rodeo",
+          "featured": true,
+          "record": "https://digital.library.temple.edu/digital/collection/p16002coll17/id/1",
+          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p16002coll17:1/manifest.json",
+          "photographer": "Paul Kolnik",
+          "date": "February 1997",
+          "subjects": ["Ballet", "Performances", "Ballet dancers"],
+          "description": "Pennsylvania Ballet company members in Agnes de Mille's Rodeo, performed at the Merriam Theatre."
+        },
+        {
+          "title": "David St. Charles - Lead Male Dancer",
+          "featured": false,
+          "record": "https://digital.library.temple.edu/digital/collection/p15037coll3/id/11529",
+          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll3:11529/manifest.json",
+          "photographer": "Jack Tinney",
+          "date": "October 4, 1981",
+          "subjects": ["Dance", "Dancers", "African American dancers"],
+          "description": "David St. Charles, Philadanco's lead male dancer, photographed at the company's West Philadelphia location."
+        }
+      ]
+    },
+    {
+      "id": "railroad-photographs",
+      "title": "Frank G. Zahn Railroad Photograph Collection",
+      "collection_id": "p16002coll26",
+      "collection_page": "https://digital.library.temple.edu/digital/collection/p16002coll26",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/info/p16002coll26/manifest.json",
+      "description": "Photographs of railroads and trains taken by Frank G. Zahn, documenting American railroading from the steam era through the transition to diesel locomotives. The collection includes images of stations, rolling stock, locomotives, and railroad infrastructure across the eastern United States.",
+      "items": [
+        {
+          "title": "Pennsylvania Railroad Locomotive",
+          "featured": true,
+          "record": "https://digital.library.temple.edu/digital/collection/p16002coll26/id/1",
+          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p16002coll26:1/manifest.json",
+          "date": "ca. 1940s",
+          "subjects": ["Railroads", "Locomotives", "Pennsylvania Railroad"],
+          "description": "A Pennsylvania Railroad steam locomotive at a station, showcasing the engineering of the steam era."
+        },
+        {
+          "title": "Reading Railroad Freight Train",
+          "featured": true,
+          "record": "https://digital.library.temple.edu/digital/collection/p16002coll26/id/5",
+          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p16002coll26:5/manifest.json",
+          "date": "ca. 1950s",
+          "subjects": ["Railroads", "Freight trains", "Reading Railroad"],
+          "description": "A Reading Railroad freight train moving through the Pennsylvania countryside."
+        },
+        {
+          "title": "30th Street Station",
+          "featured": false,
+          "record": "https://digital.library.temple.edu/digital/collection/p16002coll26/id/10",
+          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p16002coll26:10/manifest.json",
+          "date": "ca. 1950s",
+          "subjects": ["Railroads", "Railroad stations", "Philadelphia"],
+          "description": "Philadelphia's 30th Street Station, a major hub of the Pennsylvania Railroad system."
+        }
+      ]
+    },
+    {
+      "id": "city-parks",
+      "title": "City Parks Association Photographs",
+      "collection_id": "p15037coll5",
+      "collection_page": "https://digital.library.temple.edu/digital/collection/p15037coll5",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/info/p15037coll5/manifest.json",
+      "description": "Photographs from the City Parks Association of Philadelphia documenting the city's parks, playgrounds, and recreational spaces from the late 19th and early 20th centuries. The images reveal the development of urban green spaces and their role in community life.",
+      "items": [
+        {
+          "title": "Fairmount Park Scenery",
+          "featured": true,
+          "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/1",
+          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:1/manifest.json",
+          "date": "ca. 1900",
+          "subjects": ["Parks", "Fairmount Park", "Philadelphia", "Landscapes"],
+          "description": "A scenic view of Fairmount Park, Philadelphia's largest public green space."
+        },
+        {
+          "title": "Children at a City Playground",
+          "featured": true,
+          "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/5",
+          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:5/manifest.json",
+          "date": "ca. 1910",
+          "subjects": ["Children", "Playgrounds", "Recreation", "Philadelphia"],
+          "description": "Children playing at a city playground, part of the movement to create recreational spaces in urban areas."
+        },
+        {
+          "title": "Park Fountain and Visitors",
+          "featured": false,
+          "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/10",
+          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:10/manifest.json",
+          "date": "ca. 1905",
+          "subjects": ["Parks", "Fountains", "Philadelphia"],
+          "description": "Visitors enjoying a park fountain on a warm day in early 20th-century Philadelphia."
+        }
+      ]
+    },
+    {
+      "id": "naacp-photographs",
+      "title": "NAACP, Philadelphia Branch Photographs",
+      "collection_id": "p15037coll10",
+      "collection_page": "https://digital.library.temple.edu/digital/collection/p15037coll10",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/info/p15037coll10/manifest.json",
+      "description": "Photographs from the Philadelphia branch of the National Association for the Advancement of Colored People (NAACP), documenting civil rights activities, community organizing, and leadership in Philadelphia throughout the 20th century.",
+      "items": [
+        {
+          "title": "NAACP Annual Banquet",
+          "featured": true,
+          "record": "https://digital.library.temple.edu/digital/collection/p15037coll10/id/1",
+          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll10:1/manifest.json",
+          "date": "ca. 1960s",
+          "subjects": ["NAACP", "Civil rights", "African Americans", "Philadelphia"],
+          "description": "Attendees at the Philadelphia NAACP's annual banquet, a major community event bringing together civic leaders."
+        },
+        {
+          "title": "Civil Rights March in Philadelphia",
+          "featured": true,
+          "record": "https://digital.library.temple.edu/digital/collection/p15037coll10/id/5",
+          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll10:5/manifest.json",
+          "date": "ca. 1960s",
+          "subjects": ["NAACP", "Civil rights", "Marches", "Protests"],
+          "description": "Participants in a civil rights march through Philadelphia, organized by the local NAACP branch."
+        },
+        {
+          "title": "Community Meeting",
+          "featured": false,
+          "record": "https://digital.library.temple.edu/digital/collection/p15037coll10/id/10",
+          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll10:10/manifest.json",
+          "date": "ca. 1950s",
+          "subjects": ["NAACP", "Community organizing", "African Americans"],
+          "description": "A community meeting organized by the Philadelphia NAACP to discuss local civil rights issues."
+        }
+      ]
+    },
+    {
+      "id": "sheet-music",
+      "title": "Temple Sheet Music Collections",
+      "collection_id": "p15037coll1",
+      "collection_page": "https://digital.library.temple.edu/digital/collection/p15037coll1",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/info/p15037coll1/manifest.json",
+      "description": "A diverse collection of American sheet music spanning the 19th and early 20th centuries, featuring popular songs, patriotic music, ragtime, and parlor songs. The illustrated covers provide a vivid visual record of American popular culture, social attitudes, and graphic design.",
+      "items": [
+        {
+          "title": "After the Ball",
+          "featured": true,
+          "record": "https://digital.library.temple.edu/digital/collection/p15037coll1/id/1",
+          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll1:1/manifest.json",
+          "date": "1892",
+          "subjects": ["Sheet music", "Popular music", "Cover art"],
+          "description": "Sheet music for 'After the Ball,' one of the most successful popular songs of the 19th century."
+        },
+        {
+          "title": "The Stars and Stripes Forever",
+          "featured": true,
+          "record": "https://digital.library.temple.edu/digital/collection/p15037coll1/id/5",
+          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll1:5/manifest.json",
+          "date": "1897",
+          "subjects": ["Sheet music", "Marches", "Patriotic music", "John Philip Sousa"],
+          "description": "Sheet music cover for John Philip Sousa's iconic march, The Stars and Stripes Forever."
+        },
+        {
+          "title": "Maple Leaf Rag",
+          "featured": false,
+          "record": "https://digital.library.temple.edu/digital/collection/p15037coll1/id/10",
+          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll1:10/manifest.json",
+          "date": "1899",
+          "subjects": ["Sheet music", "Ragtime", "Scott Joplin"],
+          "description": "Scott Joplin's Maple Leaf Rag, a foundational work of ragtime music."
+        }
+      ]
+    },
+    {
+      "id": "paul-robeson",
+      "title": "Paul Robeson Collection",
+      "collection_id": "p16002coll23",
+      "collection_page": "https://digital.library.temple.edu/digital/collection/p16002coll23",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/info/p16002coll23/manifest.json",
+      "description": "Materials documenting the life and career of Paul Robeson, the renowned singer, actor, athlete, and civil rights activist. The collection includes photographs, programs, correspondence, and ephemera spanning Robeson's remarkable career from the stage to the political arena.",
+      "items": [
+        {
+          "title": "Paul Robeson in Othello",
+          "featured": true,
+          "record": "https://digital.library.temple.edu/digital/collection/p16002coll23/id/1",
+          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p16002coll23:1/manifest.json",
+          "date": "1943",
+          "subjects": ["Paul Robeson", "Theater", "Othello", "Actors"],
+          "description": "Paul Robeson in his acclaimed role as Othello, one of the most celebrated performances in American theater history."
+        },
+        {
+          "title": "Concert Program",
+          "featured": true,
+          "record": "https://digital.library.temple.edu/digital/collection/p16002coll23/id/5",
+          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p16002coll23:5/manifest.json",
+          "date": "1940s",
+          "subjects": ["Paul Robeson", "Concerts", "Music", "Programs"],
+          "description": "Program from a Paul Robeson concert, showcasing his celebrated bass-baritone voice."
+        },
+        {
+          "title": "Robeson at a Rally",
+          "featured": false,
+          "record": "https://digital.library.temple.edu/digital/collection/p16002coll23/id/10",
+          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p16002coll23:10/manifest.json",
+          "date": "1940s",
+          "subjects": ["Paul Robeson", "Civil rights", "Activism", "Rallies"],
+          "description": "Paul Robeson speaking at a rally, reflecting his lifelong commitment to social justice and civil rights."
+        }
+      ]
+    },
+    {
+      "id": "blockson-photographs",
+      "title": "Blockson Afro-American Collection Photographs",
+      "collection_id": "p16002coll3",
+      "collection_page": "https://digital.library.temple.edu/digital/collection/p16002coll3",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/info/p16002coll3/manifest.json",
+      "description": "Photographs from the Charles L. Blockson Afro-American Collection, one of the nation's leading research facilities for the study of the history and culture of people of African descent. The collection documents African American life, achievements, and history from the colonial era to the present.",
+      "items": [
+        {
+          "title": "Portrait of Frederick Douglass",
+          "featured": true,
+          "record": "https://digital.library.temple.edu/digital/collection/p16002coll3/id/1",
+          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p16002coll3:1/manifest.json",
+          "date": "19th century",
+          "subjects": ["African Americans", "Portraits", "Abolitionists"],
+          "description": "A portrait from the Blockson Collection documenting prominent African American figures."
+        },
+        {
+          "title": "African American Military Service",
+          "featured": true,
+          "record": "https://digital.library.temple.edu/digital/collection/p16002coll3/id/5",
+          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p16002coll3:5/manifest.json",
+          "date": "ca. 1940s",
+          "subjects": ["African Americans", "Military service", "World War II"],
+          "description": "Photograph documenting African American military service, part of the Blockson Collection's records."
+        },
+        {
+          "title": "Community Gathering",
+          "featured": false,
+          "record": "https://digital.library.temple.edu/digital/collection/p16002coll3/id/10",
+          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p16002coll3:10/manifest.json",
+          "date": "20th century",
+          "subjects": ["African Americans", "Community life", "Social gatherings"],
+          "description": "A community gathering captured in the Blockson Collection, documenting the richness of African American social life."
+        }
+      ]
+    },
+    {
+      "id": "temple-history",
+      "title": "Temple History in Photographs",
+      "collection_id": "p245801coll0",
+      "collection_page": "https://digital.library.temple.edu/digital/collection/p245801coll0",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/info/p245801coll0/manifest.json",
+      "description": "Photographs documenting the history of Temple University from its founding by Russell Conwell in 1884 to the present day. The collection includes images of campus buildings, student life, athletics, commencement ceremonies, and notable figures in the university's history.",
+      "items": [
+        {
+          "title": "Russell Conwell, Founder of Temple University",
+          "featured": true,
+          "record": "https://digital.library.temple.edu/digital/collection/p245801coll0/id/1",
+          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p245801coll0:1/manifest.json",
+          "date": "ca. 1900",
+          "subjects": ["Temple University", "Russell Conwell", "Founders", "Portraits"],
+          "description": "Portrait of Russell Conwell, who founded Temple University in 1884 with the mission of providing accessible education."
+        },
+        {
+          "title": "Early Campus Buildings",
+          "featured": true,
+          "record": "https://digital.library.temple.edu/digital/collection/p245801coll0/id/5",
+          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p245801coll0:5/manifest.json",
+          "date": "early 20th century",
+          "subjects": ["Temple University", "Campus", "Architecture", "Buildings"],
+          "description": "Early buildings on the Temple University campus in North Philadelphia."
+        },
+        {
+          "title": "Commencement Ceremony",
+          "featured": false,
+          "record": "https://digital.library.temple.edu/digital/collection/p245801coll0/id/10",
+          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p245801coll0:10/manifest.json",
+          "date": "mid-20th century",
+          "subjects": ["Temple University", "Commencement", "Graduation"],
+          "description": "A Temple University commencement ceremony, marking the achievements of graduating students."
+        }
+      ]
+    }
+  ]
+}

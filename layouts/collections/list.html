@@ -1,0 +1,41 @@
+{{ define "main" }}
+{{ $data := site.Data.collections }}
+{{ $collections := $data.collections }}
+
+<section class="hero">
+  <div class="wrap">
+    <p class="eyebrow">All Collections</p>
+    <h1>Browse Collections</h1>
+    <p class="lead">{{ len $collections }} curated collections from Temple University Libraries' digital holdings.</p>
+  </div>
+</section>
+
+<section class="collections-browse wrap">
+  <div class="collection-grid">
+    {{ $collectionPages := where site.RegularPages "Section" "collections" }}
+    {{ range $index, $page := $collectionPages }}
+      {{ $collId := $page.Params.collection_id }}
+      {{ $collData := false }}
+      {{ range $collections }}
+        {{ if eq .id $collId }}
+          {{ $collData = . }}
+        {{ end }}
+      {{ end }}
+      {{ if $collData }}
+        {{ $previewItem := index $collData.items 0 }}
+        {{ $image := partial "iiif-image.html" $previewItem }}
+        <a class="collection-card reveal" href="{{ $page.RelPermalink }}" style="--delay: {{ mul $index 0.06 }}s;">
+          <div class="collection-card-image">
+            <img src="{{ $image }}" alt="{{ $collData.title }}" loading="lazy" decoding="async" />
+          </div>
+          <div class="collection-card-body">
+            <h3>{{ $collData.title }}</h3>
+            <p class="meta">{{ len $collData.items }} featured items</p>
+            <p class="summary">{{ $collData.description | truncate 160 }}</p>
+          </div>
+        </a>
+      {{ end }}
+    {{ end }}
+  </div>
+</section>
+{{ end }}

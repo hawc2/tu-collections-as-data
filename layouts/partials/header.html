@@ -1,0 +1,19 @@
+{{ $collections := site.Data.collections.collections }}
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="{{ "/" | relURL }}">
+      <div class="brand-mark">TU</div>
+      <div>
+        <p class="brand-title">Digital Collections</p>
+        <p class="brand-subtitle">Temple University Libraries</p>
+      </div>
+    </a>
+    <nav class="header-nav">
+      {{ $collectionPages := where site.RegularPages "Section" "collections" }}
+      {{ range $collectionPages }}
+        <a class="nav-link" href="{{ .RelPermalink }}">{{ .Title }}</a>
+      {{ end }}
+    </nav>
+  </div>
+</header>
