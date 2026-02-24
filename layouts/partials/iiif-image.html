@@ -1,7 +1,9 @@
 {{- $item := . -}}
 {{- $image := "" -}}
 {{- $service := "" -}}
-{{- $manifest := (resources.GetRemote $item.manifest) | transform.Unmarshal -}}
+{{- $raw := resources.GetRemote $item.manifest -}}
+{{- if and $raw $raw.Content -}}
+{{- $manifest := $raw | transform.Unmarshal -}}
 {{- $seq := index $manifest.sequences 0 -}}
 {{- if $seq -}}
   {{- $canvas := index $seq.canvases 0 -}}
@@ -53,5 +55,6 @@
 {{- end -}}
 {{- if and (eq $image "") (ne $service "") -}}
   {{- $image = printf "%s/full/full/0/default.jpg" $service -}}
+{{- end -}}
 {{- end -}}
 {{- return $image -}}
