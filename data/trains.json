@@ -27220,6 +27220,1358 @@
         "Great Britain -- Armed forces -- Recruiting, enlistment, etc. -- World War, 1914-1918."
       ],
       "description": "Text says that there is room on the train of recruits for you; so enlist to-day. Illustration shows a troop train, with the recruits beckoning the viewer to join them."
+    },
+    {
+      "title": "Aerial view of Philadelphia",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/1",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:1/manifest.json",
+      "date": "Unknown",
+      "subjects": [
+        "Aerial photographs"
+      ],
+      "description": "Aerial view of Center City Philadelphia looking to the northeast. Train stations, Rittenhouse Square and Washington Square are pictured.",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null
+    },
+    {
+      "title": "Awbury Arboretum",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/34",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:34/manifest.json",
+      "date": "Unknown",
+      "subjects": [
+        "Rose gardens--Designs and plans"
+      ],
+      "description": "Image of layout plan for the Rose Garden of Awbury Arboretum in Germantown.",
+      "found_by": [
+        "clip"
+      ],
+      "train_confidence": 0.57
+    },
+    {
+      "title": "Awbury Arboretum",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/35",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:35/manifest.json",
+      "date": "1926-07",
+      "subjects": [
+        "Ponds"
+      ],
+      "description": "Group of people among trees at the edge of a pond.",
+      "found_by": [
+        "clip"
+      ],
+      "train_confidence": 0.57,
+      "photographer": "Wallace, Philip B."
+    },
+    {
+      "title": "A residential tree-lined street in Bornville",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/82",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:82/manifest.json",
+      "date": "Unknown",
+      "subjects": [],
+      "description": "",
+      "found_by": [
+        "clip"
+      ],
+      "train_confidence": 0.79,
+      "photographer": "Crawford, Andrew W."
+    },
+    {
+      "title": "Cadbury's freight station at Bournville",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/95",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:95/manifest.json",
+      "date": "Unknown",
+      "subjects": [],
+      "description": "",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null,
+      "photographer": "Crawford, Andrew W."
+    },
+    {
+      "title": "Walnut Street Bridge",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/98",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:98/manifest.json",
+      "date": "Unknown",
+      "subjects": [
+        "Bridges"
+      ],
+      "description": "View of the bridge crossing the river with coal plants along the bank.",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null
+    },
+    {
+      "title": "Street in Camden",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/99",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:99/manifest.json",
+      "date": "Unknown",
+      "subjects": [],
+      "description": "",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null,
+      "photographer": "Wallace, Philip B.;"
+    },
+    {
+      "title": "View of railyard and train bridged on the Schuylkill River",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/102",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:102/manifest.json",
+      "date": "Unknown",
+      "subjects": [
+        "Railroad Yards"
+      ],
+      "description": "",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null
+    },
+    {
+      "title": "34th Street Bridge",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/103",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:103/manifest.json",
+      "date": "Unknown",
+      "subjects": [
+        "Bridges"
+      ],
+      "description": "",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null,
+      "photographer": "Stady, Stanley Elmore;"
+    },
+    {
+      "title": "War memorial at Crum Creek",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/104",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:104/manifest.json",
+      "date": "1925-07",
+      "subjects": [
+        "War memorials"
+      ],
+      "description": "",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null,
+      "photographer": "Wallace, Philip B.;"
+    },
+    {
+      "title": "Stone bridge across a river",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/110",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:110/manifest.json",
+      "date": "Unknown",
+      "subjects": [
+        "Stone bridges"
+      ],
+      "description": "View from mid-river of a multi-span stone bridge spanning wooded river banks.",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null
+    },
+    {
+      "title": "Covered bridge across a river",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/111",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:111/manifest.json",
+      "date": "Unknown",
+      "subjects": [
+        "Covered bridges"
+      ],
+      "description": "View from mid-river of a covered bridge.",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null
+    },
+    {
+      "title": "View of 30th Street Station from center city",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/115",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:115/manifest.json",
+      "date": "Unknown",
+      "subjects": [],
+      "description": "A view from north and east of 30th Street Station looking at the station from across teh Schuylkill River.",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null,
+      "photographer": "Stady, Stanley Elmore;"
+    },
+    {
+      "title": "Exterior of 30th Street Station",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/116",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:116/manifest.json",
+      "date": "Unknown",
+      "subjects": [],
+      "description": "Exterior of 30th Street side of 30th Street Station with cars in parking lot.",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null,
+      "photographer": "Stady, Stanley Elmore;"
+    },
+    {
+      "title": "View of the Market St. Bridge and rail lines",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/121",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:121/manifest.json",
+      "date": "Unknown",
+      "subjects": [],
+      "description": "Market St. Bridge and rail lines looking North from the East bank of the Schuylkill River at Chestnut St.",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null,
+      "photographer": "Wallace, Philip B.;"
+    },
+    {
+      "title": "Offices of the Pennsylvania Railroad under construction",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/125",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:125/manifest.json",
+      "date": "1926-08",
+      "subjects": [],
+      "description": "",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null,
+      "photographer": "Wallace, Philip B.;"
+    },
+    {
+      "title": "The Philadelphia station of the B&O  Railroad",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/126",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:126/manifest.json",
+      "date": "1930-08",
+      "subjects": [],
+      "description": "",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null,
+      "photographer": "Wallace, Philip B.;"
+    },
+    {
+      "title": "Freight lines crossing the passenger rail lines and Market Frankford El at 31st Street",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/128",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:128/manifest.json",
+      "date": "Unknown",
+      "subjects": [],
+      "description": "",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null
+    },
+    {
+      "title": "Rail lines along the West bank to Schuylkill river",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/129",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:129/manifest.json",
+      "date": "1928-08",
+      "subjects": [],
+      "description": "",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null,
+      "photographer": "Wallace, Philip B.;"
+    },
+    {
+      "title": "Proposed site of the new B+O Railroad Station",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/130",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:130/manifest.json",
+      "date": "1930-09",
+      "subjects": [],
+      "description": "The Hudson Essex  building at the proposed construction site of the B+O station",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null,
+      "photographer": "Wallace, Philip B.;"
+    },
+    {
+      "title": "Market Frankford El and the tracks of the Pennsylvania Railroad along Market Street",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/132",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:132/manifest.json",
+      "date": "Unknown",
+      "subjects": [],
+      "description": "",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null,
+      "photographer": "Wallace, Philip B.;"
+    },
+    {
+      "title": "East bank of the Schuylkill from the Chestnut Street Bridge",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/208",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:208/manifest.json",
+      "date": "1928-07",
+      "subjects": [],
+      "description": "Shows rail lines running along the bank, bridges crossing the river and the Hudson Essex building.",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null
+    },
+    {
+      "title": "Freight lines crossing the passenger rail lines and Market-Frankford El at 31st Street",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/211",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:211/manifest.json",
+      "date": "Unknown",
+      "subjects": [],
+      "description": "",
+      "found_by": [
+        "metadata",
+        "clip"
+      ],
+      "train_confidence": 0.61
+    },
+    {
+      "title": "Elevated line, rail lines with steam locomotive",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/218",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:218/manifest.json",
+      "date": "Unknown",
+      "subjects": [
+        "Steam locomotives",
+        "Railroads, Elevated"
+      ],
+      "description": "Elevated line and rail lines with steam locomotive rounding the bend.",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null
+    },
+    {
+      "title": "Girard Avenue trolley",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/238",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:238/manifest.json",
+      "date": "Unknown",
+      "subjects": [
+        "Trolley cars"
+      ],
+      "description": "Route 15 trolleys share Girard Avenue with trucks and cars",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null,
+      "photographer": "Stady, Stanley Elmore;"
+    },
+    {
+      "title": "Street view along Chestnut Street",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/244",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:244/manifest.json",
+      "date": "Unknown",
+      "subjects": [],
+      "description": "The Route 13 trolley and pedestrians along Chestnut Street.",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null,
+      "photographer": "Stady, Stanley Elmore;"
+    },
+    {
+      "title": "Trolley terminal",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/271",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:271/manifest.json",
+      "date": "Unknown",
+      "subjects": [],
+      "description": "",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null
+    },
+    {
+      "title": "Street construction",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/376",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:376/manifest.json",
+      "date": "Unknown",
+      "subjects": [],
+      "description": "Installation of paving stones along trolley tracks.",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null,
+      "photographer": "Stady, Stanley Elmore;"
+    },
+    {
+      "title": "View from the Elevated Train Line around 31st Street",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/388",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:388/manifest.json",
+      "date": "unknown",
+      "subjects": [
+        "Market-Frankford Elevated Train (Philadelphia, Pa.)"
+      ],
+      "description": "",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null,
+      "photographer": "Stady, Stanley Elmore;"
+    },
+    {
+      "title": "Under the El at 44th and Market Sts.",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/398",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:398/manifest.json",
+      "date": "1925-07",
+      "subjects": [
+        "Market-Frankford Elevated Train (Philadelphia, Pa.)"
+      ],
+      "description": "Automobile parked under the elevated train tracks. Cobblestone street.",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null,
+      "photographer": "Wallace, Philip B.;"
+    },
+    {
+      "title": "Train tracks on West Chester Pike",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/406",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:406/manifest.json",
+      "date": "unknown",
+      "subjects": [
+        "Railroad tracks"
+      ],
+      "description": "",
+      "found_by": [
+        "metadata",
+        "clip"
+      ],
+      "train_confidence": 0.87,
+      "photographer": "Wallace, Philip B.;"
+    },
+    {
+      "title": "Aerial view of Pennsylvania Avenue",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/448",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:448/manifest.json",
+      "date": "unknown",
+      "subjects": [
+        "Factories",
+        "Aerial photographs"
+      ],
+      "description": "Factories and railroad tracks.",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null,
+      "photographer": "Stady, Stanley Elmore;"
+    },
+    {
+      "title": "Railroad tracks along Schuylkill banks",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/449",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:449/manifest.json",
+      "date": "unknown",
+      "subjects": [
+        "Factories",
+        "Railroad tracks"
+      ],
+      "description": "Vim Motor Truck Company factory.",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null
+    },
+    {
+      "title": "Filbert Street",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/456",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:456/manifest.json",
+      "date": "1925-06",
+      "subjects": [
+        "Railroad bridges"
+      ],
+      "description": "Cobblestones on Filbert Street. 'Chinese Wall' train viaduct visable.",
+      "found_by": [
+        "metadata",
+        "clip"
+      ],
+      "train_confidence": 0.6,
+      "photographer": "Wallace, Philip B.;"
+    },
+    {
+      "title": "Filbert Street",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/457",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:457/manifest.json",
+      "date": "1927-08-01",
+      "subjects": [],
+      "description": "",
+      "found_by": [
+        "clip"
+      ],
+      "train_confidence": 0.6,
+      "photographer": "Wallace, Philip B.;"
+    },
+    {
+      "title": "Filbert Street",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/463",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:463/manifest.json",
+      "date": "1927-08-01",
+      "subjects": [
+        "Row houses"
+      ],
+      "description": "",
+      "found_by": [
+        "clip"
+      ],
+      "train_confidence": 0.6,
+      "photographer": "Wallace, Philip B.;"
+    },
+    {
+      "title": "Chinese Wall at Seventeenth and Market Streets",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/465",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:465/manifest.json",
+      "date": "1925-07",
+      "subjects": [
+        "Railroad bridges"
+      ],
+      "description": "",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null,
+      "photographer": "Wallace, Philip B.;"
+    },
+    {
+      "title": "Automobiles on Filbert Street",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/469",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:469/manifest.json",
+      "date": "1925-07",
+      "subjects": [
+        "Railroad bridges"
+      ],
+      "description": "Automobiles on Filbert Street along the Chinese Wall.",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null,
+      "photographer": "Wallace, Philip B.;"
+    },
+    {
+      "title": "Delaware Avenue",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/484",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:484/manifest.json",
+      "date": "1899-04-17",
+      "subjects": [
+        "Horse-drawn vehicles"
+      ],
+      "description": "Horse-drawn carriages along Delaware Avenue. Pennsylvania Railroad Ferry Station.",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null,
+      "photographer": "Crawford, Andrew W.;"
+    },
+    {
+      "title": "Chinese Wall",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/485",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:485/manifest.json",
+      "date": "1925-07",
+      "subjects": [
+        "Railroad bridges"
+      ],
+      "description": "Chinese Wall with City Hall in the background.",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null,
+      "photographer": "Wallace, Philip B.;"
+    },
+    {
+      "title": "Crum Creek valley",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/591",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:591/manifest.json",
+      "date": "1927-09-09",
+      "subjects": [],
+      "description": "Factories, buildings and train tracks from Baltimore Pike.",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null,
+      "photographer": "Wallace, Philip B.;"
+    },
+    {
+      "title": "Pennsylvania Railroad Freight Station on Delaware Avenue",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/600",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:600/manifest.json",
+      "date": "unknown",
+      "subjects": [
+        "Horse-drawn vehicles"
+      ],
+      "description": "",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null
+    },
+    {
+      "title": "Bus at Delaware and Oregon Avenues",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/603",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:603/manifest.json",
+      "date": "unknown",
+      "subjects": [
+        "Buses"
+      ],
+      "description": "",
+      "found_by": [
+        "clip"
+      ],
+      "train_confidence": 0.8,
+      "photographer": "Wallace, Philip B.;"
+    },
+    {
+      "title": "Garrett Road",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/665",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:665/manifest.json",
+      "date": "unknown",
+      "subjects": [
+        "Railroad tracks",
+        "Telephone lines"
+      ],
+      "description": "Train tracks and telephone polls line Garrett Road.",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null,
+      "photographer": "Wallace, Philip B.;"
+    },
+    {
+      "title": "Wingohocking Station",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/674",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:674/manifest.json",
+      "date": "1926-08",
+      "subjects": [],
+      "description": "Wingohocking Station on the Pennsylvania and Reading Railroad",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null,
+      "photographer": "Wallace, Philip B.;"
+    },
+    {
+      "title": "Unidentified train station",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/703",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:703/manifest.json",
+      "date": "unknown",
+      "subjects": [
+        "Railroad tracks",
+        "Railroad stations"
+      ],
+      "description": "",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null
+    },
+    {
+      "title": "Train station, Winchester",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/728",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:728/manifest.json",
+      "date": "unknown",
+      "subjects": [
+        "Railroad bridges",
+        "Railroad stations"
+      ],
+      "description": "",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null
+    },
+    {
+      "title": "Manayunk Bridge",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/743",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:743/manifest.json",
+      "date": "unknown",
+      "subjects": [
+        "Railroad bridges"
+      ],
+      "description": "View down Main Street looking east under a span of the Manayunk Bridge.",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null,
+      "photographer": "unknown"
+    },
+    {
+      "title": "Grain elevator and railroad tracks",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/759",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:759/manifest.json",
+      "date": "unknown",
+      "subjects": [
+        "Railroad tracks"
+      ],
+      "description": "",
+      "found_by": [
+        "metadata",
+        "clip"
+      ],
+      "train_confidence": 0.6,
+      "photographer": "Stady, Stanley Elmore"
+    },
+    {
+      "title": "Trolley tracks along unidentified road",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/767",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:767/manifest.json",
+      "date": "unknown",
+      "subjects": [],
+      "description": "",
+      "found_by": [
+        "metadata",
+        "clip"
+      ],
+      "train_confidence": 0.77,
+      "photographer": "Stady, Stanley Elmore"
+    },
+    {
+      "title": "Unidentified lot shot from elevated railroad tracks",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/768",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:768/manifest.json",
+      "date": "unknown",
+      "subjects": [],
+      "description": "",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null,
+      "photographer": "Stady, Stanley Elmore"
+    },
+    {
+      "title": "Trolley tracks along unidentified road",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/770",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:770/manifest.json",
+      "date": "unknown",
+      "subjects": [],
+      "description": "",
+      "found_by": [
+        "metadata",
+        "clip"
+      ],
+      "train_confidence": 0.77,
+      "photographer": "Stady, Stanley Elmore"
+    },
+    {
+      "title": "Road leading to the Spring Garden Bridge",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/772",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:772/manifest.json",
+      "date": "unknown",
+      "subjects": [],
+      "description": "Trolley tracks and automobiles.",
+      "found_by": [
+        "metadata",
+        "clip"
+      ],
+      "train_confidence": 0.74,
+      "photographer": "Stady, Stanley Elmore"
+    },
+    {
+      "title": "Looking east along the Manayunk Canal",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/803",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:803/manifest.json",
+      "date": "unknown",
+      "subjects": [
+        "Canals"
+      ],
+      "description": "Factory buildings, railroad tracks and telephone poles line the canal.",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null,
+      "photographer": "unknown"
+    },
+    {
+      "title": "Merion Station",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/810",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:810/manifest.json",
+      "date": "unknown",
+      "subjects": [],
+      "description": "Looking across the train tracks at Merion Station.",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null,
+      "photographer": "J. Horace McFarland Company (Harrisburg, Pa.);"
+    },
+    {
+      "title": "Germantown Avenue and Cresheim Valley Drive",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/837",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:837/manifest.json",
+      "date": "unknown",
+      "subjects": [],
+      "description": "Trolley in the background.",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null,
+      "photographer": "Stady, Stanley Elmore"
+    },
+    {
+      "title": "Rising Sun Avenue",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/865",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:865/manifest.json",
+      "date": "1925-06",
+      "subjects": [
+        "Parks"
+      ],
+      "description": "Trolley tracks and a sign for Colonial Ice Cream.",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null,
+      "photographer": "Wallace, Philip B.;"
+    },
+    {
+      "title": "Unidentified field and railroad tracks",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/965",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:965/manifest.json",
+      "date": "unknown",
+      "subjects": [],
+      "description": "",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null
+    },
+    {
+      "title": "Unidentified rowhomes",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/986",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:986/manifest.json",
+      "date": "unknown",
+      "subjects": [
+        "Dwellings",
+        "Row houses"
+      ],
+      "description": "",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null
+    },
+    {
+      "title": "Washington Square",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/995",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:995/manifest.json",
+      "date": "circa=1925",
+      "subjects": [],
+      "description": "",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null
+    },
+    {
+      "title": "Unidentified field",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/1009",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:1009/manifest.json",
+      "date": "unknown",
+      "subjects": [],
+      "description": "Buildings, dirt roads and railroad tracks.",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null
+    },
+    {
+      "title": "Riverside Drive",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/1124",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:1124/manifest.json",
+      "date": "unknown",
+      "subjects": [],
+      "description": "Railroad tracks run parallel to Riverside Drive.",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null,
+      "photographer": "unknown"
+    },
+    {
+      "title": "12th and Susquehanna",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/1132",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:1132/manifest.json",
+      "date": "unknown",
+      "subjects": [],
+      "description": "Trolley tracks intersect in cobble stone streets.",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null,
+      "photographer": "Wallace, Philip B.;"
+    },
+    {
+      "title": "Intersection on Rising Sun Avenue",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/1137",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:1137/manifest.json",
+      "date": "unknown",
+      "subjects": [],
+      "description": "An intersection with trolley tracks and park space in the middle.",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null,
+      "photographer": "unknown"
+    },
+    {
+      "title": "Delivery truck on Ridge Avenue",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/1138",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:1138/manifest.json",
+      "date": "1930",
+      "subjects": [],
+      "description": "Cars, a delivery truck and a trolley drive down Ridge Avenue.",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null,
+      "photographer": "Stady, Stanley Elmore;"
+    },
+    {
+      "title": "Olney Avenue bridge",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/1144",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:1144/manifest.json",
+      "date": "unknown",
+      "subjects": [],
+      "description": "A bridge on Olney Avenue crosses over train tracks near a factory building.",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null,
+      "photographer": "Stady, Stanley Elmore;"
+    },
+    {
+      "title": "Parkway intersection",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/1152",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:1152/manifest.json",
+      "date": "1925-07",
+      "subjects": [
+        "Parkways"
+      ],
+      "description": "Trolley tracks, parked cars and pedestrians at the intersection.",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null,
+      "photographer": "Wallace, Philip B.;"
+    },
+    {
+      "title": "Municipal Auditorium under construction",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/1396",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:1396/manifest.json",
+      "date": "1930-08-28",
+      "subjects": [
+        "Civic centers",
+        "Building"
+      ],
+      "description": "",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null,
+      "photographer": "Wallace, Philip B.;"
+    },
+    {
+      "title": "Untitled (p15037coll5/1400)",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/1400",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:1400/manifest.json",
+      "date": "Undated",
+      "subjects": [],
+      "description": "",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null
+    },
+    {
+      "title": "Architectural drawing of layout of the Rodin Museum",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/1401",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:1401/manifest.json",
+      "date": "Unknown",
+      "subjects": [
+        "Architectural drawing"
+      ],
+      "description": "",
+      "found_by": [
+        "clip"
+      ],
+      "train_confidence": 0.61
+    },
+    {
+      "title": "Street in the vicinity of 30th St. Station",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/1412",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:1412/manifest.json",
+      "date": "unknown",
+      "subjects": [],
+      "description": "Trolley and railroad tracks.",
+      "found_by": [
+        "clip"
+      ],
+      "train_confidence": 0.57,
+      "photographer": "Stady, Stanley Elmore;"
+    },
+    {
+      "title": "Untitled (p15037coll5/1434)",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/1434",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:1434/manifest.json",
+      "date": "Undated",
+      "subjects": [],
+      "description": "",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null
+    },
+    {
+      "title": "Untitled (p15037coll5/1461)",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/1461",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:1461/manifest.json",
+      "date": "Undated",
+      "subjects": [],
+      "description": "",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null
+    },
+    {
+      "title": "Debris by the Susquehanna River",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/1476",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:1476/manifest.json",
+      "date": "unknown",
+      "subjects": [],
+      "description": "",
+      "found_by": [
+        "clip"
+      ],
+      "train_confidence": 0.63,
+      "photographer": "J. Horace McFarland Company (Harrisburg, Pa.)"
+    },
+    {
+      "title": "Joannes Park in Green Bay",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/1496",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:1496/manifest.json",
+      "date": "1926-09-28",
+      "subjects": [
+        "Parks",
+        "Playgrounds"
+      ],
+      "description": "",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null
+    },
+    {
+      "title": "\"View of the South Corner of the Museum\"",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/1533",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:1533/manifest.json",
+      "date": "Undated",
+      "subjects": [],
+      "description": "",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null
+    },
+    {
+      "title": "Industry along the Schuylkill River",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/1534",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:1534/manifest.json",
+      "date": "1910",
+      "subjects": [],
+      "description": "",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null
+    },
+    {
+      "title": "Fairview church and street",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/1603",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:1603/manifest.json",
+      "date": "1926-08",
+      "subjects": [],
+      "description": "",
+      "found_by": [
+        "clip"
+      ],
+      "train_confidence": 0.74,
+      "photographer": "Wallace, Philip B.;"
+    },
+    {
+      "title": "Fairview street",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/1606",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:1606/manifest.json",
+      "date": "1926-08",
+      "subjects": [],
+      "description": "",
+      "found_by": [
+        "clip"
+      ],
+      "train_confidence": 0.74,
+      "photographer": "Wallace, Philip B.;"
+    },
+    {
+      "title": "Fairview street",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/1610",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:1610/manifest.json",
+      "date": "1926-08",
+      "subjects": [],
+      "description": "",
+      "found_by": [
+        "clip"
+      ],
+      "train_confidence": 0.74,
+      "photographer": "Wallace, Philip B.;"
+    },
+    {
+      "title": "Yorkship Village construction",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/1616",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:1616/manifest.json",
+      "date": "unknown",
+      "subjects": [
+        "Building",
+        "Dwellings"
+      ],
+      "description": "",
+      "found_by": [
+        "clip"
+      ],
+      "train_confidence": 0.64,
+      "photographer": "unknown"
+    },
+    {
+      "title": "Yorkship Village construction",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/1617",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:1617/manifest.json",
+      "date": "unknown",
+      "subjects": [
+        "Building",
+        "Dwellings"
+      ],
+      "description": "",
+      "found_by": [
+        "clip"
+      ],
+      "train_confidence": 0.74,
+      "photographer": "unknown"
+    },
+    {
+      "title": "Yorkship Village street construction",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/1619",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:1619/manifest.json",
+      "date": "unknown",
+      "subjects": [
+        "Building",
+        "Dwellings"
+      ],
+      "description": "",
+      "found_by": [
+        "clip"
+      ],
+      "train_confidence": 0.74,
+      "photographer": "unknown"
+    },
+    {
+      "title": "Yorkship Village construction",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/1620",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:1620/manifest.json",
+      "date": "unknown",
+      "subjects": [
+        "Building",
+        "Dwellings"
+      ],
+      "description": "",
+      "found_by": [
+        "clip"
+      ],
+      "train_confidence": 0.74,
+      "photographer": "Wallace, Philip B.;"
+    },
+    {
+      "title": "Tuckahoe Road, Yorkship Village",
+      "featured": false,
+      "source_collection": "cityparks",
+      "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/1621",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:1621/manifest.json",
+      "date": "unknown",
+      "subjects": [
+        "Building",
+        "Dwellings"
+      ],
+      "description": "",
+      "found_by": [
+        "clip"
+      ],
+      "train_confidence": 0.74,
+      "photographer": "unknown;"
     }
   ]
 }

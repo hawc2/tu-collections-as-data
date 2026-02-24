@@ -49,7 +49,7 @@
         <p class="meta">{{ $item.date }}{{ with $item.photographer }} · {{ . }}{{ end }}</p>
         <p class="summary">{{ $item.description }}</p>
         {{ with $item.source_collection }}
-        <span class="source-badge source-{{ . }}">{{ if eq . "warposters" }}War Posters{{ else }}Railroad Photos{{ end }}</span>
+        <span class="source-badge source-{{ . }}">{{ if eq . "warposters" }}War Posters{{ else if eq . "cityparks" }}City Parks{{ else }}Railroad Photos{{ end }}</span>
         {{ end }}
         {{ with $item.subjects }}<div class="chip-row">
           {{ range . }}<span class="chip">{{ . }}</span>{{ end }}

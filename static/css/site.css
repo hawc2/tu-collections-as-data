@@ -673,3 +673,8 @@ body::after {
   color: var(--accent);
   border: 1px solid rgba(157, 34, 53, 0.2);
 }
+.source-cityparks {
+  background: rgba(34, 120, 80, 0.1);
+  color: #1a6040;
+  border: 1px solid rgba(34, 120, 80, 0.2);
+}
