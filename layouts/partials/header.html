@@ -2,18 +2,38 @@
 
 <header class="site-header">
   <div class="wrap">
-    <a class="brand" href="{{ "/" | relURL }}">
-      <div class="brand-mark">TU</div>
+    <a class="brand" href="{{ site.BaseURL }}">
+      <div class="brand-mark">C D</div>
       <div>
-        <p class="brand-title">Digital Collections</p>
-        <p class="brand-subtitle">Temple University Libraries</p>
+        <p class="brand-title">Collections as Data</p>
+        <p class="brand-subtitle">Temple University Digital Collections</p>
       </div>
     </a>
-    <nav class="header-nav">
-      {{ $collectionPages := where site.RegularPages "Section" "collections" }}
-      {{ range $collectionPages }}
-        <a class="nav-link" href="{{ .RelPermalink }}">{{ .Title }}</a>
-      {{ end }}
+    <nav class="header-nav" style="gap: 16px;">
+      <a class="nav-link" href="{{ site.BaseURL }}">Home</a>
+      <a class="nav-link" href="{{ site.BaseURL }}#collections">All Collections</a>
+      <div class="dropdown" tabindex="0">
+        <button class="nav-link dropdown-toggle"
+          style="background:none;border:none;cursor:pointer;font-family:var(--sans);">Collections ▼</button>
+        <div class="dropdown-menu">
+          {{ $collectionPages := where site.RegularPages "Section" "collections" }}
+          {{ range $collectionPages }}
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          {{ end }}
+        </div>
+      </div>
+      <div class="dropdown" tabindex="0">
+        <button class="nav-link dropdown-toggle"
+          style="background:none;border:none;cursor:pointer;font-family:var(--sans);">Trains ▼</button>
+        <div class="dropdown-menu">
+          <a href="{{ "trains/" | relURL }}">Overview</a>
+          {{ $trainPages := where site.RegularPages "Section" "trains" }}
+          {{ range $trainPages }}
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          {{ end }}
+        </div>
+      </div>
+      <a class="nav-link" href="https://digital.library.temple.edu/" target="_blank">Temple Libraries</a>
     </nav>
   </div>
 </header>

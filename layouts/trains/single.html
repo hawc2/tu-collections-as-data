@@ -1,0 +1,65 @@
+{{ define "main" }}
+{{ $allItems := site.Data.trains.items }}
+{{ $theme := .Params.theme }}
+{{ $filterField := .Params.filter_field | default "visual_tags" }}
+
+{{ $scratch := newScratch }}
+{{ if eq $filterField "source_collection" }}
+  {{ $scratch.Set "items" (where $allItems "source_collection" $theme) }}
+{{ else if eq $filterField "subjects" }}
+  {{ $scratch.Set "items" (where $allItems "subjects" "intersect" (slice $theme)) }}
+{{ else }}
+  {{ $scratch.Set "items" (where $allItems "visual_tags" "intersect" (slice $theme)) }}
+{{ end }}
+{{ $items := $scratch.Get "items" }}
+
+<section class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Theme</p>
+    <h1>{{ .Title }}</h1>
+    <p class="lead">{{ .Params.description }}</p>
+  </div>
+</section>
+
+{{ with .Params.clip_note }}
+<section class="wrap" style="padding-top: 0; padding-bottom: 2rem;">
+  <div style="background: rgba(157, 34, 53, 0.04); border: 1px solid rgba(157, 34, 53, 0.12); border-radius: 12px; padding: 1.5rem 2rem; max-width: 800px;">
+    <p style="margin: 0 0 0.5rem; font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent);">CLIP Analysis Note</p>
+    <p style="margin: 0; color: var(--muted); font-size: 0.95rem; line-height: 1.6;">{{ . }}</p>
+  </div>
+</section>
+{{ end }}
+
+<section class="gallery wrap">
+  <div class="section-title">
+    <h2>{{ len $items }} {{ if eq $filterField "source_collection" }}items{{ else }}photographs{{ end }}</h2>
+    <p><a href="{{ "trains/" | relURL }}">&#8592; All trains</a></p>
+  </div>
+  <div class="card-grid">
+    {{ range $index, $item := $items }}
+    {{ $image := partial "iiif-image.html" $item }}
+    <article class="card reveal" style="--delay: {{ mul $index 0.06 }}s;">
+      <a class="image-link" href="{{ $item.record }}" target="_blank" rel="noopener">
+        <div class="image-frame">
+          <img src="{{ $image }}" alt="{{ $item.title }}" loading="lazy" decoding="async" />
+        </div>
+      </a>
+      <div class="card-body">
+        <h3>{{ $item.title }}</h3>
+        <p class="meta">{{ $item.date }}{{ with $item.photographer }} · {{ . }}{{ end }}</p>
+        <p class="summary">{{ $item.description }}</p>
+        {{ with $item.source_collection }}
+        <span class="source-badge source-{{ . }}">{{ if eq . "warposters" }}War Posters{{ else }}Railroad Photos{{ end }}</span>
+        {{ end }}
+        {{ with $item.subjects }}<div class="chip-row">
+          {{ range . }}<span class="chip">{{ . }}</span>{{ end }}
+        </div>{{ end }}
+        {{ with $item.visual_tags }}<div class="chip-row">
+          {{ range . }}<span class="chip ai-tag">{{ . }}</span>{{ end }}
+        </div>{{ end }}
+      </div>
+    </article>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

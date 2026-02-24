@@ -1,0 +1,113 @@
+{{ define "main" }}
+{{ $items := site.Data.trains.items }}
+{{ $totalItems := len $items }}
+
+<section class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Exhibit</p>
+    <h1>{{ .Title }}</h1>
+    <p class="lead">{{ .Params.description }}</p>
+
+    <div class="at-a-glance" style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+      <span class="badge"
+        style="background: rgba(157, 34, 53, 0.1); color: var(--accent); padding: 0.6rem 1.2rem; border-radius: 99px; font-weight: 700; font-size: 0.9rem; border: 1px solid rgba(157, 34, 53, 0.2); box-shadow: 0 4px 12px rgba(157,34,53,0.05); letter-spacing: 0.05em; text-transform: uppercase;">
+        <svg style="width:14px;height:14px;vertical-align:middle;margin-right:6px;margin-top:-2px" viewBox="0 0 24 24"
+          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="3" width="7" height="7"></rect>
+          <rect x="14" y="3" width="7" height="7"></rect>
+          <rect x="14" y="14" width="7" height="7"></rect>
+          <rect x="3" y="14" width="7" height="7"></rect>
+        </svg>{{ $totalItems }} photographs</span>
+    </div>
+  </div>
+</section>
+
+{{ $themePages := where site.RegularPages "Section" "trains" }}
+{{ if $themePages }}
+<section class="wrap" style="padding-top: 2rem; padding-bottom: 2rem;">
+  <div class="section-title">
+    <h2>Browse by Theme</h2>
+    <p>Categories discovered through visual analysis of the collection</p>
+  </div>
+  <div class="card-grid">
+    {{ range $index, $page := $themePages }}
+    {{ $theme := $page.Params.theme }}
+    {{ $filterField := $page.Params.filter_field | default "visual_tags" }}
+    {{ $scratch := newScratch }}
+    {{ if eq $filterField "source_collection" }}
+      {{ $scratch.Set "items" (where $items "source_collection" $theme) }}
+    {{ else if eq $filterField "subjects" }}
+      {{ $scratch.Set "items" (where $items "subjects" "intersect" (slice $theme)) }}
+    {{ else }}
+      {{ $scratch.Set "items" (where $items "visual_tags" "intersect" (slice $theme)) }}
+    {{ end }}
+    {{ $themeItems := $scratch.Get "items" }}
+    {{ $sampleItem := false }}
+    {{ range first 1 $themeItems }}{{ $sampleItem = . }}{{ end }}
+    <a href="{{ $page.RelPermalink }}" class="theme-card reveal" style="--delay: {{ mul $index 0.08 }}s; text-decoration: none; color: inherit;">
+      <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border: 1px solid rgba(0,0,0,0.05); transition: transform 0.2s, box-shadow 0.2s;">
+        {{ if $sampleItem }}
+        {{ $image := partial "iiif-image.html" $sampleItem }}
+        {{ if $image }}
+        <div style="height: 200px; overflow: hidden;">
+          <img src="{{ $image }}" alt="{{ $page.Title }}" loading="lazy" decoding="async"
+            style="width: 100%; height: 100%; object-fit: cover;" />
+        </div>
+        {{ end }}
+        {{ end }}
+        <div style="padding: 1.2rem;">
+          <h3 style="margin: 0 0 0.4rem; font-family: var(--serif); font-size: 1.1rem;">{{ $page.Title }}</h3>
+          <p style="margin: 0; color: var(--muted); font-size: 0.85rem;">{{ len $themeItems }} items</p>
+        </div>
+      </div>
+    </a>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+
+<section class="gallery wrap">
+  <div class="section-title">
+    <h2>All Items</h2>
+  </div>
+  <div class="card-grid">
+    {{ range $index, $item := first 30 $items }}
+    {{ $image := partial "iiif-image.html" $item }}
+    <article class="card reveal" style="--delay: {{ mul $index 0.06 }}s;">
+      <a class="image-link" href="{{ $item.record }}" target="_blank" rel="noopener">
+        <div class="image-frame">
+          <img src="{{ $image }}" alt="{{ $item.title }}" loading="lazy" decoding="async" />
+        </div>
+      </a>
+      <div class="card-body">
+        <h3>{{ $item.title }}</h3>
+        <p class="meta">{{ $item.date }}{{ with $item.photographer }} · {{ . }}{{ end }}</p>
+        <p class="summary">{{ $item.description }}</p>
+        {{ with $item.source_collection }}
+        <span class="source-badge source-{{ . }}">{{ if eq . "warposters" }}War Posters{{ else }}Railroad Photos{{ end }}</span>
+        {{ end }}
+        {{ with $item.subjects }}<div class="chip-row">
+          {{ range . }}<span class="chip">{{ . }}</span>{{ end }}
+        </div>{{ end }}
+        {{ with $item.visual_tags }}<div class="chip-row">
+          {{ range . }}<span class="chip ai-tag">{{ . }}</span>{{ end }}
+        </div>{{ end }}
+      </div>
+    </article>
+    {{ end }}
+  </div>
+</section>
+
+<section class="cta wrap">
+  <div class="cta-card">
+    <div>
+      <h2>Explore the source collections</h2>
+      <p>These items are drawn from the
+        <a href="https://digital.library.temple.edu/digital/collection/p16002coll26" target="_blank" rel="noopener">Frank G. Zahn Railroad Photograph Collection</a>
+        and the
+        <a href="https://digital.library.temple.edu/digital/collection/p16002coll9" target="_blank" rel="noopener">Allied Posters of World War I</a>
+        at Temple University Libraries.</p>
+    </div>
+  </div>
+</section>
+{{ end }}

@@ -1,21 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Manrope:wght@400;500;600;700&display=swap");
 
 :root {
-  --bg: #f5f2ec;
-  --ink: #1c1a16;
-  --muted: #6d5f52;
+  --bg: #ffffff;
+  --ink: #111111;
+  --muted: #555555;
   --accent: #9d2235;
   --accent-dark: #7a1a2a;
-  --accent-soft: rgba(157, 34, 53, 0.12);
-  --paper: #fffaf3;
-  --paper-ink: #2b251e;
-  --line: rgba(28, 26, 22, 0.12);
-  --shadow: 0 18px 48px rgba(28, 26, 22, 0.12);
-  --radius: 18px;
+  --accent-soft: rgba(157, 34, 53, 0.08);
+  --paper: #f9f9f9;
+  --paper-ink: #222222;
+  --line: rgba(0, 0, 0, 0.08);
+  --shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+  --radius: 12px;
   --serif: "Fraunces", Georgia, serif;
   --sans: "Manrope", "Segoe UI", sans-serif;
   --cherry: #9d2235;
-  --gold: #c4a35a;
+  --gold: #ffb81c;
   --slate: #3d5a80;
 }
 
@@ -68,10 +68,11 @@ body::after {
 .site-header {
   position: sticky;
   top: 0;
-  backdrop-filter: blur(14px);
-  background: rgba(245, 242, 236, 0.75);
-  border-bottom: 1px solid var(--line);
-  z-index: 10;
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.9);
+  border-bottom: 2px solid var(--cherry);
+  z-index: 1000;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
 
 .site-header .wrap {
@@ -125,16 +126,59 @@ body::after {
 .nav-link {
   text-decoration: none;
   color: var(--ink);
-  font-size: 0.85rem;
-  font-weight: 500;
-  padding: 6px 12px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 8px 16px;
   border-radius: 999px;
-  transition: background 0.15s ease, color 0.15s ease;
+  transition: all 0.2s ease;
 }
 
 .nav-link:hover {
-  background: var(--accent-soft);
-  color: var(--accent-dark);
+  background: var(--cherry);
+  color: white;
+  transform: translateY(-1px);
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  min-width: 250px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  z-index: 1001;
+  padding: 8px 0;
+  border: 1px solid var(--line);
+  margin-top: 10px;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  animation: fadeup 0.2s ease forwards;
+}
+
+.dropdown-menu a {
+  color: var(--ink);
+  padding: 10px 20px;
+  text-decoration: none;
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background 0.1s;
+}
+
+.dropdown-menu a:hover {
+  background-color: var(--accent-soft);
+  color: var(--cherry);
 }
 
 /* Main */
@@ -280,14 +324,14 @@ body::after {
 
 .collection-card {
   display: flex;
-  background: var(--paper);
-  border-radius: var(--radius);
+  background: white;
+  border-radius: 16px;
   border: 1px solid var(--line);
-  box-shadow: var(--shadow);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
   overflow: hidden;
   text-decoration: none;
   color: inherit;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
   transform: translateY(10px);
   opacity: 0;
   animation: lift 0.7s ease forwards;
@@ -295,16 +339,18 @@ body::after {
 }
 
 .collection-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 24px 52px rgba(28, 26, 22, 0.16);
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  border-color: rgba(157, 34, 53, 0.3);
 }
 
 .collection-card-image {
   width: 140px;
   min-height: 160px;
   flex-shrink: 0;
-  background: linear-gradient(135deg, rgba(157, 34, 53, 0.08), rgba(15, 12, 9, 0.04));
+  background: var(--bg);
   overflow: hidden;
+  position: relative;
 }
 
 .collection-card-image img {
@@ -330,8 +376,10 @@ body::after {
 
 .collection-card-body .summary {
   font-size: 0.88rem;
+  color: var(--muted);
   display: -webkit-box;
   -webkit-line-clamp: 3;
+  line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -536,6 +584,7 @@ body::after {
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -547,6 +596,7 @@ body::after {
     opacity: 0;
     transform: translateY(12px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -589,4 +639,37 @@ body::after {
   .cta-card {
     padding: 24px;
   }
+}
+
+/* AI visual tag chips */
+.chip.ai-tag {
+  background: rgba(61, 90, 128, 0.1);
+  color: var(--slate);
+  border: 1px solid rgba(61, 90, 128, 0.2);
+  font-size: 0.75rem;
+  font-style: italic;
+}
+
+/* Source collection badge */
+.source-badge {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  border-radius: 99px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.source-railroad {
+  background: rgba(61, 90, 128, 0.1);
+  color: var(--slate);
+  border: 1px solid rgba(61, 90, 128, 0.2);
+}
+
+.source-warposters {
+  background: rgba(157, 34, 53, 0.1);
+  color: var(--accent);
+  border: 1px solid rgba(157, 34, 53, 0.2);
 }

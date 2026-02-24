@@ -4,4 +4,8 @@
   <title>{{ if .Title }}{{ .Title }} | {{ end }}{{ site.Title }}</title>
   <meta name="description" content="{{ .Params.description | default site.Params.description }}" />
   <link rel="stylesheet" href="{{ "css/site.css" | relURL }}" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
 </head>
