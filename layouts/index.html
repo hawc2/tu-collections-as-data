@@ -3,41 +3,63 @@
 {{ $collections := $data.collections }}
 
 <section class="hero wrap">
-  <p class="kicker">IIIF Digital Exhibit</p>
-  <h1>{{ .Title }}</h1>
-  <p class="lead">{{ $data.site.description }} All images are served via the <a href="https://iiif.io" target="_blank" rel="noopener">IIIF Image API</a>.</p>
+  <p class="kicker">Exploratory Dashboard</p>
+  <h1>Collections as Data</h1>
+  <p class="lead">{{ $data.site.description }} <br><br>All item images and data analyzed on this site are served via the
+    <a href="https://iiif.io" target="_blank" rel="noopener">IIIF Image API</a>.</p>
 </section>
 
 <section class="overview wrap">
   <div class="section-title">
-    <h2>Collections Overview</h2>
-    <p>{{ len $collections }} collections</p>
+    <h2>The Big Picture</h2>
+    <p>Scaling our Cultural Heritage</p>
   </div>
   <div class="breakdown-grid">
+    <div class="panel"
+      style="grid-column: 1 / -1; background: var(--cherry); color: white; border: none; padding: 40px; border-radius: 16px;">
+      <div style="display: flex; justify-content: space-around; text-align: center; flex-wrap: wrap; gap: 30px;">
+        <div>
+          <div style="font-size: 3.5rem; font-weight: 800; font-family: var(--serif); line-height: 1;">10</div>
+          <div
+            style="font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.1em; opacity: 0.9; margin-top: 10px;">
+            Curated Collections Visualized</div>
+        </div>
+        <div>
+          <div style="font-size: 3.5rem; font-weight: 800; font-family: var(--serif); line-height: 1;">3,354</div>
+          <div
+            style="font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.1em; opacity: 0.9; margin-top: 10px;">
+            Items Analyzed in Set</div>
+        </div>
+        <div>
+          <div style="font-size: 3.5rem; font-weight: 800; font-family: var(--serif); line-height: 1;">~500K</div>
+          <div
+            style="font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.1em; opacity: 0.9; margin-top: 10px;">
+            Total Archival Items Online</div>
+        </div>
+        <div>
+          <div style="font-size: 3.5rem; font-weight: 800; font-family: var(--serif); line-height: 1;">&lt; 1%</div>
+          <div
+            style="font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.1em; opacity: 0.9; margin-top: 10px;">
+            of Temple's Assets Sampled Here</div>
+        </div>
+      </div>
+    </div>
+
     <div class="panel">
-      <h3>What You'll Find</h3>
-      <ul class="count-list">
-        <li><span>Photographs &amp; Images</span><span>Thousands</span></li>
-        <li><span>Sheet Music &amp; Documents</span><span>Hundreds</span></li>
-        <li><span>Historical Posters</span><span>200+</span></li>
-        <li><span>Time Span</span><span>1880s - Present</span></li>
-      </ul>
+      <h3>Temporal Reach</h3>
+      <p style="color: var(--muted); font-size: 0.95rem;">The collections sampled span from the <strong>1880s to the
+          present day</strong>, allowing us to build timelines mapping public recreation, wartime propaganda, and civil
+        rights mobilization.</p>
     </div>
     <div class="panel">
-      <h3>Subject Areas</h3>
-      <ul class="count-list">
-        <li><span>Philadelphia History</span></li>
-        <li><span>African American Culture</span></li>
-        <li><span>Performing Arts</span></li>
-        <li><span>Transportation</span></li>
-        <li><span>University Archives</span></li>
-        <li><span>Civil Rights</span></li>
-      </ul>
+      <h3>Geospatial Footprint</h3>
+      <p style="color: var(--muted); font-size: 0.95rem;">While rooted in <strong>Philadelphia History</strong>, we
+        extract coordinates from these items to reveal the global geographic footprint of our local archives.</p>
     </div>
   </div>
 </section>
 
-<section class="collections-browse wrap">
+<section id="collections" class="collections-browse wrap">
   <div class="section-title">
     <h2>Browse Collections</h2>
     <p>Select a collection to explore its items</p>
@@ -45,28 +67,28 @@
   <div class="collection-grid">
     {{ $collectionPages := where site.RegularPages "Section" "collections" }}
     {{ range $index, $page := $collectionPages }}
-      {{/* Find matching data for this collection page */}}
-      {{ $collId := $page.Params.collection_id }}
-      {{ $collData := false }}
-      {{ range $collections }}
-        {{ if eq .id $collId }}
-          {{ $collData = . }}
-        {{ end }}
-      {{ end }}
-      {{ if $collData }}
-        {{ $previewItem := index $collData.items 0 }}
-        {{ $image := partial "iiif-image.html" $previewItem }}
-        <a class="collection-card reveal" href="{{ $page.RelPermalink }}" style="--delay: {{ mul $index 0.06 }}s;">
-          <div class="collection-card-image">
-            <img src="{{ $image }}" alt="{{ $collData.title }}" loading="lazy" decoding="async" />
-          </div>
-          <div class="collection-card-body">
-            <h3>{{ $collData.title }}</h3>
-            <p class="meta">{{ len $collData.items }} featured items</p>
-            <p class="summary">{{ $collData.description | truncate 160 }}</p>
-          </div>
-        </a>
-      {{ end }}
+    {{/* Find matching data for this collection page */}}
+    {{ $collId := $page.Params.collection_id }}
+    {{ $collData := false }}
+    {{ range $collections }}
+    {{ if eq .id $collId }}
+    {{ $collData = . }}
+    {{ end }}
+    {{ end }}
+    {{ if $collData }}
+    {{ $previewItem := index $collData.items 0 }}
+    {{ $image := partial "iiif-image.html" $previewItem }}
+    <a class="collection-card reveal" href="{{ $page.RelPermalink }}" style="--delay: {{ mul $index 0.06 }}s;">
+      <div class="collection-card-image">
+        <img src="{{ $image }}" alt="{{ $collData.title }}" loading="lazy" decoding="async" />
+      </div>
+      <div class="collection-card-body">
+        <h3>{{ $collData.title }}</h3>
+        <p class="meta">{{ len $collData.items }} featured items</p>
+        <p class="summary">{{ $collData.description | truncate 160 }}</p>
+      </div>
+    </a>
+    {{ end }}
     {{ end }}
   </div>
 </section>
@@ -74,8 +96,10 @@
 <section class="cta wrap">
   <div class="cta-card">
     <div>
-      <h2>Explore More at Temple</h2>
-      <p>These curated selections represent just a fraction of the digital resources available. Visit the <a href="{{ $data.site.url }}" target="_blank" rel="noopener">full digital collections portal</a> to discover over 50 collections spanning Philadelphia history, African American heritage, university archives, and more.</p>
+      <h2>Explore the full archives</h2>
+      <p>This site serves as an exploratory proof-of-concept for data visualization. To browse the definitive
+        collections, perform deep searches, and view un-curated materials, visit the <a href="{{ $data.site.url }}"
+          target="_blank" rel="noopener">Temple University Digital Collections portal</a>.</p>
     </div>
   </div>
 </section>

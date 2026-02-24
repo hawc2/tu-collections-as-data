@@ -35,8 +35,14 @@
     <h2>{{ len $items }} {{ if eq $filterField "source_collection" }}items{{ else }}photographs{{ end }}</h2>
     <p><a href="{{ "trains/" | relURL }}">&#8592; All trains</a></p>
   </div>
+  {{ $limit := 60 }}
+  {{ $showing := $items }}
+  {{ if gt (len $items) $limit }}
+    {{ $showing = first $limit $items }}
+    <p style="color: var(--muted); font-size: 0.9rem; margin-bottom: 1.5rem;">Showing {{ $limit }} of {{ len $items }} items. Browse the full set at <a href="https://digital.library.temple.edu" target="_blank" rel="noopener">Temple Digital Collections</a>.</p>
+  {{ end }}
   <div class="card-grid">
-    {{ range $index, $item := $items }}
+    {{ range $index, $item := $showing }}
     {{ $image := partial "iiif-image.html" $item }}
     <article class="card reveal" style="--delay: {{ mul $index 0.06 }}s;">
       <a class="image-link" href="{{ $item.record }}" target="_blank" rel="noopener">

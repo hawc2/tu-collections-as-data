@@ -1,7 +1,7 @@
 baseURL = "https://hawc2.github.io/tu-digital-collections/"
 languageCode = "en-us"
-title = "Temple University Libraries Digital Collections"
+title = "Collections as Data | Temple Libraries"
 disableKinds = ["taxonomy", "term", "RSS", "sitemap"]
 
 [params]
-  description = "Explore the unique primary historical and cultural resources held by Temple University Libraries, served through the IIIF Image API."
+  description = "A Collections as Data approach to Temple University Libraries' digital collections, visualizing and exploring materials through IIIF."

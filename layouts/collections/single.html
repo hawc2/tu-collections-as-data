@@ -3,9 +3,9 @@
 {{ $collId := .Params.collection_id }}
 {{ $collData := false }}
 {{ range $allCollections }}
-  {{ if eq .id $collId }}
-    {{ $collData = . }}
-  {{ end }}
+{{ if eq .id $collId }}
+{{ $collData = . }}
+{{ end }}
 {{ end }}
 
 {{ if $collData }}
@@ -14,37 +14,255 @@
     <p class="eyebrow">Collection</p>
     <h1>{{ $collData.title }}</h1>
     <p class="lead">{{ $collData.description }}</p>
+
+    <div class="at-a-glance" style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+      {{ if $collData.total_items }}<span class="badge"
+        style="background: rgba(157, 34, 53, 0.1); color: var(--accent); padding: 0.6rem 1.2rem; border-radius: 99px; font-weight: 700; font-size: 0.9rem; border: 1px solid rgba(157, 34, 53, 0.2); box-shadow: 0 4px 12px rgba(157,34,53,0.05); letter-spacing: 0.05em; text-transform: uppercase;"><svg
+          style="width:14px;height:14px;vertical-align:middle;margin-right:6px;margin-top:-2px" viewBox="0 0 24 24"
+          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="3" width="7" height="7"></rect>
+          <rect x="14" y="3" width="7" height="7"></rect>
+          <rect x="14" y="14" width="7" height="7"></rect>
+          <rect x="3" y="14" width="7" height="7"></rect>
+        </svg>Total
+        items: {{ $collData.total_items }}</span>{{ end }}
+      {{ if $collData.date_range }}<span class="badge"
+        style="background: rgba(61, 90, 128, 0.1); color: var(--slate); padding: 0.6rem 1.2rem; border-radius: 99px; font-weight: 700; font-size: 0.9rem; border: 1px solid rgba(61, 90, 128, 0.2); box-shadow: 0 4px 12px rgba(61,90,128,0.05); letter-spacing: 0.05em; text-transform: uppercase;"><svg
+          style="width:14px;height:14px;vertical-align:middle;margin-right:6px;margin-top:-2px" viewBox="0 0 24 24"
+          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"></circle>
+          <polyline points="12 6 12 12 16 14"></polyline>
+        </svg>Date Range:
+        {{ $collData.date_range }}</span>{{ end }}
+    </div>
   </div>
 </section>
+
+{{ if $collData.viz_type }}
+<section class="data-explorer wrap" style="padding-top: 2rem; padding-bottom: 2rem;">
+  <div class="section-title">
+    <h2>Data Explorer</h2>
+  </div>
+
+  <div class="viz-container"
+    style="background: #ffffff; padding: 2.5rem; border-radius: 16px; box-shadow: 0 20px 40px rgba(0,0,0,0.08); border: 1px solid rgba(0,0,0,0.05);">
+    {{ if eq $collData.viz_type "bar_chart" }}
+    <canvas id="collectionChart" style="max-height: 480px;"></canvas>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const ctx = document.getElementById('collectionChart').getContext('2d');
+        const data = {{ $collData.viz_data | jsonify | safeJS
+      }};
+
+      let gradient = ctx.createLinearGradient(0, 0, 0, 400);
+      gradient.addColorStop(0, 'rgba(157, 34, 53, 0.9)');
+      gradient.addColorStop(1, 'rgba(196, 163, 90, 0.6)');
+
+      new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: data.labels,
+          datasets: [{
+            label: 'Items Added',
+            data: data.data,
+            backgroundColor: gradient,
+            borderRadius: 8,
+            borderSkipped: false,
+            barPercentage: 0.6,
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: { display: false },
+            tooltip: {
+              backgroundColor: 'rgba(28, 26, 22, 0.9)',
+              titleFont: { size: 14, family: "'Manrope', sans-serif" },
+              bodyFont: { size: 14, family: "'Manrope', sans-serif" },
+              padding: 12,
+              cornerRadius: 8,
+              displayColors: false
+            }
+          },
+          scales: {
+            x: {
+              grid: { display: false, drawBorder: false },
+              ticks: { font: { family: "'Manrope', sans-serif", weight: '600' }, color: '#6d5f52' }
+            },
+            y: {
+              beginAtZero: true,
+              grid: { color: 'rgba(28, 26, 22, 0.05)', drawBorder: false },
+              ticks: { display: false }
+            }
+          },
+          animation: {
+            y: { duration: 1500, easing: 'easeOutQuart' }
+          }
+        }
+      });
+      });
+    </script>
+    {{ else if eq $collData.viz_type "map" }}
+    <div id="collectionMap"
+      style="height: 450px; width: 100%; border-radius: 12px; border: 1px solid rgba(0,0,0,0.1); box-shadow: inset 0 2px 10px rgba(0,0,0,0.05); z-index: 1;">
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const mapData = {{ $collData.viz_data | jsonify | safeJS
+      }};
+      if (mapData && mapData.length > 0) {
+        const map = L.map('collectionMap').setView([mapData[0].lat, mapData[0].lng], 13);
+
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+          maxZoom: 19,
+          attribution: '© OpenStreetMap contributors © CARTO'
+        }).addTo(map);
+
+        // Premium marker design
+        const customIcon = L.divIcon({
+          className: 'custom-map-marker',
+          html: '<div style="background:var(--cherry); width:16px; height:16px; border-radius:50%; border:3px solid white; box-shadow:0 0 10px rgba(0,0,0,0.3);"></div>',
+          iconSize: [16, 16],
+          iconAnchor: [8, 8]
+        });
+
+        mapData.forEach(function (pt) {
+          L.marker([pt.lat, pt.lng], { icon: customIcon }).addTo(map)
+            .bindPopup("<div style='font-family:var(--sans); font-weight:600; padding:4px;'><span style='color:var(--cherry);'>•</span> " + pt.title + "</div>");
+        });
+      }
+      });
+    </script>
+    </script>
+    {{ else if eq $collData.viz_type "network" }}
+    <div id="collectionNetwork"
+      style="width: 100%; height: 500px; border-radius: 12px; border: 1px solid rgba(0,0,0,0.1); background: #faf9f7; position: relative; overflow: hidden;">
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const netData = {{ $collData.viz_data | jsonify | safeJS
+      }};
+      if (!netData || !netData.nodes) return;
+
+      const width = document.getElementById("collectionNetwork").clientWidth;
+      const height = 500;
+
+      const svg = d3.select("#collectionNetwork")
+        .append("svg")
+        .attr("width", width)
+        .attr("height", height);
+
+      const simulation = d3.forceSimulation(netData.nodes)
+        .force("link", d3.forceLink(netData.links).id(d => d.id).distance(120))
+        .force("charge", d3.forceManyBody().strength(-300))
+        .force("center", d3.forceCenter(width / 2, height / 2))
+        .force("collide", d3.forceCollide().radius(d => d.val * 2 + 10).iterations(2));
+
+      const link = svg.append("g")
+        .attr("stroke", "rgba(157, 34, 53, 0.2)")
+        .attr("stroke-width", 2)
+        .selectAll("line")
+        .data(netData.links)
+        .join("line");
+
+      const node = svg.append("g")
+        .selectAll("g")
+        .data(netData.nodes)
+        .join("g")
+        .call(d3.drag()
+          .on("start", dragstarted)
+          .on("drag", dragged)
+          .on("end", dragended));
+
+      // Add circular def paths for images
+      const defs = svg.append("defs");
+      netData.nodes.forEach(d => {
+        if (d.image) {
+          defs.append("pattern")
+            .attr("id", "image-" + d.id)
+            .attr("width", 1)
+            .attr("height", 1)
+            .attr("patternContentUnits", "objectBoundingBox")
+            .append("image")
+            .attr("href", d.image)
+            .attr("preserveAspectRatio", "xMidYMid slice")
+            .attr("width", 1)
+            .attr("height", 1);
+        }
+      });
+
+      node.append("circle")
+        .attr("r", d => d.image ? d.val * 1.5 : d.val)
+        .attr("fill", d => d.image ? "url(#image-" + d.id + ")" : (d.group === 4 ? "#c4a35a" : "#3d5a80"))
+        .attr("stroke", d => d.image ? "#9d2235" : "none")
+        .attr("stroke-width", 3);
+
+      node.append("text")
+        .text(d => d.label)
+        .attr("x", d => (d.image ? d.val * 1.5 : d.val) + 5)
+        .attr("y", 4)
+        .style("font-family", "var(--sans)")
+        .style("font-size", "12px")
+        .style("font-weight", "600")
+        .style("fill", "var(--ink)");
+
+      simulation.on("tick", () => {
+        link
+          .attr("x1", d => d.source.x)
+          .attr("y1", d => d.source.y)
+          .attr("x2", d => d.target.x)
+          .attr("y2", d => d.target.y);
+
+        node.attr("transform", d => `translate(${d.x},${d.y})`);
+      });
+
+      function dragstarted(event, d) {
+        if (!event.active) simulation.alphaTarget(0.3).restart();
+        d.fx = d.x;
+        d.fy = d.y;
+      }
+
+      function dragged(event, d) {
+        d.fx = event.x;
+        d.fy = event.y;
+      }
+
+      function dragended(event, d) {
+        if (!event.active) simulation.alphaTarget(0);
+        d.fx = null;
+        d.fy = null;
+      }
+      });
+    </script>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
 
 <section class="gallery wrap">
   <div class="section-title">
     <h2>{{ len $collData.items }} featured items</h2>
-    <p><a href="{{ "/" | relURL }}">&#8592; All collections</a></p>
+    <p><a href="{{ site.BaseURL }}#collections">&#8592; All collections</a></p>
   </div>
   <div class="card-grid">
     {{ range $index, $item := $collData.items }}
-      {{ $image := partial "iiif-image.html" $item }}
-      <article class="card reveal" style="--delay: {{ mul $index 0.06 }}s;">
-        <a class="image-link" href="{{ $item.record }}" target="_blank" rel="noopener">
-          <div class="image-frame">
-            <img
-              src="{{ $image }}"
-              alt="{{ $item.title }}"
-              loading="lazy"
-              decoding="async"
-            />
-          </div>
-        </a>
-        <div class="card-body">
-          <h3>{{ $item.title }}</h3>
-          <p class="meta">{{ $item.date }}{{ with $item.photographer }} · {{ . }}{{ end }}</p>
-          <p class="summary">{{ $item.description }}</p>
-          {{ with $item.subjects }}<div class="chip-row">
-            {{ range . }}<span class="chip">{{ . }}</span>{{ end }}
-          </div>{{ end }}
+    {{ $image := partial "iiif-image.html" $item }}
+    <article class="card reveal" style="--delay: {{ mul $index 0.06 }}s;">
+      <a class="image-link" href="{{ $item.record }}" target="_blank" rel="noopener">
+        <div class="image-frame">
+          <img src="{{ $image }}" alt="{{ $item.title }}" loading="lazy" decoding="async" />
         </div>
-      </article>
+      </a>
+      <div class="card-body">
+        <h3>{{ $item.title }}</h3>
+        <p class="meta">{{ $item.date }}{{ with $item.photographer }} · {{ . }}{{ end }}</p>
+        <p class="summary">{{ $item.description }}</p>
+        {{ with $item.subjects }}<div class="chip-row">
+          {{ range . }}<span class="chip">{{ . }}</span>{{ end }}
+        </div>{{ end }}
+      </div>
+    </article>
     {{ end }}
   </div>
 </section>
@@ -53,7 +271,10 @@
   <div class="cta-card">
     <div>
       <h2>Explore the full collection</h2>
-      <p>These featured items are just a sample. Browse the <a href="{{ $collData.collection_page }}" target="_blank" rel="noopener">full {{ $collData.title }}</a> at Temple University Libraries or use the <a href="{{ $collData.manifest }}" target="_blank" rel="noopener">IIIF collection manifest</a> to access the data.</p>
+      <p>These featured items are just a sample. Browse the <a href="{{ $collData.collection_page }}" target="_blank"
+          rel="noopener">full {{ $collData.title }}</a> at Temple University Libraries or use the <a
+          href="{{ $collData.manifest }}" target="_blank" rel="noopener">IIIF collection manifest</a> to access the
+        data.</p>
     </div>
   </div>
 </section>
