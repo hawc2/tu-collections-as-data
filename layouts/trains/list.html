@@ -2,25 +2,35 @@
 {{ $items := site.Data.trains.items }}
 {{ $totalItems := len $items }}
 
+{{ if .Params.hero_image }}
+<section class="hero hero--image">
+  <div class="hero__backdrop">
+    <img src="{{ .Params.hero_image }}" alt="{{ .Title }}" />
+  </div>
+  <div class="hero__overlay"></div>
+  <div class="wrap">
+    <p class="eyebrow">Exhibit</p>
+    <h1>{{ .Title }}</h1>
+    <p class="lead">{{ .Params.description }}</p>
+    <div class="at-a-glance" style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+      <span class="badge">{{ $totalItems }} photographs</span>
+    </div>
+  </div>
+</section>
+{{ else }}
 <section class="hero">
   <div class="wrap">
     <p class="eyebrow">Exhibit</p>
     <h1>{{ .Title }}</h1>
     <p class="lead">{{ .Params.description }}</p>
-
     <div class="at-a-glance" style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
       <span class="badge"
         style="background: rgba(157, 34, 53, 0.1); color: var(--accent); padding: 0.6rem 1.2rem; border-radius: 99px; font-weight: 700; font-size: 0.9rem; border: 1px solid rgba(157, 34, 53, 0.2); box-shadow: 0 4px 12px rgba(157,34,53,0.05); letter-spacing: 0.05em; text-transform: uppercase;">
-        <svg style="width:14px;height:14px;vertical-align:middle;margin-right:6px;margin-top:-2px" viewBox="0 0 24 24"
-          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <rect x="3" y="3" width="7" height="7"></rect>
-          <rect x="14" y="3" width="7" height="7"></rect>
-          <rect x="14" y="14" width="7" height="7"></rect>
-          <rect x="3" y="14" width="7" height="7"></rect>
-        </svg>{{ $totalItems }} photographs</span>
+        {{ $totalItems }} photographs</span>
     </div>
   </div>
 </section>
+{{ end }}
 
 {{ $themePages := where site.RegularPages "Section" "trains" }}
 {{ if $themePages }}

@@ -395,6 +395,390 @@
           ],
           "description": "Visitors enjoying a park fountain on a warm day in early 20th-century Philadelphia.",
           "image_url": "https://cdm16002.contentdm.oclc.org/iiif/2/p15037coll5:10/full/full/0/default.jpg"
+        },
+        {
+          "title": "Awbury Arboretum",
+          "featured": false,
+          "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/34",
+          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:34/manifest.json",
+          "date": "Unknown",
+          "subjects": [
+            "Rose gardens--Designs and plans"
+          ],
+          "description": "Image of layout plan for the Rose Garden of Awbury Arboretum in Germantown.",
+          "image_url": ""
+        },
+        {
+          "title": "Awbury Arboretum",
+          "featured": false,
+          "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/35",
+          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:35/manifest.json",
+          "date": "1926-07",
+          "subjects": [
+            "Ponds"
+          ],
+          "description": "Group of people among trees at the edge of a pond.",
+          "image_url": ""
+        },
+        {
+          "title": "A residential tree-lined street in Bornville",
+          "featured": false,
+          "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/82",
+          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:82/manifest.json",
+          "date": "Unknown",
+          "subjects": [],
+          "description": "",
+          "image_url": ""
+        },
+        {
+          "title": "Cadbury's freight station at Bournville",
+          "featured": false,
+          "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/95",
+          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:95/manifest.json",
+          "date": "Unknown",
+          "subjects": [],
+          "description": "",
+          "image_url": ""
+        },
+        {
+          "title": "Walnut Street Bridge",
+          "featured": false,
+          "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/98",
+          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:98/manifest.json",
+          "date": "Unknown",
+          "subjects": [
+            "Bridges"
+          ],
+          "description": "View of the bridge crossing the river with coal plants along the bank.",
+          "image_url": ""
+        },
+        {
+          "title": "Street in Camden",
+          "featured": false,
+          "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/99",
+          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:99/manifest.json",
+          "date": "Unknown",
+          "subjects": [],
+          "description": "",
+          "image_url": ""
+        },
+        {
+          "title": "34th Street Bridge",
+          "featured": false,
+          "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/103",
+          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:103/manifest.json",
+          "date": "Unknown",
+          "subjects": [
+            "Bridges"
+          ],
+          "description": "",
+          "image_url": ""
+        },
+        {
+          "title": "War memorial at Crum Creek",
+          "featured": false,
+          "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/104",
+          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:104/manifest.json",
+          "date": "1925-07",
+          "subjects": [
+            "War memorials"
+          ],
+          "description": "",
+          "image_url": ""
+        },
+        {
+          "title": "Stone bridge across a river",
+          "featured": false,
+          "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/110",
+          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:110/manifest.json",
+          "date": "Unknown",
+          "subjects": [
+            "Stone bridges"
+          ],
+          "description": "View from mid-river of a multi-span stone bridge spanning wooded river banks.",
+          "image_url": ""
+        },
+        {
+          "title": "Covered bridge across a river",
+          "featured": false,
+          "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/111",
+          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:111/manifest.json",
+          "date": "Unknown",
+          "subjects": [
+            "Covered bridges"
+          ],
+          "description": "View from mid-river of a covered bridge.",
+          "image_url": ""
+        },
+        {
+          "title": "View of 30th Street Station from center city",
+          "featured": false,
+          "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/115",
+          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:115/manifest.json",
+          "date": "Unknown",
+          "subjects": [],
+          "description": "A view from north and east of 30th Street Station looking at the station from across teh Schuylkill River.",
+          "image_url": ""
+        },
+        {
+          "title": "Exterior of 30th Street Station",
+          "featured": false,
+          "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/116",
+          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:116/manifest.json",
+          "date": "Unknown",
+          "subjects": [],
+          "description": "Exterior of 30th Street side of 30th Street Station with cars in parking lot.",
+          "image_url": ""
+        },
+        {
+          "title": "Filbert Street",
+          "featured": false,
+          "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/457",
+          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:457/manifest.json",
+          "date": "1927-08-01",
+          "subjects": [],
+          "description": "",
+          "image_url": ""
+        },
+        {
+          "title": "Filbert Street",
+          "featured": false,
+          "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/463",
+          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:463/manifest.json",
+          "date": "1927-08-01",
+          "subjects": [
+            "Row houses"
+          ],
+          "description": "",
+          "image_url": ""
+        },
+        {
+          "title": "Bus at Delaware and Oregon Avenues",
+          "featured": false,
+          "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/603",
+          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:603/manifest.json",
+          "date": "unknown",
+          "subjects": [
+            "Buses"
+          ],
+          "description": "",
+          "image_url": ""
+        },
+        {
+          "title": "Unidentified rowhomes",
+          "featured": false,
+          "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/986",
+          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:986/manifest.json",
+          "date": "unknown",
+          "subjects": [
+            "Dwellings",
+            "Row houses"
+          ],
+          "description": "",
+          "image_url": ""
+        },
+        {
+          "title": "Washington Square",
+          "featured": false,
+          "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/995",
+          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:995/manifest.json",
+          "date": "circa=1925",
+          "subjects": [],
+          "description": "",
+          "image_url": ""
+        },
+        {
+          "title": "Municipal Auditorium under construction",
+          "featured": false,
+          "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/1396",
+          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:1396/manifest.json",
+          "date": "1930-08-28",
+          "subjects": [
+            "Civic centers",
+            "Building"
+          ],
+          "description": "",
+          "image_url": ""
+        },
+        {
+          "title": "Untitled (p15037coll5/1400)",
+          "featured": false,
+          "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/1400",
+          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:1400/manifest.json",
+          "date": "Undated",
+          "subjects": [],
+          "description": "",
+          "image_url": ""
+        },
+        {
+          "title": "Architectural drawing of layout of the Rodin Museum",
+          "featured": false,
+          "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/1401",
+          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:1401/manifest.json",
+          "date": "Unknown",
+          "subjects": [
+            "Architectural drawing"
+          ],
+          "description": "",
+          "image_url": ""
+        },
+        {
+          "title": "Untitled (p15037coll5/1434)",
+          "featured": false,
+          "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/1434",
+          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:1434/manifest.json",
+          "date": "Undated",
+          "subjects": [],
+          "description": "",
+          "image_url": ""
+        },
+        {
+          "title": "Untitled (p15037coll5/1461)",
+          "featured": false,
+          "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/1461",
+          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:1461/manifest.json",
+          "date": "Undated",
+          "subjects": [],
+          "description": "",
+          "image_url": ""
+        },
+        {
+          "title": "Debris by the Susquehanna River",
+          "featured": false,
+          "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/1476",
+          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:1476/manifest.json",
+          "date": "unknown",
+          "subjects": [],
+          "description": "",
+          "image_url": ""
+        },
+        {
+          "title": "Joannes Park in Green Bay",
+          "featured": false,
+          "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/1496",
+          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:1496/manifest.json",
+          "date": "1926-09-28",
+          "subjects": [
+            "Parks",
+            "Playgrounds"
+          ],
+          "description": "",
+          "image_url": ""
+        },
+        {
+          "title": "\"View of the South Corner of the Museum\"",
+          "featured": false,
+          "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/1533",
+          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:1533/manifest.json",
+          "date": "Undated",
+          "subjects": [],
+          "description": "",
+          "image_url": ""
+        },
+        {
+          "title": "Industry along the Schuylkill River",
+          "featured": false,
+          "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/1534",
+          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:1534/manifest.json",
+          "date": "1910",
+          "subjects": [],
+          "description": "",
+          "image_url": ""
+        },
+        {
+          "title": "Fairview church and street",
+          "featured": false,
+          "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/1603",
+          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:1603/manifest.json",
+          "date": "1926-08",
+          "subjects": [],
+          "description": "",
+          "image_url": ""
+        },
+        {
+          "title": "Fairview street",
+          "featured": false,
+          "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/1606",
+          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:1606/manifest.json",
+          "date": "1926-08",
+          "subjects": [],
+          "description": "",
+          "image_url": ""
+        },
+        {
+          "title": "Fairview street",
+          "featured": false,
+          "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/1610",
+          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:1610/manifest.json",
+          "date": "1926-08",
+          "subjects": [],
+          "description": "",
+          "image_url": ""
+        },
+        {
+          "title": "Yorkship Village construction",
+          "featured": false,
+          "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/1616",
+          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:1616/manifest.json",
+          "date": "unknown",
+          "subjects": [
+            "Building",
+            "Dwellings"
+          ],
+          "description": "",
+          "image_url": ""
+        },
+        {
+          "title": "Yorkship Village construction",
+          "featured": false,
+          "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/1617",
+          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:1617/manifest.json",
+          "date": "unknown",
+          "subjects": [
+            "Building",
+            "Dwellings"
+          ],
+          "description": "",
+          "image_url": ""
+        },
+        {
+          "title": "Yorkship Village street construction",
+          "featured": false,
+          "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/1619",
+          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:1619/manifest.json",
+          "date": "unknown",
+          "subjects": [
+            "Building",
+            "Dwellings"
+          ],
+          "description": "",
+          "image_url": ""
+        },
+        {
+          "title": "Yorkship Village construction",
+          "featured": false,
+          "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/1620",
+          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:1620/manifest.json",
+          "date": "unknown",
+          "subjects": [
+            "Building",
+            "Dwellings"
+          ],
+          "description": "",
+          "image_url": ""
+        },
+        {
+          "title": "Tuckahoe Road, Yorkship Village",
+          "featured": false,
+          "record": "https://digital.library.temple.edu/digital/collection/p15037coll5/id/1621",
+          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll5:1621/manifest.json",
+          "date": "unknown",
+          "subjects": [
+            "Building",
+            "Dwellings"
+          ],
+          "description": "",
+          "image_url": ""
         }
       ],
       "archival_note": "The City Parks Association was founded in 1888 to promote the creation and maintenance of parks and playgrounds in Philadelphia. These photographs document their advocacy work, capturing both the idyllic spaces they championed and the crowded neighborhoods that needed them. The collection is held by Temple University Libraries."
@@ -714,6 +1098,84 @@
           "image_url": "https://cdm16002.contentdm.oclc.org/iiif/2/p245801coll0:20/full/full/0/default.jpg",
           "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p245801coll0:20/manifest.json",
           "record": "https://digital.library.temple.edu/digital/collection/p245801coll0/id/20"
+        },
+        {
+          "title": "Temple University Speakman Hall Dedication",
+          "featured": false,
+          "record": "https://digital.library.temple.edu/digital/collection/p245801coll0/id/271",
+          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p245801coll0:271/manifest.json",
+          "date": "1965-01-15",
+          "subjects": [
+            "Building",
+            "Business schools"
+          ],
+          "description": "\"Ground was broken at noon on Friday, January 15, 1965, for Temple University's new $3.3 million School of Business Administration building to be erected on the block bounded by 13th st., Berks St., Park ave., and Montgomery ave.  Five shovels were used to begin the excavation for the building, which will be ready for occupancy in September 1966.  The building has been named Frank M. Speakman Hall, after the principal donor of funds.  Left to right: James M. Symes, chairman of the executive committee of the Pennsylvania Railroad and a member of the University's Board of Trustees, who headed a capital fund drive for the building; Dr. Millard E. Gladfelter, president of the University, and Francis J. Lamer, executive director of the Philadelphia Redevelopment Authority, through which the land was acquired.\"",
+          "image_url": "https://cdm16002.contentdm.oclc.org/iiif/2/p245801coll0:271/full/full/0/default.jpg"
+        },
+        {
+          "title": "Temple University Speakman Hall Dedication",
+          "featured": false,
+          "record": "https://digital.library.temple.edu/digital/collection/p245801coll0/id/274",
+          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p245801coll0:274/manifest.json",
+          "date": "1962-03-08",
+          "subjects": [
+            "Building",
+            "Business schools"
+          ],
+          "description": "\"Some 150 workers and committee members in a $3 million capital fund campaign for Temple University's new School of Business and Public Administration building opened the business and industry phase of the drive Thursday evening, March 8, 1962 in Mitten Memorial Hall, Broad and Berks sts.  Shown here, from left to right looking at an artist's sketch of the new building, are James M. Symes, chairman of the board of directors of the Pennsylvania Railroad and chairman of the campaign; James F. Hutton, president of Slater Food Service Management and co-chairman and director of the business and industry division of the campaign; Dr. Millard E. Gladfelter, president of Temple University, and President Judge Charles Klein of Philadelphia's Orphans Court and chairman of the University's board of trustees.\"",
+          "image_url": "https://cdm16002.contentdm.oclc.org/iiif/2/p245801coll0:274/full/full/0/default.jpg"
+        },
+        {
+          "title": "Temple University Speakman Hall Dedication",
+          "featured": false,
+          "record": "https://digital.library.temple.edu/digital/collection/p245801coll0/id/275",
+          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p245801coll0:275/manifest.json",
+          "date": "1962-03-08",
+          "subjects": [
+            "Building",
+            "Business schools"
+          ],
+          "description": "\"Some 150 workers and committee members in a $3 million capital fund campaign for Temple University's new School of Business and Public Administration building opened the business and industry phase of the drive Thursday evening, March 8, 1962 in Mitten Memorial Hall, Broad and Berks sts.  Shown here, from left to right looking at an artist's sketch of the new building, are James M. Symes, chairman of the board of directors of the Pennsylvania Railroad and chairman of the campaign; President Judge Charles Klein of Philadelphia's Orphans Court and chairman of the University's board of trustees; Dr. Millard E. Gladfelter, president of Temple University, and James F. Hutton, president of Slater Food Service Management and co-chairman and director of the business and industry division of the campaign.\"",
+          "image_url": "https://cdm16002.contentdm.oclc.org/iiif/2/p245801coll0:275/full/full/0/default.jpg"
+        },
+        {
+          "title": "Temple University Speakman Hall Dedication",
+          "featured": false,
+          "record": "https://digital.library.temple.edu/digital/collection/p245801coll0/id/277",
+          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p245801coll0:277/manifest.json",
+          "date": "1965-01-15",
+          "subjects": [
+            "Building",
+            "Business schools"
+          ],
+          "description": "\"Ground was broken at noon on Friday, January 15, 1965, for Temple University's new $3.3 million School of Business Administration building to be erected on the block bounded by 13th st., Berks st., Park ave., and Montgomery ave.  Five shovels were used to begin the excavation for the building, which will be ready for occupancy in September, 1966.  The building has been named Frank M. Speakman Hall, after the principal donor of funds.  Left to right: Clarence L. Turner, alumnus of the School of Business Administration Class of 1910 and a member of the leadership gift committee for the capital fund drive for the building; James F. Hutton, senior vice president of Automatic Retailers of America, who was general co-chairman of the drive to raise funds for the building; Francis J. Lammer, executive director of the Philadelphia Redevelopment Authority, through which the land was acquired; Edwin A. Speakman, vice president of Missile Range Programs for RCA Service Co., Camden, N.J., nephew of the late Frank M. Speakman; The Hon. Charles Klein, president judge of the Philadelphia Orphans Court and chairman of the University's Board of Trustees; Mrs. L.J. Lawton, sister of the late Mr. Speakman; Dr. Millard E. Gladfelter, president of the University; James M. Symes, chairman of the executive committee of the Pennsylvania Railroad and a member of the University's Board of Trustees, who headed a capital fund drive for the building, and William R. Spofford, Esq., chairman of the executive committee of the University's Board of Trustees.\"",
+          "image_url": "https://cdm16002.contentdm.oclc.org/iiif/2/p245801coll0:277/full/full/0/default.jpg"
+        },
+        {
+          "title": "Temple University Speakman Hall Dedication",
+          "featured": false,
+          "record": "https://digital.library.temple.edu/digital/collection/p245801coll0/id/280",
+          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p245801coll0:280/manifest.json",
+          "date": "1965-01-15",
+          "subjects": [
+            "Building",
+            "Business schools"
+          ],
+          "description": "\"Ground was broken at noon on Friday, January 15, 1965, for Temple University's new $3.3 million School of Business Administration building to be erected on the block bounded by 13th st., Berks st., Park ave., and Montgomery ave.  Five shovels were used to begin the excavation for the building, which will be ready for occupancy in September, 1966.  The building has been named Frank H. Speakman Hall, after the principal donor of funds.  On left, James M. Symes, chairman of the executive committee of the Pennsylvania Railroad and a member of the Temple University Board of Trustees, who headed a capital fund drive for the building, and Dr. Millard E. Gladfelter, University president.\"",
+          "image_url": "https://cdm16002.contentdm.oclc.org/iiif/2/p245801coll0:280/full/full/0/default.jpg"
+        },
+        {
+          "title": "Temple University Speakman Hall Dedication",
+          "featured": false,
+          "record": "https://digital.library.temple.edu/digital/collection/p245801coll0/id/281",
+          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p245801coll0:281/manifest.json",
+          "date": "1965-01-15",
+          "subjects": [
+            "Building",
+            "Business schools"
+          ],
+          "description": "\"Ground was broken at noon on Friday, January 15, 1965, for Temple University's new $3.3 million School of Business Administration building to be erected on the block bounded by 13thst., Berks st., Park ave., and Montgomery ave.  Five shovels were used to begin the excavation for the building, which will be ready for occupancy in September 1966.  The building has been named Frank M. Speakman Hall, after the principal donor of funds.  At left, James M. Symes, chairman of the executive committee of the Pennsylvania Railroad and a member of the University's Board of Trustees, who headed a capital fund drive for the building, and The Hon. Charles Klein, president judge of the Philadelphia Orphans Court and chairman of the University's Board of Trustees.\"",
+          "image_url": "https://cdm16002.contentdm.oclc.org/iiif/2/p245801coll0:281/full/full/0/default.jpg"
         }
       ],
       "archival_note": "Temple University began as a night school for working people in the basement of Grace Baptist Church. These photographs trace its growth into a major public research university, documenting over 140 years of institutional and neighborhood history. The collection is maintained by Temple University Libraries' Special Collections Research Center."
