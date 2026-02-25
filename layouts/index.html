@@ -26,8 +26,10 @@
         </div>
         <div>
           {{ $trainItems := len site.Data.trains.items }}
+          {{ $danceItems := len site.Data.dance.items }}
+          {{ $posterItems := len site.Data.posters.items }}
           {{ $featuredItems := 0 }}{{ range $collections }}{{ $featuredItems = add $featuredItems (len .items) }}{{ end }}
-          {{ $totalAnalyzed := add $trainItems $featuredItems }}
+          {{ $totalAnalyzed := add (add (add $trainItems $featuredItems) $danceItems) $posterItems }}
           <div style="font-size: 3.5rem; font-weight: 800; font-family: var(--serif); line-height: 1;">{{ lang.FormatNumber 0 $totalAnalyzed }}</div>
           <div
             style="font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.1em; opacity: 0.9; margin-top: 10px;">
@@ -93,6 +95,56 @@
     </a>
     {{ end }}
     {{ end }}
+  </div>
+</section>
+
+<section id="exhibits" class="collections-browse wrap">
+  <div class="section-title">
+    <h2>Browse Exhibits</h2>
+    <p>Thematic exhibits exploring items across Temple's digital collections</p>
+  </div>
+  <div class="collection-grid">
+    {{ $trainData := site.Data.trains.items }}
+    {{ $trainFirst := index $trainData 0 }}
+    {{ $trainImage := partial "iiif-image.html" $trainFirst }}
+    <a class="collection-card reveal" href="{{ "trains/" | relURL }}" style="--delay: 0s;">
+      <div class="collection-card-image">
+        <img src="{{ $trainImage }}" alt="Trains at Temple" loading="lazy" decoding="async" />
+      </div>
+      <div class="collection-card-body">
+        <h3>Trains at Temple</h3>
+        <p class="meta">{{ len $trainData }} photographs</p>
+        <p class="summary">Train and railroad imagery drawn from Temple University Libraries' digital collections.</p>
+      </div>
+    </a>
+
+    {{ $danceData := site.Data.dance.items }}
+    {{ $danceFirst := index $danceData 0 }}
+    {{ $danceImage := partial "iiif-image.html" $danceFirst }}
+    <a class="collection-card reveal" href="{{ "dance/" | relURL }}" style="--delay: 0.06s;">
+      <div class="collection-card-image">
+        <img src="{{ $danceImage }}" alt="Philadelphia Dance Collection" loading="lazy" decoding="async" />
+      </div>
+      <div class="collection-card-body">
+        <h3>Philadelphia Dance Collection</h3>
+        <p class="meta">{{ len $danceData }} photographs</p>
+        <p class="summary">Photographs spanning classical ballet, modern dance, and African American dance traditions.</p>
+      </div>
+    </a>
+
+    {{ $posterData := site.Data.posters.items }}
+    {{ $posterFirst := index $posterData 0 }}
+    {{ $posterImage := partial "iiif-image.html" $posterFirst }}
+    <a class="collection-card reveal" href="{{ "propaganda/" | relURL }}" style="--delay: 0.12s;">
+      <div class="collection-card-image">
+        <img src="{{ $posterImage }}" alt="WWI War Posters" loading="lazy" decoding="async" />
+      </div>
+      <div class="collection-card-body">
+        <h3>WWI War Posters</h3>
+        <p class="meta">{{ len $posterData }} posters</p>
+        <p class="summary">Allied Posters of World War I exploring recruitment, propaganda, war bonds, and the home front.</p>
+      </div>
+    </a>
   </div>
 </section>
 

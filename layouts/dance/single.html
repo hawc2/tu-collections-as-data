@@ -1,0 +1,215 @@
+{{ define "main" }}
+{{ $allItems := site.Data.dance.items }}
+{{ $subthemes := .Params.subthemes }}
+
+<section class="hero">
+  <div class="wrap">
+    <p class="eyebrow">{{ if .Params.gallery_mode }}Exhibit{{ else }}Theme{{ end }}</p>
+    <h1>{{ .Title }}</h1>
+    <p class="lead">{{ .Params.description }}</p>
+  </div>
+</section>
+
+{{ if .Params.gallery_mode }}
+{{/* Gallery mode: show CLIP category sections with ~6 items each */}}
+{{ $items := $allItems }}
+
+{{ with .Params.clip_note }}
+<section class="wrap" style="padding-top: 0; padding-bottom: 2rem;">
+  <div style="background: rgba(157, 34, 53, 0.04); border: 1px solid rgba(157, 34, 53, 0.12); border-radius: 12px; padding: 1.5rem 2rem; max-width: 800px;">
+    <p style="margin: 0 0 0.5rem; font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent);">CLIP Analysis Note</p>
+    <p style="margin: 0; color: var(--muted); font-size: 0.95rem; line-height: 1.6;">{{ . }}</p>
+  </div>
+</section>
+{{ end }}
+
+<section class="gallery wrap">
+  <div class="section-title">
+    <h2>{{ len .Params.categories }} Visual Categories</h2>
+    <p>CLIP identified {{ len .Params.categories }} categories across {{ len $items }} photographs. Six sample images are shown for each.</p>
+  </div>
+
+  {{ range $catIndex, $cat := .Params.categories }}
+  {{ $catItems := where $items "visual_tags" "intersect" (slice $cat.tag) }}
+  {{ $sample := $catItems }}
+  {{ if gt (len $catItems) 6 }}
+    {{ $sample = first 6 $catItems }}
+  {{ end }}
+  <div class="category-section" style="margin-bottom: 3rem;">
+    <h3 style="font-size: 1.3rem; margin-bottom: 0.25rem;">{{ $cat.label }}</h3>
+    <p style="color: var(--muted); font-size: 0.9rem; margin-bottom: 1.25rem;">{{ len $catItems }} items classified by CLIP</p>
+    <div class="card-grid">
+      {{ range $index, $item := $sample }}
+      {{ $image := $item.image_url }}
+      {{ if eq $image "" }}{{ $image = partial "iiif-image.html" $item }}{{ end }}
+      <article class="card reveal" style="--delay: {{ mul $index 0.06 }}s;">
+        <a class="image-link" href="{{ $item.record }}" target="_blank" rel="noopener">
+          <div class="image-frame">
+            <img src="{{ $image }}" alt="{{ $item.title }}" loading="lazy" decoding="async" />
+          </div>
+        </a>
+        <div class="card-body">
+          <h3>{{ $item.title }}</h3>
+          <p class="meta">{{ $item.company }} · {{ $item.date }}{{ with $item.photographer }} · {{ . }}{{ end }}</p>
+          {{ with $item.visual_tags }}<div class="chip-row">
+            {{ range . }}<span class="chip ai-tag">{{ . }}</span>{{ end }}
+          </div>{{ end }}
+        </div>
+      </article>
+      {{ end }}
+    </div>
+  </div>
+  {{ end }}
+</section>
+
+{{ else if $subthemes }}
+  {{/* Combined page with sub-sections */}}
+  {{ $.Scratch.Set "total" 0 }}
+  {{ range $subthemes }}
+    {{ $subItems := where $allItems "themes" "intersect" (slice .theme) }}
+    {{ $.Scratch.Set "total" (add ($.Scratch.Get "total") (len $subItems)) }}
+  {{ end }}
+  <section class="gallery wrap">
+    <div class="section-title">
+      <h2>{{ $.Scratch.Get "total" }} photographs</h2>
+      <p><a href="{{ "dance/" | relURL }}">&#8592; All themes</a></p>
+    </div>
+  </section>
+
+  {{ range $subthemes }}
+    {{ $subItems := where $allItems "themes" "intersect" (slice .theme) }}
+    <section class="gallery wrap sub-gallery">
+      <div class="sub-section-header" style="margin-bottom: 1.5rem;">
+        <h3>{{ .title }}</h3>
+        <p class="lead">{{ .description }}</p>
+        <p class="meta">{{ len $subItems }} photographs</p>
+      </div>
+      <div class="card-grid">
+        {{ range $index, $item := $subItems }}
+          {{ $image := partial "iiif-image.html" $item }}
+          <article class="card reveal" style="--delay: {{ mul $index 0.06 }}s;">
+            <a class="image-link" href="{{ $item.record }}" target="_blank" rel="noopener">
+              <div class="image-frame">
+                <img
+                  src="{{ $image }}"
+                  alt="{{ $item.title }}"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            </a>
+            <div class="card-body">
+              <h3>{{ $item.title }}</h3>
+              <p class="meta">{{ $item.company }} · {{ $item.date }}{{ with $item.photographer }} · {{ . }}{{ end }}{{ with $item.performers }} · {{ . }}{{ end }}</p>
+              <p class="summary">{{ $item.description }}</p>
+              <div class="chip-row">
+                {{ range $item.themes }}<a class="chip link" href="{{ printf "dance/%s/" (. | urlize) | relURL }}">{{ . }}</a>{{ end }}
+              </div>
+              {{ with $item.subjects }}<div class="chip-row">
+                {{ range . }}<span class="chip">{{ . }}</span>{{ end }}
+              </div>{{ end }}
+              {{ with $item.visual_tags }}<div class="chip-row">
+                {{ range . }}<span class="chip ai-tag">{{ . }}</span>{{ end }}
+              </div>{{ end }}
+            </div>
+          </article>
+        {{ end }}
+      </div>
+    </section>
+  {{ end }}
+
+{{ else }}
+  {{/* Standard single-theme page */}}
+  {{ $theme := .Params.theme }}
+  {{ $items := where $allItems "themes" "intersect" (slice $theme) }}
+
+  <section class="gallery wrap">
+    <div class="section-title">
+      <h2>{{ len $items }} photographs</h2>
+      <p><a href="{{ "dance/" | relURL }}">&#8592; All themes</a></p>
+    </div>
+    <div class="card-grid">
+      {{ range $index, $item := $items }}
+        {{ $image := partial "iiif-image.html" $item }}
+        <article class="card reveal" style="--delay: {{ mul $index 0.06 }}s;">
+          <a class="image-link" href="{{ $item.record }}" target="_blank" rel="noopener">
+            <div class="image-frame">
+              <img
+                src="{{ $image }}"
+                alt="{{ $item.title }}"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+          </a>
+          <div class="card-body">
+            <h3>{{ $item.title }}</h3>
+            <p class="meta">{{ $item.company }} · {{ $item.date }}{{ with $item.photographer }} · {{ . }}{{ end }}{{ with $item.performers }} · {{ . }}{{ end }}</p>
+            <p class="summary">{{ $item.description }}</p>
+            <div class="chip-row">
+              {{ range $item.themes }}<a class="chip link" href="{{ printf "dance/%s/" (. | urlize) | relURL }}">{{ . }}</a>{{ end }}
+            </div>
+            {{ with $item.subjects }}<div class="chip-row">
+              {{ range . }}<span class="chip">{{ . }}</span>{{ end }}
+            </div>{{ end }}
+            {{ with $item.visual_tags }}<div class="chip-row">
+              {{ range . }}<span class="chip ai-tag">{{ . }}</span>{{ end }}
+            </div>{{ end }}
+          </div>
+        </article>
+      {{ end }}
+    </div>
+  </section>
+{{ end }}
+
+{{/* More Dance Themes cross-links — exclude analysis pages */}}
+{{ $otherPages := where (where site.RegularPages "Section" "dance") ".File.LogicalName" "!=" $.File.LogicalName }}
+{{ $themePages := slice }}
+{{ range $otherPages }}
+  {{ if not (or .Params.gallery_mode .Params.layout) }}
+    {{ $themePages = $themePages | append . }}
+  {{ end }}
+{{ end }}
+{{ if $themePages }}
+<section class="wrap" style="padding-top: 0; padding-bottom: 2rem;">
+  <div class="section-title">
+    <h2>More Dance Themes</h2>
+    <p>Explore other themes in the Philadelphia Dance Collection</p>
+  </div>
+  <div class="card-grid">
+    {{ range $index, $page := $themePages }}
+    {{ $pTheme := $page.Params.theme }}
+    {{ $pSubthemes := $page.Params.subthemes }}
+    {{ $pItems := slice }}
+    {{ if $pSubthemes }}
+      {{ range $pSubthemes }}
+        {{ $sub := where $allItems "themes" "intersect" (slice .theme) }}
+        {{ $pItems = $pItems | append $sub }}
+      {{ end }}
+    {{ else }}
+      {{ $pItems = where $allItems "themes" "intersect" (slice $pTheme) }}
+    {{ end }}
+    {{ $sampleItem := false }}
+    {{ range first 1 $pItems }}{{ $sampleItem = . }}{{ end }}
+    <a href="{{ $page.RelPermalink }}" class="theme-card reveal" style="--delay: {{ mul $index 0.08 }}s; text-decoration: none; color: inherit;">
+      <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border: 1px solid rgba(0,0,0,0.05); transition: transform 0.2s, box-shadow 0.2s;">
+        {{ if $sampleItem }}
+        {{ $image := partial "iiif-image.html" $sampleItem }}
+        {{ if $image }}
+        <div style="height: 200px; overflow: hidden;">
+          <img src="{{ $image }}" alt="{{ $page.Title }}" loading="lazy" decoding="async"
+            style="width: 100%; height: 100%; object-fit: cover;" />
+        </div>
+        {{ end }}
+        {{ end }}
+        <div style="padding: 1.2rem;">
+          <h3 style="margin: 0 0 0.4rem; font-family: var(--serif); font-size: 1.1rem;">{{ $page.Title }}</h3>
+          <p style="margin: 0; color: var(--muted); font-size: 0.85rem;">{{ len $pItems }} photographs</p>
+        </div>
+      </div>
+    </a>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+{{ end }}

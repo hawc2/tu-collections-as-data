@@ -38,6 +38,24 @@
           {{ end }}
         </div>
       </div>
+      <div class="dropdown">
+        <button class="nav-link dropdown-toggle">Dance</button>
+        <div class="dropdown-menu">
+          {{ $dancePages := where site.RegularPages "Section" "dance" }}
+          {{ range $dancePages }}
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          {{ end }}
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="nav-link dropdown-toggle">Posters</button>
+        <div class="dropdown-menu">
+          {{ $posterPages := where site.RegularPages "Section" "propaganda" }}
+          {{ range $posterPages }}
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          {{ end }}
+        </div>
+      </div>
       <a class="nav-link" href="https://digital.library.temple.edu/" target="_blank">Temple Libraries</a>
     </nav>
   </div>

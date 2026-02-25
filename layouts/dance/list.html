@@ -1,0 +1,117 @@
+{{ define "main" }}
+{{ $items := site.Data.dance.items }}
+{{ $totalItems := len $items }}
+
+<section class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Exhibit</p>
+    <h1>{{ .Title }}</h1>
+    <p class="lead">{{ .Params.description }}</p>
+
+    <div class="at-a-glance" style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+      <span class="badge"
+        style="background: rgba(157, 34, 53, 0.1); color: var(--accent); padding: 0.6rem 1.2rem; border-radius: 99px; font-weight: 700; font-size: 0.9rem; border: 1px solid rgba(157, 34, 53, 0.2); box-shadow: 0 4px 12px rgba(157,34,53,0.05); letter-spacing: 0.05em; text-transform: uppercase;">
+        <svg style="width:14px;height:14px;vertical-align:middle;margin-right:6px;margin-top:-2px" viewBox="0 0 24 24"
+          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="3" width="7" height="7"></rect>
+          <rect x="14" y="3" width="7" height="7"></rect>
+          <rect x="14" y="14" width="7" height="7"></rect>
+          <rect x="3" y="14" width="7" height="7"></rect>
+        </svg>{{ $totalItems }} photographs</span>
+    </div>
+  </div>
+</section>
+
+{{/* Separate theme pages from analysis pages */}}
+{{ $themePages := slice }}
+{{ $analysisPages := slice }}
+{{ range .Pages }}
+  {{ if or .Params.gallery_mode .Params.layout }}
+    {{ $analysisPages = $analysisPages | append . }}
+  {{ else }}
+    {{ $themePages = $themePages | append . }}
+  {{ end }}
+{{ end }}
+
+<section class="wrap" style="padding-top: 2rem; padding-bottom: 2rem;">
+  <div class="section-title">
+    <h2>Browse by Theme</h2>
+    <p>Dance photographs organized by theme</p>
+  </div>
+  <div class="card-grid">
+    {{ range $index, $page := $themePages }}
+    {{ $subthemes := $page.Params.subthemes }}
+    {{ $themeItems := slice }}
+    {{ if $subthemes }}
+      {{ range $subthemes }}
+        {{ $sub := where $items "themes" "intersect" (slice .theme) }}
+        {{ $themeItems = $themeItems | append $sub }}
+      {{ end }}
+    {{ else }}
+      {{ $themeItems = where $items "themes" "intersect" (slice $page.Params.theme) }}
+    {{ end }}
+    {{ $sampleItem := false }}
+    {{ range first 1 $themeItems }}{{ $sampleItem = . }}{{ end }}
+    <a href="{{ $page.RelPermalink }}" class="theme-card reveal" style="--delay: {{ mul $index 0.08 }}s; text-decoration: none; color: inherit;">
+      <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border: 1px solid rgba(0,0,0,0.05); transition: transform 0.2s, box-shadow 0.2s;">
+        {{ if $sampleItem }}
+        {{ $image := partial "iiif-image.html" $sampleItem }}
+        {{ if $image }}
+        <div style="height: 200px; overflow: hidden;">
+          <img src="{{ $image }}" alt="{{ $page.Title }}" loading="lazy" decoding="async"
+            style="width: 100%; height: 100%; object-fit: cover;" />
+        </div>
+        {{ end }}
+        {{ end }}
+        <div style="padding: 1.2rem;">
+          <h3 style="margin: 0 0 0.4rem; font-family: var(--serif); font-size: 1.1rem;">{{ $page.Title }}</h3>
+          <p style="margin: 0 0 0.4rem; color: var(--muted); font-size: 0.85rem;">{{ len $themeItems }} photographs</p>
+          <p style="margin: 0; color: var(--muted); font-size: 0.85rem;">{{ $page.Params.description | truncate 120 }}</p>
+        </div>
+      </div>
+    </a>
+    {{ end }}
+  </div>
+</section>
+
+{{ if $analysisPages }}
+<section class="wrap" style="padding-top: 0; padding-bottom: 2rem;">
+  <div class="section-title">
+    <h2>Collections as Data</h2>
+    <p>Computational analysis of the dance photographs using CLIP machine vision</p>
+  </div>
+  <div class="card-grid">
+    {{ range $index, $page := $analysisPages }}
+    {{ $sampleItem := index $items (mod (mul $index 7) (len $items)) }}
+    <a href="{{ $page.RelPermalink }}" class="theme-card reveal" style="--delay: {{ mul $index 0.08 }}s; text-decoration: none; color: inherit;">
+      <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border: 1px solid rgba(0,0,0,0.05); transition: transform 0.2s, box-shadow 0.2s;">
+        {{ $image := partial "iiif-image.html" $sampleItem }}
+        {{ if $image }}
+        <div style="height: 200px; overflow: hidden;">
+          <img src="{{ $image }}" alt="{{ $page.Title }}" loading="lazy" decoding="async"
+            style="width: 100%; height: 100%; object-fit: cover;" />
+        </div>
+        {{ end }}
+        <div style="padding: 1.2rem;">
+          <h3 style="margin: 0 0 0.4rem; font-family: var(--serif); font-size: 1.1rem;">{{ $page.Title }}</h3>
+          <p style="margin: 0 0 0.4rem; color: var(--muted); font-size: 0.85rem;">{{ $totalItems }} photographs analyzed</p>
+          <p style="margin: 0; color: var(--muted); font-size: 0.85rem;">{{ $page.Params.description | truncate 120 }}</p>
+        </div>
+      </div>
+    </a>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+
+<section class="cta wrap">
+  <div class="cta-card">
+    <div>
+      <h2>Explore the source collection</h2>
+      <p>These photographs are drawn from the
+        <a href="https://digital.library.temple.edu/digital/collection/p16002coll19" target="_blank" rel="noopener">Philadelphia Dance Collection</a>
+        at Temple University Libraries.</p>
+    </div>
+  </div>
+</section>
+{{ end }}
