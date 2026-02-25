@@ -1,4 +1,4 @@
-baseURL = "https://hawc2.github.io/tu-digital-collections/"
+baseURL = "https://hawc2.github.io/tu-collections-as-data/"
 languageCode = "en-us"
 title = "Collections as Data | Temple Libraries"
 disableKinds = ["taxonomy", "term", "RSS", "sitemap"]
