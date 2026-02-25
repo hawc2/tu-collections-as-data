@@ -32,7 +32,6 @@
       <div class="dropdown">
         <button class="nav-link dropdown-toggle">Trains</button>
         <div class="dropdown-menu">
-          <a href="{{ "trains/" | relURL }}">Overview</a>
           {{ $trainPages := where site.RegularPages "Section" "trains" }}
           {{ range $trainPages }}
           <a href="{{ .RelPermalink }}">{{ .Title }}</a>
@@ -56,17 +55,24 @@
     });
   }
 
-  // Dropdown click handling (works on mobile + desktop)
+  // Dropdown: hover on desktop, click on mobile
+  var isTouchDevice = 'ontouchstart' in window;
   document.querySelectorAll('.dropdown').forEach(function(dd) {
     var btn = dd.querySelector('.dropdown-toggle');
+    if (!isTouchDevice) {
+      dd.addEventListener('mouseenter', function() {
+        document.querySelectorAll('.dropdown.open').forEach(function(d) { d.classList.remove('open'); });
+        dd.classList.add('open');
+      });
+      dd.addEventListener('mouseleave', function() {
+        dd.classList.remove('open');
+      });
+    }
     btn.addEventListener('click', function(e) {
       e.preventDefault();
       e.stopPropagation();
       var wasOpen = dd.classList.contains('open');
-      // Close all dropdowns
-      document.querySelectorAll('.dropdown.open').forEach(function(d) {
-        d.classList.remove('open');
-      });
+      document.querySelectorAll('.dropdown.open').forEach(function(d) { d.classList.remove('open'); });
       if (!wasOpen) dd.classList.add('open');
     });
   });

@@ -38,6 +38,15 @@
   </div>
 </section>
 
+{{ with $collData.archival_note }}
+<section class="wrap" style="padding-top: 0; padding-bottom: 2rem;">
+  <div style="background: rgba(157, 34, 53, 0.04); border: 1px solid rgba(157, 34, 53, 0.12); border-radius: 12px; padding: 1.5rem 2rem; max-width: 800px;">
+    <p style="margin: 0 0 0.5rem; font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent);">About This Collection</p>
+    <p style="margin: 0; color: var(--muted); font-size: 0.95rem; line-height: 1.6;">{{ . }}</p>
+  </div>
+</section>
+{{ end }}
+
 {{ if $collData.viz_type }}
 <section class="data-explorer wrap" style="padding-top: 2rem; padding-bottom: 2rem;">
   <div class="section-title">

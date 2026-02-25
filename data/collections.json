@@ -12,7 +12,7 @@
       "collection_id": "p16002coll9",
       "collection_page": "https://digital.library.temple.edu/digital/collection/p16002coll9",
       "manifest": "https://cdm16002.contentdm.oclc.org/iiif/info/p16002coll9/manifest.json",
-      "description": "A striking collection of over 200 Allied propaganda posters from World War I, featuring recruitment appeals, war bond campaigns, and morale-boosting imagery from the United States, Great Britain, France, and other Allied nations. These posters reflect the visual persuasion techniques of the era and the social mobilization of the home front.",
+      "description": "A striking collection of over 200 Allied propaganda posters from World War I, featuring recruitment appeals, war bond campaigns, and morale-boosting imagery from the United States, Great Britain, France, and other Allied nations. Held by Temple University Libraries' Special Collections Research Center.",
       "total_items": 234,
       "date_range": "1914-1918",
       "viz_type": "bar_chart",
@@ -76,7 +76,8 @@
           "description": "War bond poster depicting a menacing German soldier to encourage investment in Liberty Bonds.",
           "image_url": "https://cdm16002.contentdm.oclc.org/iiif/2/p16002coll9:4182/full/full/0/default.jpg"
         }
-      ]
+      ],
+      "archival_note": "These posters represent the visual rhetoric of wartime mobilization, spanning 1914-1918. Originally produced as mass-printed broadsides, they range from lithographed recruitment appeals to government-issued bond campaigns. The collection is part of the Special Collections Research Center holdings and has been fully digitized via IIIF."
     },
     {
       "id": "mosley-photographs",
@@ -84,7 +85,7 @@
       "collection_id": "p15037coll17",
       "collection_page": "https://digital.library.temple.edu/digital/collection/p15037coll17",
       "manifest": "https://cdm16002.contentdm.oclc.org/iiif/info/p15037coll17/manifest.json",
-      "description": "Photographs by John W. Mosley documenting African American social life, community events, and cultural activities in Philadelphia from the 1930s through the 1960s. Mosley captured weddings, dances, civic gatherings, and everyday life, providing a rich visual record of the city's Black communities.",
+      "description": "Over 30,000 photographs by John W. Mosley documenting African American social life, community events, and cultural activities in Philadelphia from the 1930s through the 1960s. Mosley was a staff photographer for the Philadelphia Tribune, the nation's oldest continuously published African American newspaper.",
       "items": [
         {
           "title": "Cotillion Ball at the Bellevue-Stratford Hotel",
@@ -131,7 +132,8 @@
           "description": "Musicians performing at a Philadelphia jazz club, capturing the vibrant music scene.",
           "image_url": "https://cdm16002.contentdm.oclc.org/iiif/2/p15037coll17:10/full/full/0/default.jpg"
         }
-      ]
+      ],
+      "archival_note": "Mosley's archive offers an unparalleled visual record of mid-century Black Philadelphia, capturing everything from cotillions and church gatherings to political rallies and nightclub performances. The collection is held by the Charles L. Blockson Afro-American Collection at Temple University."
     },
     {
       "id": "dance-collection",
@@ -139,7 +141,7 @@
       "collection_id": "p16002coll17",
       "collection_page": "https://digital.library.temple.edu/digital/collection/p16002coll17",
       "manifest": "https://cdm16002.contentdm.oclc.org/iiif/info/p16002coll17/manifest.json",
-      "description": "Photographs documenting Philadelphia's rich dance heritage, featuring the Pennsylvania Ballet and the Philadelphia Dance Company (Philadanco). The collection spans from the 1960s through the 1990s, capturing performances, rehearsals, and the individual artistry of dancers.",
+      "description": "Photographs documenting Philadelphia's rich dance heritage, featuring the Pennsylvania Ballet and the Philadelphia Dance Company (Philadanco). The collection captures rehearsals, performances, and the creative process behind two of the city's most important dance institutions.",
       "items": [
         {
           "title": "Sleeping Beauty",
@@ -186,7 +188,8 @@
           "description": "David St. Charles, Philadanco's lead male dancer, photographed at the company's West Philadelphia location.",
           "image_url": "https://cdm16002.contentdm.oclc.org/iiif/2/p15037coll3:11529/full/full/0/default.jpg"
         }
-      ]
+      ],
+      "archival_note": "This collection draws from Temple University's performing arts holdings, preserving the visual legacy of Philadelphia's professional dance scene from the mid-20th century forward. Both companies have deep ties to the city's cultural identity."
     },
     {
       "id": "railroad-photographs",
@@ -194,7 +197,7 @@
       "collection_id": "p16002coll26",
       "collection_page": "https://digital.library.temple.edu/digital/collection/p16002coll26",
       "manifest": "https://cdm16002.contentdm.oclc.org/iiif/info/p16002coll26/manifest.json",
-      "description": "Photographs of railroads and trains taken by Frank G. Zahn, documenting American railroading from the steam era through the transition to diesel locomotives. The collection includes images of stations, rolling stock, locomotives, and railroad infrastructure across the eastern United States.",
+      "description": "Over 1,000 photographs from the Frank G. Zahn Railroad Photograph Collection documenting Pennsylvania railroads from the 1930s through the 1990s. Zahn (1925-2008) was a lifelong railroad enthusiast whose photographs chronicle the transition from steam to diesel and electric power across the Pennsylvania Railroad, Reading Railroad, and their successors.",
       "items": [
         {
           "title": "Pennsylvania Railroad Locomotive",
@@ -238,7 +241,8 @@
           "description": "Philadelphia's 30th Street Station, a major hub of the Pennsylvania Railroad system.",
           "image_url": "https://cdm16002.contentdm.oclc.org/iiif/2/p16002coll26:10/full/full/0/default.jpg"
         }
-      ]
+      ],
+      "archival_note": "Zahn's photographs are a key primary source for railroad historians, capturing not just locomotives but also stations, yards, bridges, and the industrial landscape of Pennsylvania's rail network. The collection is held by the Special Collections Research Center at Temple University Libraries. On this site, all 1,000 photographs have been analyzed using OpenAI's CLIP vision model to generate visual categories."
     },
     {
       "id": "city-parks",
@@ -246,7 +250,7 @@
       "collection_id": "p15037coll5",
       "collection_page": "https://digital.library.temple.edu/digital/collection/p15037coll5",
       "manifest": "https://cdm16002.contentdm.oclc.org/iiif/info/p15037coll5/manifest.json",
-      "description": "Photographs from the City Parks Association of Philadelphia documenting the city's parks, playgrounds, and recreational spaces from the late 19th and early 20th centuries. The images reveal the development of urban green spaces and their role in community life.",
+      "description": "Over 200 photographs from the City Parks Association of Philadelphia documenting the city's parks, playgrounds, and recreational spaces from the late 19th and early 20th centuries. The Association advocated for urban green spaces as essential to public health and civic life.",
       "total_items": 150,
       "date_range": "1890s-1920s",
       "viz_type": "map",
@@ -259,12 +263,92 @@
         {
           "lat": 39.9526,
           "lng": -75.1652,
-          "title": "City Hall Plaz"
+          "title": "City Hall Plaza"
         },
         {
           "lat": 39.9311,
           "lng": -75.1764,
           "title": "South Philadelphia Playground"
+        },
+        {
+          "lat": 39.9684,
+          "lng": -75.181,
+          "title": "Benjamin Franklin Parkway"
+        },
+        {
+          "lat": 39.9656,
+          "lng": -75.181,
+          "title": "Rodin Museum"
+        },
+        {
+          "lat": 39.9976,
+          "lng": -75.1491,
+          "title": "Aramingo Park"
+        },
+        {
+          "lat": 39.9798,
+          "lng": -75.1721,
+          "title": "Awbury Arboretum"
+        },
+        {
+          "lat": 40.0081,
+          "lng": -75.1676,
+          "title": "Tacony Creek Park"
+        },
+        {
+          "lat": 39.9375,
+          "lng": -75.1919,
+          "title": "Cobb's Creek"
+        },
+        {
+          "lat": 39.946,
+          "lng": -75.2127,
+          "title": "Bartram's Garden"
+        },
+        {
+          "lat": 39.9505,
+          "lng": -75.1505,
+          "title": "Franklin Square"
+        },
+        {
+          "lat": 39.9437,
+          "lng": -75.1571,
+          "title": "League Island Park"
+        },
+        {
+          "lat": 39.9285,
+          "lng": -75.1455,
+          "title": "Sesqui-Centennial Site"
+        },
+        {
+          "lat": 39.956,
+          "lng": -75.1735,
+          "title": "Broad & Walnut Streets"
+        },
+        {
+          "lat": 39.9668,
+          "lng": -75.1796,
+          "title": "Logan Square"
+        },
+        {
+          "lat": 39.9477,
+          "lng": -75.1628,
+          "title": "Bryn Mawr Recreation Center"
+        },
+        {
+          "lat": 40.058,
+          "lng": -75.047,
+          "title": "Pennypack Creek"
+        },
+        {
+          "lat": 39.9536,
+          "lng": -75.1639,
+          "title": "Betsy Ross House"
+        },
+        {
+          "lat": 39.9547,
+          "lng": -75.1636,
+          "title": "Arch Street"
         }
       ],
       "items": [
@@ -312,7 +396,8 @@
           "description": "Visitors enjoying a park fountain on a warm day in early 20th-century Philadelphia.",
           "image_url": "https://cdm16002.contentdm.oclc.org/iiif/2/p15037coll5:10/full/full/0/default.jpg"
         }
-      ]
+      ],
+      "archival_note": "The City Parks Association was founded in 1888 to promote the creation and maintenance of parks and playgrounds in Philadelphia. These photographs document their advocacy work, capturing both the idyllic spaces they championed and the crowded neighborhoods that needed them. The collection is held by Temple University Libraries."
     },
     {
       "id": "naacp-photographs",
@@ -320,7 +405,7 @@
       "collection_id": "p15037coll10",
       "collection_page": "https://digital.library.temple.edu/digital/collection/p15037coll10",
       "manifest": "https://cdm16002.contentdm.oclc.org/iiif/info/p15037coll10/manifest.json",
-      "description": "Photographs from the Philadelphia branch of the National Association for the Advancement of Colored People (NAACP), documenting civil rights activities, community organizing, and leadership in Philadelphia throughout the 20th century.",
+      "description": "Photographs from the Philadelphia branch of the National Association for the Advancement of Colored People (NAACP), documenting civil rights activities, community organizing, legal advocacy, and public demonstrations in Philadelphia from the mid-20th century.",
       "items": [
         {
           "title": "NAACP Annual Banquet",
@@ -366,7 +451,8 @@
           "description": "A community meeting organized by the Philadelphia NAACP to discuss local civil rights issues.",
           "image_url": "https://cdm16002.contentdm.oclc.org/iiif/2/p15037coll10:10/full/full/0/default.jpg"
         }
-      ]
+      ],
+      "archival_note": "The Philadelphia NAACP branch, one of the oldest and most active in the nation, played a central role in desegregation campaigns, voter registration drives, and community empowerment throughout the 20th century. These photographs are held by the Charles L. Blockson Afro-American Collection at Temple University."
     },
     {
       "id": "sheet-music",
@@ -374,52 +460,34 @@
       "collection_id": "p15037coll1",
       "collection_page": "https://digital.library.temple.edu/digital/collection/p15037coll1",
       "manifest": "https://cdm16002.contentdm.oclc.org/iiif/info/p15037coll1/manifest.json",
-      "description": "A diverse collection of American sheet music spanning the 19th and early 20th centuries, featuring popular songs, patriotic music, ragtime, and parlor songs. The illustrated covers provide a vivid visual record of American popular culture, social attitudes, and graphic design.",
+      "description": "A diverse collection of American sheet music spanning the 19th and early 20th centuries, featuring popular songs, patriotic music, ragtime, and parlor songs. The illustrated covers are themselves significant artifacts of American visual culture and commercial art.",
       "items": [
         {
-          "title": "After the Ball",
-          "featured": true,
-          "record": "https://digital.library.temple.edu/digital/collection/p15037coll1/id/1",
-          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll1:1/manifest.json",
-          "date": "1892",
-          "subjects": [
-            "Sheet music",
-            "Popular music",
-            "Cover art"
-          ],
-          "description": "Sheet music for 'After the Ball,' one of the most successful popular songs of the 19th century.",
-          "image_url": "https://cdm16002.contentdm.oclc.org/iiif/2/p15037coll1:1/full/full/0/default.jpg"
+          "id": 375,
+          "title": "Oh! Native scenes",
+          "description": "Farm buildings and a spire in the woods, sheep and man-made waterways.",
+          "image_url": "https://cdm16002.contentdm.oclc.org/iiif/2/p15037coll1:375/full/full/0/default.jpg",
+          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll1:375/manifest.json",
+          "record": "https://digital.library.temple.edu/digital/collection/p15037coll1/id/375"
         },
         {
-          "title": "The Stars and Stripes Forever",
-          "featured": true,
-          "record": "https://digital.library.temple.edu/digital/collection/p15037coll1/id/5",
-          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll1:5/manifest.json",
-          "date": "1897",
-          "subjects": [
-            "Sheet music",
-            "Marches",
-            "Patriotic music",
-            "John Philip Sousa"
-          ],
-          "description": "Sheet music cover for John Philip Sousa's iconic march, The Stars and Stripes Forever.",
-          "image_url": "https://cdm16002.contentdm.oclc.org/iiif/2/p15037coll1:5/full/full/0/default.jpg"
+          "id": 381,
+          "title": "Where are now the hopes I cherished",
+          "description": "A woman embracing a man in Roman dress, while the man looks away; colonnades and a volcano in the background.",
+          "image_url": "https://cdm16002.contentdm.oclc.org/iiif/2/p15037coll1:381/full/full/0/default.jpg",
+          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll1:381/manifest.json",
+          "record": "https://digital.library.temple.edu/digital/collection/p15037coll1/id/381"
         },
         {
-          "title": "Maple Leaf Rag",
-          "featured": false,
-          "record": "https://digital.library.temple.edu/digital/collection/p15037coll1/id/10",
-          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll1:10/manifest.json",
-          "date": "1899",
-          "subjects": [
-            "Sheet music",
-            "Ragtime",
-            "Scott Joplin"
-          ],
-          "description": "Scott Joplin's Maple Leaf Rag, a foundational work of ragtime music.",
-          "image_url": "https://cdm16002.contentdm.oclc.org/iiif/2/p15037coll1:10/full/full/0/default.jpg"
+          "id": 387,
+          "title": "I'll meet thee in the lane",
+          "description": "Woman stands next to fence on road through the woods, a church and field in the background.",
+          "image_url": "https://cdm16002.contentdm.oclc.org/iiif/2/p15037coll1:387/full/full/0/default.jpg",
+          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p15037coll1:387/manifest.json",
+          "record": "https://digital.library.temple.edu/digital/collection/p15037coll1/id/387"
         }
-      ]
+      ],
+      "archival_note": "Sheet music was a primary medium for popular music distribution before the phonograph era. The illustrated covers reflect prevailing tastes, social attitudes, and printing technologies of their time. This collection is drawn from Temple University Libraries' Special Collections Research Center."
     },
     {
       "id": "paul-robeson",
@@ -427,7 +495,7 @@
       "collection_id": "p16002coll23",
       "collection_page": "https://digital.library.temple.edu/digital/collection/p16002coll23",
       "manifest": "https://cdm16002.contentdm.oclc.org/iiif/info/p16002coll23/manifest.json",
-      "description": "Materials documenting the life and career of Paul Robeson, the renowned singer, actor, athlete, and civil rights activist. The collection includes photographs, programs, correspondence, and ephemera spanning Robeson's remarkable career from the stage to the political arena.",
+      "description": "Materials documenting the life and career of Paul Robeson (1898-1976), the renowned singer, actor, athlete, and civil rights activist. The collection includes photographs, correspondence, and ephemera spanning his career from All-American football player at Rutgers to internationally celebrated performer and political figure.",
       "items": [
         {
           "title": "Paul Robeson in Othello",
@@ -474,7 +542,8 @@
           "description": "Paul Robeson speaking at a rally, reflecting his lifelong commitment to social justice and civil rights.",
           "image_url": "https://cdm16002.contentdm.oclc.org/iiif/2/p16002coll23:10/full/full/0/default.jpg"
         }
-      ]
+      ],
+      "archival_note": "Robeson's legacy intersects with nearly every major social movement of the 20th century. His papers at Temple reflect both his artistic achievements and his political activism, including his advocacy for labor rights, anti-colonialism, and civil rights. The collection is part of the Charles L. Blockson Afro-American Collection."
     },
     {
       "id": "blockson-photographs",
@@ -482,7 +551,7 @@
       "collection_id": "p16002coll3",
       "collection_page": "https://digital.library.temple.edu/digital/collection/p16002coll3",
       "manifest": "https://cdm16002.contentdm.oclc.org/iiif/info/p16002coll3/manifest.json",
-      "description": "Photographs from the Charles L. Blockson Afro-American Collection, one of the nation's leading research facilities for the study of the history and culture of people of African descent. The collection documents African American life, achievements, and history from the colonial era to the present.",
+      "description": "Photographs from the Charles L. Blockson Afro-American Collection, one of the nation's leading research facilities for the study of the history and culture of people of African descent. The collection encompasses over 500,000 items spanning five centuries of the African diaspora.",
       "total_items": 1000,
       "date_range": "1800s-Present",
       "viz_type": "network",
@@ -608,7 +677,8 @@
           "description": "A community gathering captured in the Blockson Collection, documenting the richness of African American social life.",
           "image_url": "https://cdm16002.contentdm.oclc.org/iiif/2/p16002coll3:10/full/full/0/default.jpg"
         }
-      ]
+      ],
+      "archival_note": "Assembled over decades by historian and bibliophile Charles L. Blockson, this collection was donated to Temple University in 1984. It is one of the largest privately assembled collections of African American artifacts in the United States, housed in Sullivan Hall on Temple's Main Campus."
     },
     {
       "id": "temple-history",
@@ -616,53 +686,37 @@
       "collection_id": "p245801coll0",
       "collection_page": "https://digital.library.temple.edu/digital/collection/p245801coll0",
       "manifest": "https://cdm16002.contentdm.oclc.org/iiif/info/p245801coll0/manifest.json",
-      "description": "Photographs documenting the history of Temple University from its founding by Russell Conwell in 1884 to the present day. The collection includes images of campus buildings, student life, athletics, commencement ceremonies, and notable figures in the university's history.",
+      "description": "Over 1,500 photographs documenting the history of Temple University from its founding by Russell Conwell in 1884 to the present day. The collection includes images of campus buildings, academic ceremonies, student life, athletics, and the university's evolving relationship with its North Philadelphia neighborhood.",
       "items": [
         {
-          "title": "Russell Conwell, Founder of Temple University",
-          "featured": true,
-          "record": "https://digital.library.temple.edu/digital/collection/p245801coll0/id/1",
-          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p245801coll0:1/manifest.json",
-          "date": "ca. 1900",
-          "subjects": [
-            "Temple University",
-            "Russell Conwell",
-            "Founders",
-            "Portraits"
-          ],
-          "description": "Portrait of Russell Conwell, who founded Temple University in 1884 with the mission of providing accessible education.",
-          "image_url": "https://cdm16002.contentdm.oclc.org/iiif/2/p245801coll0:1/full/full/0/default.jpg"
+          "id": 18,
+          "title": "Dean Laura H. Carnell",
+          "description": "Dr. Laura Carnell in academic gown. Dr. Carnell was Associate President of Temple University 1925-1929.",
+          "date": "1912",
+          "image_url": "https://cdm16002.contentdm.oclc.org/iiif/2/p245801coll0:18/full/full/0/default.jpg",
+          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p245801coll0:18/manifest.json",
+          "record": "https://digital.library.temple.edu/digital/collection/p245801coll0/id/18"
         },
         {
-          "title": "Early Campus Buildings",
-          "featured": true,
-          "record": "https://digital.library.temple.edu/digital/collection/p245801coll0/id/5",
-          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p245801coll0:5/manifest.json",
-          "date": "early 20th century",
-          "subjects": [
-            "Temple University",
-            "Campus",
-            "Architecture",
-            "Buildings"
-          ],
-          "description": "Early buildings on the Temple University campus in North Philadelphia.",
-          "image_url": "https://cdm16002.contentdm.oclc.org/iiif/2/p245801coll0:5/full/full/0/default.jpg"
+          "id": 19,
+          "title": "Groundbreaking for Samuel Paley Library",
+          "description": "The Hon. Charles Klein and chairman of the Board of Trustees at the groundbreaking ceremony.",
+          "date": "1963-11-26",
+          "image_url": "https://cdm16002.contentdm.oclc.org/iiif/2/p245801coll0:19/full/full/0/default.jpg",
+          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p245801coll0:19/manifest.json",
+          "record": "https://digital.library.temple.edu/digital/collection/p245801coll0/id/19"
         },
         {
-          "title": "Commencement Ceremony",
-          "featured": false,
-          "record": "https://digital.library.temple.edu/digital/collection/p245801coll0/id/10",
-          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p245801coll0:10/manifest.json",
-          "date": "mid-20th century",
-          "subjects": [
-            "Temple University",
-            "Commencement",
-            "Graduation"
-          ],
-          "description": "A Temple University commencement ceremony, marking the achievements of graduating students.",
-          "image_url": "https://cdm16002.contentdm.oclc.org/iiif/2/p245801coll0:10/full/full/0/default.jpg"
+          "id": 20,
+          "title": "Groundbreaking for Samuel Paley Library",
+          "description": "Dr. Gladfelter turns the first shovel full of earth for the groundbreaking.",
+          "date": "1963-11-26",
+          "image_url": "https://cdm16002.contentdm.oclc.org/iiif/2/p245801coll0:20/full/full/0/default.jpg",
+          "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p245801coll0:20/manifest.json",
+          "record": "https://digital.library.temple.edu/digital/collection/p245801coll0/id/20"
         }
-      ]
+      ],
+      "archival_note": "Temple University began as a night school for working people in the basement of Grace Baptist Church. These photographs trace its growth into a major public research university, documenting over 140 years of institutional and neighborhood history. The collection is maintained by Temple University Libraries' Special Collections Research Center."
     }
   ]
 }

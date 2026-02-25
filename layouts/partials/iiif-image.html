@@ -1,7 +1,7 @@
 {{- $item := . -}}
 {{- $image := "" -}}
 {{- with $item.image_url -}}
-  {{- $image = . -}}
+  {{- $image = replace . "/full/full/" "/full/800,/" -}}
 {{- else -}}
   {{- with $item.manifest -}}
     {{- $raw := resources.GetRemote . -}}

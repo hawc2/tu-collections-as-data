@@ -19,13 +19,16 @@
       style="grid-column: 1 / -1; background: var(--cherry); color: white; border: none; padding: 40px; border-radius: 16px;">
       <div style="display: flex; justify-content: space-around; text-align: center; flex-wrap: wrap; gap: 30px;">
         <div>
-          <div style="font-size: 3.5rem; font-weight: 800; font-family: var(--serif); line-height: 1;">10</div>
+          <div style="font-size: 3.5rem; font-weight: 800; font-family: var(--serif); line-height: 1;">{{ len $collections }}</div>
           <div
             style="font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.1em; opacity: 0.9; margin-top: 10px;">
             Curated Collections Visualized</div>
         </div>
         <div>
-          <div style="font-size: 3.5rem; font-weight: 800; font-family: var(--serif); line-height: 1;">3,354</div>
+          {{ $trainItems := len site.Data.trains.items }}
+          {{ $featuredItems := 0 }}{{ range $collections }}{{ $featuredItems = add $featuredItems (len .items) }}{{ end }}
+          {{ $totalAnalyzed := add $trainItems $featuredItems }}
+          <div style="font-size: 3.5rem; font-weight: 800; font-family: var(--serif); line-height: 1;">{{ lang.FormatNumber 0 $totalAnalyzed }}</div>
           <div
             style="font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.1em; opacity: 0.9; margin-top: 10px;">
             Items Analyzed in Set</div>

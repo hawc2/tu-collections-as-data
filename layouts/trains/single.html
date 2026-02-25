@@ -30,10 +30,99 @@
 </section>
 {{ end }}
 
+{{ if .Params.gallery_mode }}
+{{/* Gallery mode: show category sections with ~6 items each */}}
+<section class="gallery wrap">
+  <div class="section-title">
+    <h2>{{ len .Params.categories }} Visual Categories</h2>
+    <p>CLIP identified {{ len .Params.categories }} categories across {{ lang.FormatNumber 0 (len $items) }} photographs. Six sample images are shown for each.</p>
+  </div>
+
+  {{ range $catIndex, $cat := .Params.categories }}
+  {{ $catItems := where $items "visual_tags" "intersect" (slice $cat.tag) }}
+  {{ $sample := $catItems }}
+  {{ if gt (len $catItems) 6 }}
+    {{ $sample = first 6 $catItems }}
+  {{ end }}
+  <div class="category-section" style="margin-bottom: 3rem;">
+    <h3 style="font-size: 1.3rem; margin-bottom: 0.25rem;">{{ $cat.label }}</h3>
+    <p style="color: var(--muted); font-size: 0.9rem; margin-bottom: 1.25rem;">{{ len $catItems }} items classified by CLIP</p>
+    <div class="card-grid">
+      {{ range $index, $item := $sample }}
+      {{ $image := partial "iiif-image.html" $item }}
+      <article class="card reveal" style="--delay: {{ mul $index 0.06 }}s;">
+        <a class="image-link" href="{{ $item.record }}" target="_blank" rel="noopener">
+          <div class="image-frame">
+            <img src="{{ $image }}" alt="{{ $item.title }}" loading="lazy" decoding="async" />
+          </div>
+        </a>
+        <div class="card-body">
+          <h3>{{ $item.title }}</h3>
+          <p class="meta">{{ $item.date }}{{ with $item.photographer }} · {{ . }}{{ end }}</p>
+          {{ with $item.visual_tags }}<div class="chip-row">
+            {{ range . }}<span class="chip ai-tag">{{ . }}</span>{{ end }}
+          </div>{{ end }}
+        </div>
+      </article>
+      {{ end }}
+    </div>
+  </div>
+  {{ end }}
+
+  <p style="color: var(--muted); font-size: 0.9rem; margin-top: 1rem;">Browse the full collection of {{ len $items }} items at <a href="https://digital.library.temple.edu/digital/collection/p16002coll26" target="_blank" rel="noopener">Temple Digital Collections</a>.</p>
+</section>
+
+{{/* Related train collections */}}
+{{ $otherPages := where (where site.RegularPages "Section" "trains") ".File.LogicalName" "!=" $.File.LogicalName }}
+{{ if $otherPages }}
+<section class="wrap" style="padding-top: 0; padding-bottom: 2rem;">
+  <div class="section-title">
+    <h2>More Train Collections</h2>
+    <p>Train and railroad imagery discovered across Temple's other digital collections</p>
+  </div>
+  <div class="card-grid">
+    {{ range $index, $page := $otherPages }}
+    {{ $pTheme := $page.Params.theme }}
+    {{ $pFilter := $page.Params.filter_field | default "visual_tags" }}
+    {{ $ps := newScratch }}
+    {{ if eq $pFilter "source_collection" }}
+      {{ $ps.Set "items" (where $allItems "source_collection" $pTheme) }}
+    {{ else if eq $pFilter "subjects" }}
+      {{ $ps.Set "items" (where $allItems "subjects" "intersect" (slice $pTheme)) }}
+    {{ else }}
+      {{ $ps.Set "items" (where $allItems "visual_tags" "intersect" (slice $pTheme)) }}
+    {{ end }}
+    {{ $pItems := $ps.Get "items" }}
+    {{ $sampleItem := false }}
+    {{ range first 1 $pItems }}{{ $sampleItem = . }}{{ end }}
+    <a href="{{ $page.RelPermalink }}" class="theme-card reveal" style="--delay: {{ mul $index 0.08 }}s; text-decoration: none; color: inherit;">
+      <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border: 1px solid rgba(0,0,0,0.05); transition: transform 0.2s, box-shadow 0.2s;">
+        {{ if $sampleItem }}
+        {{ $image := partial "iiif-image.html" $sampleItem }}
+        {{ if $image }}
+        <div style="height: 200px; overflow: hidden;">
+          <img src="{{ $image }}" alt="{{ $page.Title }}" loading="lazy" decoding="async"
+            style="width: 100%; height: 100%; object-fit: cover;" />
+        </div>
+        {{ end }}
+        {{ end }}
+        <div style="padding: 1.2rem;">
+          <h3 style="margin: 0 0 0.4rem; font-family: var(--serif); font-size: 1.1rem;">{{ $page.Title }}</h3>
+          <p style="margin: 0; color: var(--muted); font-size: 0.85rem;">{{ len $pItems }} items</p>
+        </div>
+      </div>
+    </a>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+
+{{ else }}
+{{/* Standard mode: flat grid with optional filter buttons */}}
 <section class="gallery wrap">
   <div class="section-title">
     <h2>{{ len $items }} items</h2>
-    <p><a href="{{ "trains/" | relURL }}">&#8592; All trains</a></p>
+    <p><a href="{{ "trains/railroad-photographs/" | relURL }}">&#8592; Railroad Photographs</a></p>
   </div>
 
   {{ with .Params.categories }}
@@ -112,4 +201,6 @@
 })();
 </script>
 {{ end }}
+{{ end }}
+
 {{ end }}
