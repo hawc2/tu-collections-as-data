@@ -15,7 +15,7 @@
 
 <section class="hero">
   <div class="wrap">
-    <p class="eyebrow">Theme</p>
+    <p class="eyebrow">Collection</p>
     <h1>{{ .Title }}</h1>
     <p class="lead">{{ .Params.description }}</p>
   </div>
@@ -32,19 +32,30 @@
 
 <section class="gallery wrap">
   <div class="section-title">
-    <h2>{{ len $items }} {{ if eq $filterField "source_collection" }}items{{ else }}photographs{{ end }}</h2>
+    <h2>{{ len $items }} items</h2>
     <p><a href="{{ "trains/" | relURL }}">&#8592; All trains</a></p>
   </div>
+
+  {{ with .Params.categories }}
+  <div class="filter-bar" style="margin-bottom: 2rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+    <button class="filter-btn active" data-filter="all">All</button>
+    {{ range . }}
+    <button class="filter-btn" data-filter="{{ .tag }}">{{ .label }}</button>
+    {{ end }}
+  </div>
+  {{ end }}
+
   {{ $limit := 60 }}
   {{ $showing := $items }}
   {{ if gt (len $items) $limit }}
     {{ $showing = first $limit $items }}
-    <p style="color: var(--muted); font-size: 0.9rem; margin-bottom: 1.5rem;">Showing {{ $limit }} of {{ len $items }} items. Browse the full set at <a href="https://digital.library.temple.edu" target="_blank" rel="noopener">Temple Digital Collections</a>.</p>
+    <p class="showing-note" style="color: var(--muted); font-size: 0.9rem; margin-bottom: 1.5rem;">Showing {{ $limit }} of {{ len $items }} items. Browse the full set at <a href="https://digital.library.temple.edu" target="_blank" rel="noopener">Temple Digital Collections</a>.</p>
   {{ end }}
   <div class="card-grid">
     {{ range $index, $item := $showing }}
     {{ $image := partial "iiif-image.html" $item }}
-    <article class="card reveal" style="--delay: {{ mul $index 0.06 }}s;">
+    <article class="card reveal" style="--delay: {{ mul $index 0.06 }}s;"
+      {{ with $item.subjects }}data-subjects="{{ delimit . "|" }}"{{ end }}>
       <a class="image-link" href="{{ $item.record }}" target="_blank" rel="noopener">
         <div class="image-frame">
           <img src="{{ $image }}" alt="{{ $item.title }}" loading="lazy" decoding="async" />
@@ -55,7 +66,7 @@
         <p class="meta">{{ $item.date }}{{ with $item.photographer }} · {{ . }}{{ end }}</p>
         <p class="summary">{{ $item.description }}</p>
         {{ with $item.source_collection }}
-        <span class="source-badge source-{{ . }}">{{ if eq . "warposters" }}War Posters{{ else if eq . "cityparks" }}City Parks{{ else }}Railroad Photos{{ end }}</span>
+        <span class="source-badge source-{{ . }}">{{ if eq . "warposters" }}War Posters{{ else if eq . "cityparks" }}City Parks{{ else if eq . "templehistory" }}Temple History{{ else }}Railroad Photos{{ end }}</span>
         {{ end }}
         {{ with $item.subjects }}<div class="chip-row">
           {{ range . }}<span class="chip">{{ . }}</span>{{ end }}
@@ -68,4 +79,37 @@
     {{ end }}
   </div>
 </section>
+
+{{ with .Params.categories }}
+<script>
+(function() {
+  var buttons = document.querySelectorAll('.filter-btn');
+  var cards = document.querySelectorAll('.card-grid .card');
+  var note = document.querySelector('.showing-note');
+  buttons.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      buttons.forEach(function(b) { b.classList.remove('active'); });
+      btn.classList.add('active');
+      var filter = btn.getAttribute('data-filter');
+      var shown = 0;
+      cards.forEach(function(card) {
+        if (filter === 'all') {
+          card.style.display = '';
+          shown++;
+        } else {
+          var subj = card.getAttribute('data-subjects') || '';
+          if (subj.indexOf(filter) !== -1) {
+            card.style.display = '';
+            shown++;
+          } else {
+            card.style.display = 'none';
+          }
+        }
+      });
+      if (note) note.style.display = filter === 'all' ? '' : 'none';
+    });
+  });
+})();
+</script>
+{{ end }}
 {{ end }}

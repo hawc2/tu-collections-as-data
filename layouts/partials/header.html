@@ -9,22 +9,28 @@
         <p class="brand-subtitle">Temple University Digital Collections</p>
       </div>
     </a>
-    <nav class="header-nav" style="gap: 16px;">
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
+    </button>
+    <nav class="header-nav">
       <a class="nav-link" href="{{ site.BaseURL }}">Home</a>
-      <a class="nav-link" href="{{ site.BaseURL }}#collections">All Collections</a>
-      <div class="dropdown" tabindex="0">
-        <button class="nav-link dropdown-toggle"
-          style="background:none;border:none;cursor:pointer;font-family:var(--sans);">Collections ▼</button>
+      <div class="dropdown">
+        <button class="nav-link dropdown-toggle">Collections</button>
         <div class="dropdown-menu">
           {{ $collectionPages := where site.RegularPages "Section" "collections" }}
           {{ range $collectionPages }}
+          {{ if ne .Params.collection_id "railroad-photographs" }}
           <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          {{ end }}
           {{ end }}
         </div>
       </div>
-      <div class="dropdown" tabindex="0">
-        <button class="nav-link dropdown-toggle"
-          style="background:none;border:none;cursor:pointer;font-family:var(--sans);">Trains ▼</button>
+      <div class="dropdown">
+        <button class="nav-link dropdown-toggle">Trains</button>
         <div class="dropdown-menu">
           <a href="{{ "trains/" | relURL }}">Overview</a>
           {{ $trainPages := where site.RegularPages "Section" "trains" }}
@@ -37,3 +43,39 @@
     </nav>
   </div>
 </header>
+
+<script>
+(function() {
+  // Mobile nav toggle
+  var toggle = document.querySelector('.nav-toggle');
+  var nav = document.querySelector('.header-nav');
+  if (toggle) {
+    toggle.addEventListener('click', function() {
+      nav.classList.toggle('open');
+      toggle.classList.toggle('open');
+    });
+  }
+
+  // Dropdown click handling (works on mobile + desktop)
+  document.querySelectorAll('.dropdown').forEach(function(dd) {
+    var btn = dd.querySelector('.dropdown-toggle');
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      var wasOpen = dd.classList.contains('open');
+      // Close all dropdowns
+      document.querySelectorAll('.dropdown.open').forEach(function(d) {
+        d.classList.remove('open');
+      });
+      if (!wasOpen) dd.classList.add('open');
+    });
+  });
+
+  // Close dropdowns when clicking outside
+  document.addEventListener('click', function() {
+    document.querySelectorAll('.dropdown.open').forEach(function(d) {
+      d.classList.remove('open');
+    });
+  });
+})();
+</script>

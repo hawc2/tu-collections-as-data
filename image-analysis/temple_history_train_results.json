@@ -1,0 +1,622 @@
+{
+  "collection": {
+    "title": "Temple History in Photographs",
+    "collection_id": "p245801coll0",
+    "total_scanned": 1500
+  },
+  "summary": {
+    "metadata_matches": 26,
+    "clip_matches": 6,
+    "overlap": 0,
+    "metadata_only": 26,
+    "clip_only": 6
+  },
+  "items": [
+    {
+      "title": "Temple University Hospital",
+      "featured": false,
+      "source_collection": "templehistory",
+      "record": "https://digital.library.temple.edu/digital/collection/p245801coll0/id/66",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p245801coll0:66/manifest.json",
+      "image_url": "https://cdm16002.contentdm.oclc.org/iiif/2/p245801coll0:66/full/full/0/default.jpg",
+      "date": "Undated",
+      "subjects": [
+        "Hospitals"
+      ],
+      "description": "Streetview of Temple University Hospital.",
+      "found_by": [
+        "clip"
+      ],
+      "train_confidence": 0.5540859699249268
+    },
+    {
+      "title": "Rendering of the Columbia Avenue Subway Plaza",
+      "featured": false,
+      "source_collection": "templehistory",
+      "record": "https://digital.library.temple.edu/digital/collection/p245801coll0/id/72",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p245801coll0:72/manifest.json",
+      "image_url": "https://cdm16002.contentdm.oclc.org/iiif/2/p245801coll0:72/full/full/0/default.jpg",
+      "date": "1986-09-16",
+      "subjects": [
+        "Public transportation"
+      ],
+      "description": "An architectural rendering of the Columbia Avenue Subway Plaza on Temple University's main campus.",
+      "found_by": [
+        "clip"
+      ],
+      "train_confidence": 0.6132329106330872
+    },
+    {
+      "title": "Temple University Speakman Hall Dedication",
+      "featured": false,
+      "source_collection": "templehistory",
+      "record": "https://digital.library.temple.edu/digital/collection/p245801coll0/id/271",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p245801coll0:271/manifest.json",
+      "image_url": "https://cdm16002.contentdm.oclc.org/iiif/2/p245801coll0:271/full/full/0/default.jpg",
+      "date": "1965-01-15",
+      "subjects": [
+        "Building",
+        "Business schools"
+      ],
+      "description": "\"Ground was broken at noon on Friday, January 15, 1965, for Temple University's new $3.3 million School of Business Administration building to be erected on the block bounded by 13th st., Berks St., Park ave., and Montgomery ave.  Five shovels were used to begin the excavation for the building, which will be ready for occupancy in September 1966.  The building has been named Frank M. Speakman Hall, after the principal donor of funds.  Left to right: James M. Symes, chairman of the executive committee of the Pennsylvania Railroad and a member of the University's Board of Trustees, who headed a capital fund drive for the building; Dr. Millard E. Gladfelter, president of the University, and Francis J. Lamer, executive director of the Philadelphia Redevelopment Authority, through which the land was acquired.\"",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null,
+      "photographer": "Office of Public Information;"
+    },
+    {
+      "title": "Temple University Speakman Hall Dedication",
+      "featured": false,
+      "source_collection": "templehistory",
+      "record": "https://digital.library.temple.edu/digital/collection/p245801coll0/id/274",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p245801coll0:274/manifest.json",
+      "image_url": "https://cdm16002.contentdm.oclc.org/iiif/2/p245801coll0:274/full/full/0/default.jpg",
+      "date": "1962-03-08",
+      "subjects": [
+        "Building",
+        "Business schools"
+      ],
+      "description": "\"Some 150 workers and committee members in a $3 million capital fund campaign for Temple University's new School of Business and Public Administration building opened the business and industry phase of the drive Thursday evening, March 8, 1962 in Mitten Memorial Hall, Broad and Berks sts.  Shown here, from left to right looking at an artist's sketch of the new building, are James M. Symes, chairman of the board of directors of the Pennsylvania Railroad and chairman of the campaign; James F. Hutton, president of Slater Food Service Management and co-chairman and director of the business and industry division of the campaign; Dr. Millard E. Gladfelter, president of Temple University, and President Judge Charles Klein of Philadelphia's Orphans Court and chairman of the University's board of trustees.\"",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null,
+      "photographer": "Office of Public Information;"
+    },
+    {
+      "title": "Temple University Speakman Hall Dedication",
+      "featured": false,
+      "source_collection": "templehistory",
+      "record": "https://digital.library.temple.edu/digital/collection/p245801coll0/id/275",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p245801coll0:275/manifest.json",
+      "image_url": "https://cdm16002.contentdm.oclc.org/iiif/2/p245801coll0:275/full/full/0/default.jpg",
+      "date": "1962-03-08",
+      "subjects": [
+        "Building",
+        "Business schools"
+      ],
+      "description": "\"Some 150 workers and committee members in a $3 million capital fund campaign for Temple University's new School of Business and Public Administration building opened the business and industry phase of the drive Thursday evening, March 8, 1962 in Mitten Memorial Hall, Broad and Berks sts.  Shown here, from left to right looking at an artist's sketch of the new building, are James M. Symes, chairman of the board of directors of the Pennsylvania Railroad and chairman of the campaign; President Judge Charles Klein of Philadelphia's Orphans Court and chairman of the University's board of trustees; Dr. Millard E. Gladfelter, president of Temple University, and James F. Hutton, president of Slater Food Service Management and co-chairman and director of the business and industry division of the campaign.\"",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null,
+      "photographer": "Office of Public Information;"
+    },
+    {
+      "title": "Temple University Speakman Hall Dedication",
+      "featured": false,
+      "source_collection": "templehistory",
+      "record": "https://digital.library.temple.edu/digital/collection/p245801coll0/id/277",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p245801coll0:277/manifest.json",
+      "image_url": "https://cdm16002.contentdm.oclc.org/iiif/2/p245801coll0:277/full/full/0/default.jpg",
+      "date": "1965-01-15",
+      "subjects": [
+        "Building",
+        "Business schools"
+      ],
+      "description": "\"Ground was broken at noon on Friday, January 15, 1965, for Temple University's new $3.3 million School of Business Administration building to be erected on the block bounded by 13th st., Berks st., Park ave., and Montgomery ave.  Five shovels were used to begin the excavation for the building, which will be ready for occupancy in September, 1966.  The building has been named Frank M. Speakman Hall, after the principal donor of funds.  Left to right: Clarence L. Turner, alumnus of the School of Business Administration Class of 1910 and a member of the leadership gift committee for the capital fund drive for the building; James F. Hutton, senior vice president of Automatic Retailers of America, who was general co-chairman of the drive to raise funds for the building; Francis J. Lammer, executive director of the Philadelphia Redevelopment Authority, through which the land was acquired; Edwin A. Speakman, vice president of Missile Range Programs for RCA Service Co., Camden, N.J., nephew of the late Frank M. Speakman; The Hon. Charles Klein, president judge of the Philadelphia Orphans Court and chairman of the University's Board of Trustees; Mrs. L.J. Lawton, sister of the late Mr. Speakman; Dr. Millard E. Gladfelter, president of the University; James M. Symes, chairman of the executive committee of the Pennsylvania Railroad and a member of the University's Board of Trustees, who headed a capital fund drive for the building, and William R. Spofford, Esq., chairman of the executive committee of the University's Board of Trustees.\"",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null,
+      "photographer": "Office of Public Information;"
+    },
+    {
+      "title": "Temple University Speakman Hall Dedication",
+      "featured": false,
+      "source_collection": "templehistory",
+      "record": "https://digital.library.temple.edu/digital/collection/p245801coll0/id/280",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p245801coll0:280/manifest.json",
+      "image_url": "https://cdm16002.contentdm.oclc.org/iiif/2/p245801coll0:280/full/full/0/default.jpg",
+      "date": "1965-01-15",
+      "subjects": [
+        "Building",
+        "Business schools"
+      ],
+      "description": "\"Ground was broken at noon on Friday, January 15, 1965, for Temple University's new $3.3 million School of Business Administration building to be erected on the block bounded by 13th st., Berks st., Park ave., and Montgomery ave.  Five shovels were used to begin the excavation for the building, which will be ready for occupancy in September, 1966.  The building has been named Frank H. Speakman Hall, after the principal donor of funds.  On left, James M. Symes, chairman of the executive committee of the Pennsylvania Railroad and a member of the Temple University Board of Trustees, who headed a capital fund drive for the building, and Dr. Millard E. Gladfelter, University president.\"",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null,
+      "photographer": "Office of Public Information;"
+    },
+    {
+      "title": "Temple University Speakman Hall Dedication",
+      "featured": false,
+      "source_collection": "templehistory",
+      "record": "https://digital.library.temple.edu/digital/collection/p245801coll0/id/281",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p245801coll0:281/manifest.json",
+      "image_url": "https://cdm16002.contentdm.oclc.org/iiif/2/p245801coll0:281/full/full/0/default.jpg",
+      "date": "1965-01-15",
+      "subjects": [
+        "Building",
+        "Business schools"
+      ],
+      "description": "\"Ground was broken at noon on Friday, January 15, 1965, for Temple University's new $3.3 million School of Business Administration building to be erected on the block bounded by 13thst., Berks st., Park ave., and Montgomery ave.  Five shovels were used to begin the excavation for the building, which will be ready for occupancy in September 1966.  The building has been named Frank M. Speakman Hall, after the principal donor of funds.  At left, James M. Symes, chairman of the executive committee of the Pennsylvania Railroad and a member of the University's Board of Trustees, who headed a capital fund drive for the building, and The Hon. Charles Klein, president judge of the Philadelphia Orphans Court and chairman of the University's Board of Trustees.\"",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null,
+      "photographer": "Office of Public Information;"
+    },
+    {
+      "title": "Miss A. Jacqueline Steck, Temple University Director of Undergraduate Publications",
+      "featured": false,
+      "source_collection": "templehistory",
+      "record": "https://digital.library.temple.edu/digital/collection/p245801coll0/id/393",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p245801coll0:393/manifest.json",
+      "image_url": "https://cdm16002.contentdm.oclc.org/iiif/2/p245801coll0:393/full/full/0/default.jpg",
+      "date": "Undated",
+      "subjects": [
+        "Officials and employees",
+        "Journalists",
+        "Temple University--Administration"
+      ],
+      "description": "\"Miss A. Jacqueline Steck, Director of Undergraduate Publications, has been associated with the University for five years.  A Temple Department of Journalism graduate, Miss Steck previously was Managing Editor of several weekly papers and publicicty writer for a radio station.  She sponsors Theta Sigma Phi and Newman Club.\"",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null
+    },
+    {
+      "title": "Installation dinner of William H. Sylk as president of the General Alumni Association of Temple University",
+      "featured": false,
+      "source_collection": "templehistory",
+      "record": "https://digital.library.temple.edu/digital/collection/p245801coll0/id/444",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p245801coll0:444/manifest.json",
+      "image_url": "https://cdm16002.contentdm.oclc.org/iiif/2/p245801coll0:444/full/full/0/default.jpg",
+      "date": "1958-02-06",
+      "subjects": [
+        "Alumni and alumnae",
+        "Associations, institutions, etc.",
+        "Dinners and dining",
+        "Temple University--Alumni and alumnae"
+      ],
+      "description": "\"Installation dinner William H. Sylk, president of the General Alumni Association of Temple University - Bellevue-Stratford Hotel, Thursday, February 6, 1958.  Left to right standing William Sylk, Executive of Sun Ray Drug Co., and WPEN Radio Station, president of the Association; Dr. Louis P. Hoyer, Former Superintendant, Philadelphia Public Schools and Chairman of the Board of Directors of the Association.  Seated extreme right with pipe, Dr. Robert L. Johnson, Temple University President.     Temple University, Office of Public Information, Philadelphia 22, PA.\"",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null,
+      "photographer": "Leonard Studio"
+    },
+    {
+      "title": "Miss Kendig dressed for a game of la crosse",
+      "featured": false,
+      "source_collection": "templehistory",
+      "record": "https://digital.library.temple.edu/digital/collection/p245801coll0/id/508",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p245801coll0:508/manifest.json",
+      "image_url": "https://cdm16002.contentdm.oclc.org/iiif/2/p245801coll0:508/full/full/0/default.jpg",
+      "date": "1936",
+      "subjects": [
+        "Athletes",
+        "Officials and employees",
+        "Temple University--Faculty"
+      ],
+      "description": "\"Miss Kendig taught Freshman Physical Training Class at Temple in 1936.  La Crosse\"",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null
+    },
+    {
+      "title": "Floor plan of Annenberg Hall",
+      "featured": false,
+      "source_collection": "templehistory",
+      "record": "https://digital.library.temple.edu/digital/collection/p245801coll0/id/865",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p245801coll0:865/manifest.json",
+      "image_url": "https://cdm16002.contentdm.oclc.org/iiif/2/p245801coll0:865/full/full/0/default.jpg",
+      "date": "1968-09",
+      "subjects": [
+        "Architectural drawing",
+        "Temple University--Buildings"
+      ],
+      "description": "\"Annenberg Hall Sept. 1968\"",
+      "found_by": [
+        "clip"
+      ],
+      "train_confidence": 0.7123209238052368
+    },
+    {
+      "title": "Temple University football team in training, 1920's",
+      "featured": false,
+      "source_collection": "templehistory",
+      "record": "https://digital.library.temple.edu/digital/collection/p245801coll0/id/915",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p245801coll0:915/manifest.json",
+      "image_url": "https://cdm16002.contentdm.oclc.org/iiif/2/p245801coll0:915/full/full/0/default.jpg",
+      "date": "Circa=1928",
+      "subjects": [
+        "Football",
+        "Football players",
+        "Temple University--Students"
+      ],
+      "description": "\"From papers of Charles Cranford, B.S. Teacher's College '28\"",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null
+    },
+    {
+      "title": "Drawing showing the location of the sculpture of Russell Conwell on the School District of Philadelphia building",
+      "featured": false,
+      "source_collection": "templehistory",
+      "record": "https://digital.library.temple.edu/digital/collection/p245801coll0/id/977",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p245801coll0:977/manifest.json",
+      "image_url": "https://cdm16002.contentdm.oclc.org/iiif/2/p245801coll0:977/full/full/0/default.jpg",
+      "date": "Undated",
+      "subjects": [
+        "Architectural drawing",
+        "Temple University--Presidents"
+      ],
+      "description": "\"Layout showing names & arrangement of sculptured heads for the Administration Bldg., School District of Philadelphia\"",
+      "found_by": [
+        "clip"
+      ],
+      "train_confidence": 0.5551945567131042
+    },
+    {
+      "title": "Temple University gymnastics team, 1953/54",
+      "featured": false,
+      "source_collection": "templehistory",
+      "record": "https://digital.library.temple.edu/digital/collection/p245801coll0/id/1050",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p245801coll0:1050/manifest.json",
+      "image_url": "https://cdm16002.contentdm.oclc.org/iiif/2/p245801coll0:1050/full/full/0/default.jpg",
+      "date": "Circa=1954",
+      "subjects": [
+        "Athletes",
+        "Temple University--Students",
+        "Temple University--Administration"
+      ],
+      "description": "\"Temple University Gymnastic Team   Coach M.W. Younger; F. Rabinowitz, Mng.; W. Rooco; A. Coco; R. Brown; R. Deherjian; R. Flynn; R. Zelinsky; R. Abel, Asst. Mng.; S. Rosenthal, Trainer                                                        (Front Row)  J. Drury; E. Scholl; Capt. John Jenco; J. Bretcher; W. Cocco; B. Paul  1953-1954\"",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null
+    },
+    {
+      "title": "Pearson/McGonigle Hall floor plan",
+      "featured": false,
+      "source_collection": "templehistory",
+      "record": "https://digital.library.temple.edu/digital/collection/p245801coll0/id/1054",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p245801coll0:1054/manifest.json",
+      "image_url": "https://cdm16002.contentdm.oclc.org/iiif/2/p245801coll0:1054/full/full/0/default.jpg",
+      "date": "unknown",
+      "subjects": [
+        "Blueprints",
+        "Temple University--Buildings"
+      ],
+      "description": "\"Temple University- Main Campus  Fitness (Weight) Room and Physical Training Facility; Pearson/McGonigle Halls\"",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null
+    },
+    {
+      "title": "The Temple University World Peace Award",
+      "featured": false,
+      "source_collection": "templehistory",
+      "record": "https://digital.library.temple.edu/digital/collection/p245801coll0/id/1127",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p245801coll0:1127/manifest.json",
+      "image_url": "https://cdm16002.contentdm.oclc.org/iiif/2/p245801coll0:1127/full/full/0/default.jpg",
+      "date": "1965",
+      "subjects": [
+        "Awards",
+        "Temple University--Events"
+      ],
+      "description": "\"Temple University World Peace Award in Memory of Lawrence C. Kline\"",
+      "found_by": [
+        "clip"
+      ],
+      "train_confidence": 0.6875218152999878
+    },
+    {
+      "title": "Barton Hall with view of Park Mall",
+      "featured": false,
+      "source_collection": "templehistory",
+      "record": "https://digital.library.temple.edu/digital/collection/p245801coll0/id/1176",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p245801coll0:1176/manifest.json",
+      "image_url": "https://cdm16002.contentdm.oclc.org/iiif/2/p245801coll0:1176/full/full/0/default.jpg",
+      "date": "Circa=1961",
+      "subjects": [
+        "Temple University--Buildings",
+        "Temple University--Students"
+      ],
+      "description": "\"Barton Hall, Temple University's $4.3 million physical sciences building with classrooms and laboratories designed to handle some 2,200 students in its 155,000 square feet of space.  It contains a planetarium, a weather station and an animal house, as well as research facilities.  Dedicated April 7, 1961\"",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null
+    },
+    {
+      "title": "Barton Hall, showing Norris Street facade, with view of Park Mall",
+      "featured": false,
+      "source_collection": "templehistory",
+      "record": "https://digital.library.temple.edu/digital/collection/p245801coll0/id/1177",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p245801coll0:1177/manifest.json",
+      "image_url": "https://cdm16002.contentdm.oclc.org/iiif/2/p245801coll0:1177/full/full/0/default.jpg",
+      "date": "Circa=1961",
+      "subjects": [
+        "Temple University--Buildings",
+        "Trees"
+      ],
+      "description": "\"Barton Hall, Temple University's $4.3 million physical sciences building, taken from Park Ave. and Norris St.  Classrooms and laboratories within the building are designed to handle some 2,200 students within 155,000 square feet of space.  Barton Hall contains a planetarium, a weather station and an animal house, in addition to research facilities.  It was dedicated April 7, 1961.\"",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null
+    },
+    {
+      "title": "View of Barton Hall from Park Mall",
+      "featured": false,
+      "source_collection": "templehistory",
+      "record": "https://digital.library.temple.edu/digital/collection/p245801coll0/id/1179",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p245801coll0:1179/manifest.json",
+      "image_url": "https://cdm16002.contentdm.oclc.org/iiif/2/p245801coll0:1179/full/full/0/default.jpg",
+      "date": "Circa=1961",
+      "subjects": [
+        "Temple University--Buildings",
+        "Trees"
+      ],
+      "description": "\"Barton Hall, Temple University's $4.3 million physical sciences building with classrooms and laboratories designed to handle some 2,200 students in its 155,000 square feet of space.  It contains a planetarium, a weather station and an animal house, as well as research facilities.  Dedicated April 7, 1961.  Architects: Nolen, Swinburne and Associates.\"",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null
+    },
+    {
+      "title": "Stauffer Hall, with Broad Street Subway steps in front of the building",
+      "featured": false,
+      "source_collection": "templehistory",
+      "record": "https://digital.library.temple.edu/digital/collection/p245801coll0/id/1462",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p245801coll0:1462/manifest.json",
+      "image_url": "https://cdm16002.contentdm.oclc.org/iiif/2/p245801coll0:1462/full/full/0/default.jpg",
+      "date": "Undated",
+      "subjects": [
+        "Temple University--Buildings",
+        "Subway stations"
+      ],
+      "description": "\"Stouffer Hall\"",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null
+    },
+    {
+      "title": "Stauffer Hall, on the south east corner of Broad Street and Columbia (now Cecil B. Moore) Ave.",
+      "featured": false,
+      "source_collection": "templehistory",
+      "record": "https://digital.library.temple.edu/digital/collection/p245801coll0/id/1464",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p245801coll0:1464/manifest.json",
+      "image_url": "https://cdm16002.contentdm.oclc.org/iiif/2/p245801coll0:1464/full/full/0/default.jpg",
+      "date": "Undated",
+      "subjects": [
+        "Temple University--Buildings",
+        "Streets",
+        "Pedestrians",
+        "Subway stations"
+      ],
+      "description": "\"Stouffer Hall\"",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null
+    },
+    {
+      "title": "Stauffer Hall",
+      "featured": false,
+      "source_collection": "templehistory",
+      "record": "https://digital.library.temple.edu/digital/collection/p245801coll0/id/1476",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p245801coll0:1476/manifest.json",
+      "image_url": "https://cdm16002.contentdm.oclc.org/iiif/2/p245801coll0:1476/full/full/0/default.jpg",
+      "date": "1975",
+      "subjects": [
+        "Temple University--Buildings",
+        "Subway stations",
+        "Automobiles",
+        "Pedestrians"
+      ],
+      "description": "\"Stauffer Hall, Broad & Columbia, photo used in Templar 1975\"",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null
+    },
+    {
+      "title": "View from Paley Library roof looking northeast",
+      "featured": false,
+      "source_collection": "templehistory",
+      "record": "https://digital.library.temple.edu/digital/collection/p245801coll0/id/1519",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p245801coll0:1519/manifest.json",
+      "image_url": "https://cdm16002.contentdm.oclc.org/iiif/2/p245801coll0:1519/full/full/0/default.jpg",
+      "date": "Undated",
+      "subjects": [
+        "Temple University--Buildings",
+        "City blocks",
+        "Row houses -- Pennsylvania -- Philadelphia.",
+        "Railroad tracks"
+      ],
+      "description": "There is no description on the photograph.",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null
+    },
+    {
+      "title": "South Hall, northeast corner of Broad Street and Columbia Avenue",
+      "featured": false,
+      "source_collection": "templehistory",
+      "record": "https://digital.library.temple.edu/digital/collection/p245801coll0/id/1536",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p245801coll0:1536/manifest.json",
+      "image_url": "https://cdm16002.contentdm.oclc.org/iiif/2/p245801coll0:1536/full/full/0/default.jpg",
+      "date": "Undated",
+      "subjects": [
+        "Temple University--Buildings",
+        "Subway stations",
+        "Automobiles",
+        "Streets"
+      ],
+      "description": "There is no description on the photo.",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null
+    },
+    {
+      "title": "Broad and Montgomery Streets with Conwell Hall, circa 1927",
+      "featured": false,
+      "source_collection": "templehistory",
+      "record": "https://digital.library.temple.edu/digital/collection/p245801coll0/id/1626",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p245801coll0:1626/manifest.json",
+      "image_url": "https://cdm16002.contentdm.oclc.org/iiif/2/p245801coll0:1626/full/full/0/default.jpg",
+      "date": "Circa=1927",
+      "subjects": [
+        "Temple University--Buildings",
+        "Streets",
+        "Automobiles",
+        "Row houses -- Pennsylvania -- Philadelphia.",
+        "Service stations",
+        "Religious institutions"
+      ],
+      "description": "\"Conwell Hall, looking south on Broad Street, 1920's\"",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null
+    },
+    {
+      "title": "Cedarbrook Unit recreation building under construction",
+      "featured": false,
+      "source_collection": "templehistory",
+      "record": "https://digital.library.temple.edu/digital/collection/p245801coll0/id/1638",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p245801coll0:1638/manifest.json",
+      "image_url": "https://cdm16002.contentdm.oclc.org/iiif/2/p245801coll0:1638/full/full/0/default.jpg",
+      "date": "Circa=1946",
+      "subjects": [
+        "Temple University--Buildings",
+        "Construction projects",
+        "Construction workers",
+        "Bulldozers"
+      ],
+      "description": "\"Cafeteria-Recreation Building, Cedarbrook Unit, 1948 (1946)",
+      "found_by": [
+        "clip"
+      ],
+      "train_confidence": 0.6944888830184937,
+      "photographer": "Saltzman, Harry"
+    },
+    {
+      "title": "Window display illustrating the engineering science management war training courses offered by Temple University",
+      "featured": false,
+      "source_collection": "templehistory",
+      "record": "https://digital.library.temple.edu/digital/collection/p245801coll0/id/1691",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p245801coll0:1691/manifest.json",
+      "image_url": "https://cdm16002.contentdm.oclc.org/iiif/2/p245801coll0:1691/full/full/0/default.jpg",
+      "date": "Circa=1943",
+      "subjects": [
+        "Temple University--Students",
+        "Radio Equipment and supplies",
+        "Exhibitions",
+        "Electronics",
+        "Publicity",
+        "World War, 1939-1945--War work"
+      ],
+      "description": "\"E.S.M.W.T. window display - C. E. Rowell - Germantown - Oct. 19th - Nov. 1st\"",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null,
+      "photographer": "The Colony Studio; Kelleher, C.A."
+    },
+    {
+      "title": "Marion Mackenzie, faculty member in the Temple University Normal Department of Kindergarten Training",
+      "featured": false,
+      "source_collection": "templehistory",
+      "record": "https://digital.library.temple.edu/digital/collection/p245801coll0/id/1701",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p245801coll0:1701/manifest.json",
+      "image_url": "https://cdm16002.contentdm.oclc.org/iiif/2/p245801coll0:1701/full/full/0/default.jpg",
+      "date": "Circa=1912",
+      "subjects": [
+        "Temple University--Faculty"
+      ],
+      "description": "\"Dr. Marion MacKenzie - Sciences\"",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null
+    },
+    {
+      "title": "Lucinda MacKenzie, Director of the Temple University Normal Department of Kindergarten Training",
+      "featured": false,
+      "source_collection": "templehistory",
+      "record": "https://digital.library.temple.edu/digital/collection/p245801coll0/id/1702",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p245801coll0:1702/manifest.json",
+      "image_url": "https://cdm16002.contentdm.oclc.org/iiif/2/p245801coll0:1702/full/full/0/default.jpg",
+      "date": "Circa=1912",
+      "subjects": [
+        "Temple University--Administration"
+      ],
+      "description": "\"Miss Lucinda P. MacKenzie, Principle\"",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null
+    },
+    {
+      "title": "Anna W. Williams, faculty member in the Temple University Normal Department of Kindergarten Training",
+      "featured": false,
+      "source_collection": "templehistory",
+      "record": "https://digital.library.temple.edu/digital/collection/p245801coll0/id/1705",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p245801coll0:1705/manifest.json",
+      "image_url": "https://cdm16002.contentdm.oclc.org/iiif/2/p245801coll0:1705/full/full/0/default.jpg",
+      "date": "Circa=1912",
+      "subjects": [
+        "Temple University--Faculty"
+      ],
+      "description": "\"Miss Williams, hand work\"",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null
+    },
+    {
+      "title": "Senior class of the Temple University Normal Department of Kindergarten Training, 1911",
+      "featured": false,
+      "source_collection": "templehistory",
+      "record": "https://digital.library.temple.edu/digital/collection/p245801coll0/id/1706",
+      "manifest": "https://cdm16002.contentdm.oclc.org/iiif/p245801coll0:1706/manifest.json",
+      "image_url": "https://cdm16002.contentdm.oclc.org/iiif/2/p245801coll0:1706/full/full/0/default.jpg",
+      "date": "Circa=1911",
+      "subjects": [
+        "Temple University--Faculty",
+        "Temple University--Students",
+        "Women",
+        "Fashion"
+      ],
+      "description": "\"Our seniors, 1911\"",
+      "found_by": [
+        "metadata"
+      ],
+      "train_confidence": null
+    }
+  ]
+}

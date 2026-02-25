@@ -161,9 +161,17 @@ body::after {
   margin-top: 10px;
 }
 
-.dropdown:hover .dropdown-menu {
+.dropdown:hover .dropdown-menu,
+.dropdown.open .dropdown-menu {
   display: block;
   animation: fadeup 0.2s ease forwards;
+}
+
+.dropdown-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: var(--sans);
 }
 
 .dropdown-menu a {
@@ -615,15 +623,46 @@ body::after {
   }
 }
 
+/* Mobile nav toggle */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  color: var(--ink);
+}
+
 @media (max-width: 640px) {
+  .nav-toggle {
+    display: block;
+  }
+
   .header-nav {
     display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 4px;
+    padding-top: 12px;
+    border-top: 1px solid var(--line);
+  }
+
+  .header-nav.open {
+    display: flex;
+  }
+
+  .dropdown-menu {
+    position: static;
+    transform: none;
+    box-shadow: none;
+    border: none;
+    padding: 0 0 0 16px;
+    min-width: 0;
+    margin-top: 0;
   }
 
   .site-header .wrap {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
+    flex-wrap: wrap;
   }
 
   .collection-card {
@@ -677,4 +716,35 @@ body::after {
   background: rgba(34, 120, 80, 0.1);
   color: #1a6040;
   border: 1px solid rgba(34, 120, 80, 0.2);
+}
+
+.source-templehistory {
+  background: rgba(180, 130, 40, 0.1);
+  color: #8a6820;
+  border: 1px solid rgba(180, 130, 40, 0.2);
+}
+
+/* Filter buttons */
+.filter-btn {
+  padding: 0.5rem 1.2rem;
+  border-radius: 99px;
+  border: 1px solid var(--line);
+  background: white;
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.filter-btn:hover {
+  border-color: var(--cherry);
+  color: var(--cherry);
+}
+
+.filter-btn.active {
+  background: var(--cherry);
+  color: white;
+  border-color: var(--cherry);
 }

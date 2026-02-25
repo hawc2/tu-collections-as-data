@@ -26,8 +26,8 @@
 {{ if $themePages }}
 <section class="wrap" style="padding-top: 2rem; padding-bottom: 2rem;">
   <div class="section-title">
-    <h2>Browse by Theme</h2>
-    <p>Categories discovered through visual analysis of the collection</p>
+    <h2>Browse by Collection</h2>
+    <p>Train and railroad imagery discovered across Temple's digital collections</p>
   </div>
   <div class="card-grid">
     {{ range $index, $page := $themePages }}
@@ -84,7 +84,7 @@
         <p class="meta">{{ $item.date }}{{ with $item.photographer }} · {{ . }}{{ end }}</p>
         <p class="summary">{{ $item.description }}</p>
         {{ with $item.source_collection }}
-        <span class="source-badge source-{{ . }}">{{ if eq . "warposters" }}War Posters{{ else if eq . "cityparks" }}City Parks{{ else }}Railroad Photos{{ end }}</span>
+        <span class="source-badge source-{{ . }}">{{ if eq . "warposters" }}War Posters{{ else if eq . "cityparks" }}City Parks{{ else if eq . "templehistory" }}Temple History{{ else }}Railroad Photos{{ end }}</span>
         {{ end }}
         {{ with $item.subjects }}<div class="chip-row">
           {{ range . }}<span class="chip">{{ . }}</span>{{ end }}
