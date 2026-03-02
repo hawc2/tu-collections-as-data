@@ -6,7 +6,8 @@ Pulls from two sources:
   1. Frank G. Zahn Railroad Photograph Collection (p16002coll26) — all items
   2. Allied Posters of World War I (p16002coll9) — filtered for train/railroad content
 
-Outputs a trains.json with the same schema used by enrich_trains.py.
+Uses IIIF collection manifest pagination (from contentdm-iiif-api notebook)
+to enumerate items, then fetches rich metadata via dmGetItemInfo.
 
 Usage:
   python3 image-analysis/fetch_trains.py --output data/trains.json
@@ -22,8 +23,9 @@ import requests
 
 
 CONTENTDM_BASE = "https://cdm16002.contentdm.oclc.org"
-TEMPLE_DIGITAL  = "https://digital.library.temple.edu/digital"
-REQUEST_DELAY   = 0.4
+IIIF_BASE      = f"{CONTENTDM_BASE}/iiif"
+TEMPLE_DIGITAL = "https://digital.library.temple.edu/digital"
+REQUEST_DELAY  = 0.4
 
 # Keywords that indicate train/railroad content in war posters
 TRAIN_KEYWORDS = re.compile(
@@ -33,35 +35,59 @@ TRAIN_KEYWORDS = re.compile(
 )
 
 
-def get_all_pointers(collection: str) -> list:
-    """Return all item pointers in a ContentDM collection."""
-    url = (
-        f"{CONTENTDM_BASE}/digital/bl/dmwebservices/index.php"
-        f"?q=dmQuery/{collection}/0/pointer!descri/pointer/1000/0/1/0/0/0/json"
-    )
+def get_all_manifest_urls(collection: str) -> list:
+    """Get all item manifest URLs via IIIF collection pagination.
+
+    Uses the same approach as the CDM_IIIF_Image_Download notebook:
+    fetch the collection manifest, follow first/next page links.
+    """
+    coll_url = f"{IIIF_BASE}/{collection}/manifest.json"
     try:
-        r = requests.get(url, timeout=20)
+        r = requests.get(coll_url, timeout=30)
         r.raise_for_status()
-        d = r.json()
-        recs = d.get("records", [])
-        pointers = []
-        for rec in recs:
-            if rec.get("parentobject", -1) != -1:
-                continue
-            ptr = rec.get("pointer")
-            if ptr != "" and ptr is not None:
-                pointers.append(int(ptr))
-                continue
-            find = rec.get("find", "")
-            if find:
-                try:
-                    pointers.append(int(find.split(".")[0]) - 1)
-                except ValueError:
-                    pass
-        return pointers
+        coll = r.json()
     except Exception as e:
-        print(f"  [WARN] failed to list {collection}: {e}")
+        print(f"  [ERROR] Failed to fetch collection manifest: {e}")
         return []
+
+    page_url = coll.get("first")
+    if isinstance(page_url, dict):
+        page_url = page_url["@id"]
+
+    all_urls = []
+    page_num = 0
+    while page_url:
+        page_num += 1
+        try:
+            r = requests.get(page_url, timeout=30)
+            r.raise_for_status()
+            page = r.json()
+        except Exception as e:
+            print(f"  [WARN] Failed to fetch page {page_num}: {e}")
+            break
+
+        manifests = page.get("manifests", [])
+        if not manifests:
+            break
+
+        for m in manifests:
+            all_urls.append(m["@id"])
+
+        print(f"  Page {page_num}: {len(manifests)} items (total: {len(all_urls)})")
+        page_url = page.get("next", None)
+
+    return all_urls
+
+
+def pointer_from_manifest_url(url: str) -> int:
+    """Extract the ContentDM pointer from an IIIF manifest URL.
+
+    e.g. '.../iiif/p16002coll26:148/manifest.json' -> 148
+    """
+    match = re.search(r":(\d+)/manifest", url)
+    if match:
+        return int(match.group(1))
+    return -1
 
 
 def fetch_item_info(collection: str, pointer: int) -> dict:
@@ -70,13 +96,17 @@ def fetch_item_info(collection: str, pointer: int) -> dict:
         f"{CONTENTDM_BASE}/digital/bl/dmwebservices/index.php"
         f"?q=dmGetItemInfo/{collection}/{pointer}/json"
     )
-    try:
-        r = requests.get(url, timeout=15)
-        r.raise_for_status()
-        return r.json()
-    except Exception as e:
-        print(f"    [WARN] dmGetItemInfo failed for {collection}/{pointer}: {e}")
-        return {}
+    for attempt in range(3):
+        try:
+            r = requests.get(url, timeout=20)
+            r.raise_for_status()
+            return r.json()
+        except Exception as e:
+            if attempt < 2:
+                time.sleep(1)
+            else:
+                print(f"    [WARN] dmGetItemInfo failed for {collection}/{pointer}: {e}")
+    return {}
 
 
 def parse_subjects(raw: str) -> list:
@@ -140,18 +170,22 @@ def main():
     existing_manifests = {item["manifest"] for item in data.get("items", [])}
     new_items = []
 
-    # --- Collection 1: Railroad Photographs (all items) ---
+    # --- Collection 1: Railroad Photographs (all items via IIIF pagination) ---
     railroad_coll = "p16002coll26"
     print(f"\n=== Railroad Photographs ({railroad_coll}) ===")
-    print("  Fetching pointer list...")
-    pointers = get_all_pointers(railroad_coll)
-    print(f"  Found {len(pointers)} items")
+    print("  Enumerating items via IIIF collection manifest...")
+    manifest_urls = get_all_manifest_urls(railroad_coll)
+    print(f"  Found {len(manifest_urls)} items total")
 
-    for ptr in pointers:
-        manifest_url = f"{CONTENTDM_BASE}/iiif/{railroad_coll}:{ptr}/manifest.json"
-        if manifest_url in existing_manifests:
+    skipped = 0
+    for i, murl in enumerate(manifest_urls):
+        if murl in existing_manifests:
+            skipped += 1
             continue
-        print(f"  Fetching {railroad_coll}/{ptr}...")
+        ptr = pointer_from_manifest_url(murl)
+        if ptr < 0:
+            continue
+        print(f"  [{i+1}/{len(manifest_urls)}] Fetching {railroad_coll}/{ptr}...")
         info = fetch_item_info(railroad_coll, ptr)
         time.sleep(REQUEST_DELAY)
         if not info or info.get("code") == -2:
@@ -159,17 +193,21 @@ def main():
             continue
         new_items.append(build_item(railroad_coll, ptr, info, "railroad"))
 
+    print(f"  Skipped {skipped} already-fetched items")
+
     # --- Collection 2: War Posters — train-related only ---
     posters_coll = "p16002coll9"
     print(f"\n=== War Posters — train filter ({posters_coll}) ===")
-    print("  Fetching pointer list...")
-    pointers = get_all_pointers(posters_coll)
-    print(f"  Found {len(pointers)} total items, filtering for train content...")
+    print("  Enumerating items via IIIF collection manifest...")
+    manifest_urls = get_all_manifest_urls(posters_coll)
+    print(f"  Found {len(manifest_urls)} total items, filtering for train content...")
 
     train_poster_count = 0
-    for ptr in pointers:
-        manifest_url = f"{CONTENTDM_BASE}/iiif/{posters_coll}:{ptr}/manifest.json"
-        if manifest_url in existing_manifests:
+    for murl in manifest_urls:
+        if murl in existing_manifests:
+            continue
+        ptr = pointer_from_manifest_url(murl)
+        if ptr < 0:
             continue
         info = fetch_item_info(posters_coll, ptr)
         time.sleep(REQUEST_DELAY)

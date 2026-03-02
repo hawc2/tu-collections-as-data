@@ -3,7 +3,7 @@ title: "Frank G. Zahn Railroad Photographs"
 theme: "railroad"
 filter_field: "source_collection"
 gallery_mode: true
-description: "1,000 photographs from the Frank G. Zahn Railroad Photograph Collection documenting Pennsylvania railroads from the 1930s through the 1990s."
+description: "4,811 photographs from the Frank G. Zahn Railroad Photograph Collection documenting Pennsylvania railroads from the 1930s through the 1990s."
 clip_note: "Each photograph was classified into visual categories using OpenAI's CLIP vision model (clip-vit-base-patch32). The model compared each image against 17 descriptive prompts and assigned the top 4 matching tags. The categories below reflect these AI-generated classifications."
 categories:
   - { label: "Steam Locomotives", tag: "steam locomotive" }

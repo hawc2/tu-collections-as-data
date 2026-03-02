@@ -81,23 +81,27 @@ def slugify(text: str) -> str:
     return s[:80]
 
 
-def fetch_manifest(url: str, cache_dir: Path) -> Optional[dict]:
+def fetch_manifest(url: str, cache_dir: Path, force_refetch: bool = False) -> Optional[dict]:
     slug = slugify(url[-60:])
     cache_path = cache_dir / f"{slug}.json"
-    if cache_path.exists():
+    if not force_refetch and cache_path.exists():
         try:
             return json.loads(cache_path.read_text())
         except Exception:
             pass
-    try:
-        r = requests.get(url, timeout=20)
-        r.raise_for_status()
-        data = r.json()
-        cache_path.write_text(json.dumps(data))
-        return data
-    except Exception as e:
-        print(f"    [WARN] manifest fetch failed: {url} — {e}")
-        return None
+    for attempt in range(3):
+        try:
+            r = requests.get(url, timeout=25)
+            r.raise_for_status()
+            data = r.json()
+            cache_path.write_text(json.dumps(data))
+            return data
+        except Exception as e:
+            if attempt < 2:
+                time.sleep(1)
+            else:
+                print(f"    [WARN] manifest fetch failed: {url} — {e}")
+    return None
 
 
 def extract_image_url(manifest: dict) -> str:
@@ -184,24 +188,36 @@ def phase1_fetch_and_tag(items, model, processor, cache_dir, force_retag=False):
     prompt_to_label = {v: k for k, v in TAG_PROMPTS.items()}
     embeddings = []
 
-    for item in items:
+    for idx, item in enumerate(items):
         item["id"] = slugify(item["title"])
-        print(f"  {item['title']}")
+        label = f"  [{idx+1}/{len(items)}] {item['title']}"
 
         cached_emb = load_embedding(cache_dir, item["id"])
+
+        # If we have a cached embedding but no image_url, try to resolve the URL
+        if cached_emb is not None and not item.get("image_url"):
+            manifest = fetch_manifest(item["manifest"], cache_dir)
+            if manifest:
+                image_url = extract_image_url(manifest)
+                if image_url:
+                    item["image_url"] = image_url
+
         if cached_emb is not None:
             if force_retag or "visual_tags" not in item:
                 top_prompts = zero_shot_from_embedding(model, processor, cached_emb, prompts, TOP_TAGS)
                 item["visual_tags"] = [prompt_to_label.get(p, p) for p in top_prompts]
-                print("    [cached embedding, tags updated]")
+                print(f"{label} [cached embedding, tags updated]")
             else:
-                print("    [cached, skipping]")
+                print(f"{label} [cached, skipping]")
             embeddings.append(cached_emb)
             continue
 
-        manifest = fetch_manifest(item["manifest"], cache_dir)
+        # No cached embedding — need to fetch manifest and image
+        # Retry manifest for items that previously failed (no cache file)
+        needs_refetch = not item.get("image_url")
+        manifest = fetch_manifest(item["manifest"], cache_dir, force_refetch=needs_refetch)
         if not manifest:
-            item["image_url"] = ""
+            item.setdefault("image_url", "")
             embeddings.append(None)
             continue
 
@@ -209,7 +225,7 @@ def phase1_fetch_and_tag(items, model, processor, cache_dir, force_retag=False):
         item["image_url"] = image_url
 
         if not image_url:
-            print("    [WARN] no image URL in manifest")
+            print(f"{label} [WARN] no image URL in manifest")
             embeddings.append(None)
             continue
 
@@ -224,6 +240,7 @@ def phase1_fetch_and_tag(items, model, processor, cache_dir, force_retag=False):
         emb = get_embedding(model, processor, image)
         save_embedding(cache_dir, item["id"], emb)
         embeddings.append(emb)
+        print(f"{label} [tagged]")
         time.sleep(REQUEST_DELAY)
 
     return embeddings
